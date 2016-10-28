@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[AFHTTPSessionManager dataTaskWithHTTPMethod:URLString:parameters:uploadProgress:downloadProgress:success:failure:]:AFHTTPSessionManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString]">
+            </PersistentString>
+            <PersistentString
+               value = "self.baseURL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseUINavigationController pushViewController:animated:]:BaseUINavigationController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewController.navigationController.navigationBarHidden">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__23-[LoginView toGetPass:]_block_invoke:LoginView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.verificationCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RentBarReportM initWithCoder:]:RentBarReportM.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseRentBarTableVC dataWithCaches]:BaseRentBarTableVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HomePageViewController updateData]:HomePageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parametDic">
+            </PersistentString>
+            <PersistentString
+               value = "self.ordeBy">
+            </PersistentString>
+            <PersistentString
+               value = "self.minRate">
+            </PersistentString>
+            <PersistentString
+               value = "dic">
+            </PersistentString>
+            <PersistentString
+               value = "curPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RentBarReportCell rowHeightWithCellModel:]:RentBarReportCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "__25-[SelectionView getBrand]_block_invoke:SelectionView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__36-[BaseRentBarTableVC NetToLoadData:]_block_invoke.249:BaseRentBarTableVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__26-[SelectionView getBrand:]_block_invoke:SelectionView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "vc.secondArray">
+            </PersistentString>
+            <PersistentString
+               value = "dic2.parentId">
+            </PersistentString>
+            <PersistentString
+               value = "dic1.id">
+            </PersistentString>
+            <PersistentString
+               value = "dic">
+            </PersistentString>
+            <PersistentString
+               value = "dic1.IDS">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HomePageViewController tableView:numberOfRowsInSection:]:HomePageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__45-[HomePageViewController firstTimeImportData]_block_invoke.230:HomePageViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AccountNumberVC firshSetUP]:AccountNumberVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.nameLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginView firstLogin:]:LoginView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_passWLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "self.verificationCode">
+            </PersistentString>
+            <PersistentString
+               value = "_phoneLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CGPickViewController tableView:didSelectRowAtIndexPath:]:CGPickViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.secondIDArray[indexPath.row-1]">
+            </PersistentString>
+            <PersistentString
+               value = "min">
+            </PersistentString>
+            <PersistentString
+               value = "self.parametDic">
+            </PersistentString>
+            <PersistentString
+               value = "self.currentBtnTag">
+            </PersistentString>
+            <PersistentString
+               value = "self.categoryArray">
+            </PersistentString>
+            <PersistentString
+               value = "self.categoryArray[indexPath.row]">
+            </PersistentString>
+            <PersistentString
+               value = "self.tableViewNumber">
+            </PersistentString>
+            <PersistentString
+               value = "rateString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseRentBarTableVC NetToLoadStatusData:]:BaseRentBarTableVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LoginView phoneAlert]:LoginView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HomePageViewController tableView:viewForHeaderInSection:]:HomePageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parametDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RentBarReportCell contentPhotosH]:RentBarReportCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.photosView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectionView layoutSubviews]:SelectionView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mj_w">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__36-[BaseRentBarTableVC NetToLoadData:]_block_invoke:BaseRentBarTableVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BaseRentBarTableVC reloadData]:BaseRentBarTableVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HomePageViewController tableView:cellForRowAtIndexPath:]:HomePageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.contentDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectionView titleClick:]:SelectionView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parametDic">
+            </PersistentString>
+            <PersistentString
+               value = "vc.parametDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__40-[HomePageViewController NetToLoadData:]_block_invoke:HomePageViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RenterBarViewController changeVCformIndex:toIndex:]:RenterBarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.selectedIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MyHeaderLoginView initWithFrame:]:MyHeaderLoginView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.headerData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__44-[RentBarReportCell rowHeightWithCellModel:]_block_invoke:RentBarReportCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[RentBarReportM encodeWithCoder:]:RentBarReportM.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[RentBarReportCell setupReport]:RentBarReportCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.nameLabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MyHeaderLoginView layoutSubviews]:MyHeaderLoginView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.headerData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

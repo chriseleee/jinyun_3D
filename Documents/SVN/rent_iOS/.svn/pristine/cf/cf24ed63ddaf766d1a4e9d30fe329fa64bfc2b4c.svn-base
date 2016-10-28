@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "092a4b40-bef5-4e80-9e76-becb6bbb38bf++1042",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "092a4b40-bef5-4e80-9e76-becb6bbb38bf++1042" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "092a4b40-bef5-4e80-9e76-becb6bbb38bf++1042" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9F024F97-D84E-4CBD-BA3C-F8BA6581753D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "092a4b40-bef5-4e80-9e76-becb6bbb38bf++1042" : "vrrent-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "vrrent",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "vrrent.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.50.203\/project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "092a4b40-bef5-4e80-9e76-becb6bbb38bf++1042"
+    }
+  ]
+}
