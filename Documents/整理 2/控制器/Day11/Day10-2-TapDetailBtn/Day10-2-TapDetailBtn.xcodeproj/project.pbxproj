@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85F714291B7C49AF00A61936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F714281B7C49AF00A61936 /* main.m */; };
+		85F7142C1B7C49AF00A61936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F7142B1B7C49AF00A61936 /* AppDelegate.m */; };
+		85F7142F1B7C49AF00A61936 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F7142E1B7C49AF00A61936 /* ViewController.m */; };
+		85F714321B7C49AF00A61936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F714301B7C49AF00A61936 /* Main.storyboard */; };
+		85F714341B7C49AF00A61936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F714331B7C49AF00A61936 /* Images.xcassets */; };
+		85F714371B7C49AF00A61936 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85F714351B7C49AF00A61936 /* LaunchScreen.xib */; };
+		85F714431B7C49AF00A61936 /* Day10_2_TapDetailBtnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F714421B7C49AF00A61936 /* Day10_2_TapDetailBtnTests.m */; };
+		85F7144F1B7C49EB00A61936 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F7144D1B7C49EB00A61936 /* MyTableViewController.m */; };
+		85F714501B7C49EB00A61936 /* MyTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85F7144E1B7C49EB00A61936 /* MyTableViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85F7143D1B7C49AF00A61936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85F7141B1B7C49AF00A61936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85F714221B7C49AF00A61936;
+			remoteInfo = "Day10-2-TapDetailBtn";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85F714231B7C49AF00A61936 /* Day10-2-TapDetailBtn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day10-2-TapDetailBtn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F714271B7C49AF00A61936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F714281B7C49AF00A61936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85F7142A1B7C49AF00A61936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85F7142B1B7C49AF00A61936 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85F7142D1B7C49AF00A61936 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85F7142E1B7C49AF00A61936 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85F714311B7C49AF00A61936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85F714331B7C49AF00A61936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85F714361B7C49AF00A61936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		85F7143C1B7C49AF00A61936 /* Day10-2-TapDetailBtnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day10-2-TapDetailBtnTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F714411B7C49AF00A61936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F714421B7C49AF00A61936 /* Day10_2_TapDetailBtnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day10_2_TapDetailBtnTests.m; sourceTree = "<group>"; };
+		85F7144C1B7C49EB00A61936 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		85F7144D1B7C49EB00A61936 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		85F7144E1B7C49EB00A61936 /* MyTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85F714201B7C49AF00A61936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85F714391B7C49AF00A61936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85F7141A1B7C49AF00A61936 = {
+			isa = PBXGroup;
+			children = (
+				85F714251B7C49AF00A61936 /* Day10-2-TapDetailBtn */,
+				85F7143F1B7C49AF00A61936 /* Day10-2-TapDetailBtnTests */,
+				85F714241B7C49AF00A61936 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85F714241B7C49AF00A61936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85F714231B7C49AF00A61936 /* Day10-2-TapDetailBtn.app */,
+				85F7143C1B7C49AF00A61936 /* Day10-2-TapDetailBtnTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85F714251B7C49AF00A61936 /* Day10-2-TapDetailBtn */ = {
+			isa = PBXGroup;
+			children = (
+				85F7142A1B7C49AF00A61936 /* AppDelegate.h */,
+				85F7142B1B7C49AF00A61936 /* AppDelegate.m */,
+				85F7144C1B7C49EB00A61936 /* MyTableViewController.h */,
+				85F7144D1B7C49EB00A61936 /* MyTableViewController.m */,
+				85F7144E1B7C49EB00A61936 /* MyTableViewController.xib */,
+				85F7142D1B7C49AF00A61936 /* ViewController.h */,
+				85F7142E1B7C49AF00A61936 /* ViewController.m */,
+				85F714301B7C49AF00A61936 /* Main.storyboard */,
+				85F714331B7C49AF00A61936 /* Images.xcassets */,
+				85F714351B7C49AF00A61936 /* LaunchScreen.xib */,
+				85F714261B7C49AF00A61936 /* Supporting Files */,
+			);
+			path = "Day10-2-TapDetailBtn";
+			sourceTree = "<group>";
+		};
+		85F714261B7C49AF00A61936 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85F714271B7C49AF00A61936 /* Info.plist */,
+				85F714281B7C49AF00A61936 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85F7143F1B7C49AF00A61936 /* Day10-2-TapDetailBtnTests */ = {
+			isa = PBXGroup;
+			children = (
+				85F714421B7C49AF00A61936 /* Day10_2_TapDetailBtnTests.m */,
+				85F714401B7C49AF00A61936 /* Supporting Files */,
+			);
+			path = "Day10-2-TapDetailBtnTests";
+			sourceTree = "<group>";
+		};
+		85F714401B7C49AF00A61936 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85F714411B7C49AF00A61936 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85F714221B7C49AF00A61936 /* Day10-2-TapDetailBtn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85F714461B7C49AF00A61936 /* Build configuration list for PBXNativeTarget "Day10-2-TapDetailBtn" */;
+			buildPhases = (
+				85F7141F1B7C49AF00A61936 /* Sources */,
+				85F714201B7C49AF00A61936 /* Frameworks */,
+				85F714211B7C49AF00A61936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day10-2-TapDetailBtn";
+			productName = "Day10-2-TapDetailBtn";
+			productReference = 85F714231B7C49AF00A61936 /* Day10-2-TapDetailBtn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85F7143B1B7C49AF00A61936 /* Day10-2-TapDetailBtnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85F714491B7C49AF00A61936 /* Build configuration list for PBXNativeTarget "Day10-2-TapDetailBtnTests" */;
+			buildPhases = (
+				85F714381B7C49AF00A61936 /* Sources */,
+				85F714391B7C49AF00A61936 /* Frameworks */,
+				85F7143A1B7C49AF00A61936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85F7143E1B7C49AF00A61936 /* PBXTargetDependency */,
+			);
+			name = "Day10-2-TapDetailBtnTests";
+			productName = "Day10-2-TapDetailBtnTests";
+			productReference = 85F7143C1B7C49AF00A61936 /* Day10-2-TapDetailBtnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85F7141B1B7C49AF00A61936 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					85F714221B7C49AF00A61936 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					85F7143B1B7C49AF00A61936 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 85F714221B7C49AF00A61936;
+					};
+				};
+			};
+			buildConfigurationList = 85F7141E1B7C49AF00A61936 /* Build configuration list for PBXProject "Day10-2-TapDetailBtn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85F7141A1B7C49AF00A61936;
+			productRefGroup = 85F714241B7C49AF00A61936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85F714221B7C49AF00A61936 /* Day10-2-TapDetailBtn */,
+				85F7143B1B7C49AF00A61936 /* Day10-2-TapDetailBtnTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85F714211B7C49AF00A61936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F714321B7C49AF00A61936 /* Main.storyboard in Resources */,
+				85F714371B7C49AF00A61936 /* LaunchScreen.xib in Resources */,
+				85F714341B7C49AF00A61936 /* Images.xcassets in Resources */,
+				85F714501B7C49EB00A61936 /* MyTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85F7143A1B7C49AF00A61936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85F7141F1B7C49AF00A61936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F7142F1B7C49AF00A61936 /* ViewController.m in Sources */,
+				85F7142C1B7C49AF00A61936 /* AppDelegate.m in Sources */,
+				85F714291B7C49AF00A61936 /* main.m in Sources */,
+				85F7144F1B7C49EB00A61936 /* MyTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85F714381B7C49AF00A61936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F714431B7C49AF00A61936 /* Day10_2_TapDetailBtnTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85F7143E1B7C49AF00A61936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85F714221B7C49AF00A61936 /* Day10-2-TapDetailBtn */;
+			targetProxy = 85F7143D1B7C49AF00A61936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85F714301B7C49AF00A61936 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85F714311B7C49AF00A61936 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85F714351B7C49AF00A61936 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85F714361B7C49AF00A61936 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85F714441B7C49AF00A61936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85F714451B7C49AF00A61936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85F714471B7C49AF00A61936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day10-2-TapDetailBtn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85F714481B7C49AF00A61936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day10-2-TapDetailBtn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85F7144A1B7C49AF00A61936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day10-2-TapDetailBtnTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day10-2-TapDetailBtn.app/Day10-2-TapDetailBtn";
+			};
+			name = Debug;
+		};
+		85F7144B1B7C49AF00A61936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day10-2-TapDetailBtnTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day10-2-TapDetailBtn.app/Day10-2-TapDetailBtn";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85F7141E1B7C49AF00A61936 /* Build configuration list for PBXProject "Day10-2-TapDetailBtn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F714441B7C49AF00A61936 /* Debug */,
+				85F714451B7C49AF00A61936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85F714461B7C49AF00A61936 /* Build configuration list for PBXNativeTarget "Day10-2-TapDetailBtn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F714471B7C49AF00A61936 /* Debug */,
+				85F714481B7C49AF00A61936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85F714491B7C49AF00A61936 /* Build configuration list for PBXNativeTarget "Day10-2-TapDetailBtnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F7144A1B7C49AF00A61936 /* Debug */,
+				85F7144B1B7C49AF00A61936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85F7141B1B7C49AF00A61936 /* Project object */;
+}

@@ -1,0 +1,5 @@
+{
+    "FeelsLikeC" : "20",
+    "tempC" : "22",
+    "request" : [ {"query" : "Beijing, China"} ]
+}

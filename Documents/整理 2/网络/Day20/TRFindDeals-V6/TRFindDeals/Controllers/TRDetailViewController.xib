@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRDetailViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="RrN-gB-V6w" id="x2f-Y5-tcP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7t-DU-10S" userLabel="头部View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="团购详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH1-5d-m4R">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVq-gR-m2s">
+                            <rect key="frame" x="10" y="10" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="hDi-j6-92d"/>
+                                <constraint firstAttribute="width" constant="44" id="whb-kP-zRa"/>
+                            </constraints>
+                            <state key="normal" image="icon_back">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickBackButton:" destination="-1" eventType="touchUpInside" id="f9m-Fv-ctP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3Fb-XX-QQV"/>
+                        <constraint firstItem="IVq-gR-m2s" firstAttribute="leading" secondItem="o7t-DU-10S" secondAttribute="leading" constant="10" id="kph-hj-g8y"/>
+                        <constraint firstItem="iH1-5d-m4R" firstAttribute="top" secondItem="o7t-DU-10S" secondAttribute="top" id="ksf-cV-A9s"/>
+                        <constraint firstAttribute="bottom" secondItem="IVq-gR-m2s" secondAttribute="bottom" constant="10" id="l3J-B6-xkR"/>
+                        <constraint firstAttribute="trailing" secondItem="iH1-5d-m4R" secondAttribute="trailing" id="seg-lH-otY"/>
+                        <constraint firstAttribute="bottom" secondItem="iH1-5d-m4R" secondAttribute="bottom" id="t1j-lC-Ad9"/>
+                        <constraint firstItem="iH1-5d-m4R" firstAttribute="leading" secondItem="o7t-DU-10S" secondAttribute="leading" id="tA5-7O-dH0"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrN-gB-V6w">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RrN-gB-V6w" secondAttribute="trailing" id="AOo-18-k0y"/>
+                <constraint firstItem="o7t-DU-10S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cjg-fV-yfS"/>
+                <constraint firstItem="RrN-gB-V6w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IgD-Ph-2Ac"/>
+                <constraint firstItem="RrN-gB-V6w" firstAttribute="top" secondItem="o7t-DU-10S" secondAttribute="bottom" id="VQM-4g-pKs"/>
+                <constraint firstItem="o7t-DU-10S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XPx-6r-X2M"/>
+                <constraint firstAttribute="trailing" secondItem="o7t-DU-10S" secondAttribute="trailing" id="rA1-sS-A3D"/>
+                <constraint firstAttribute="bottom" secondItem="RrN-gB-V6w" secondAttribute="bottom" id="wVg-S2-vNp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_back" width="30" height="30"/>
+    </resources>
+</document>

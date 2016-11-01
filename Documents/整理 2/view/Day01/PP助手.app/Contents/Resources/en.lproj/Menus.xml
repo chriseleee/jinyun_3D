@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <menuData name="userinfo" title="User Center" icon="" tag="2000">
+        <local>
+            <menuData name="user_web" title="User Center" icon="" tag="2010">
+                <menuData name="user_web_collect" title="Favorites" icon="" tag="2011"/>
+                <menuData name="user_web_history" title="History" icon="" tag="2012"/>
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name="application" title="Apps" icon="" tag="1000">
+        <local>
+            <menuData name="app_web" title="Network Resources" icon="node_source" tag="1010">
+                <menuData name="app_web_jailbreak" title="Jailbreak Apps" icon="app_web_jailbreak.png" tag="1011"/>
+                <menuData name="app_web_appstore" title="PP Apps" icon="app_web_appstore.png" tag="1012"/>
+                <menuData name="app_web_deb" title="Jailbreak Plugins" icon="jbreakplug.png" tag="1013"/>
+            </menuData>
+            <menuData name="app_local" title="Local Resources" icon="node_local" tag="1020">
+                <menuData name="app_local_iphoneprogram" title="iPhone" icon="download_local_program.png" tag="1021"/>
+                <menuData name="app_local_update" title="Update" icon="app_local_update.png" tag="1022"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="app_device" title="[DEVICENAME]" icon="node_device" tag="1030">
+                <menuData name="app_device_list" title="Apps" icon="app_device_list.png" tag="1031"/>
+                <menuData name="app_device_update" title="Updates" icon="app_local_update.png" tag="1032"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="photo" title="Photos" icon="" tag="1100">
+        <local>
+            <menuData name="photo_web" title="Network Resources" icon="" tag="1110">
+                <menuData name="photo_web_source" title="Wallpaper" icon="photo_web_resource" tag="1111"/>
+            </menuData>
+            <menuData name="photo_local" title="Local Resources" icon="" tag="1120">
+                <menuData name="photo_local_library" title="Library" icon="photo_local_resource.png" tag="1121"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="photo_device" title="[DEVICENAME]" icon="" tag="1130">
+                <menuData name="photo_device_photo" title="Photos" icon="photo_device_photo.png" tag="1131"/>
+                <menuData name="photo_device_wallpaper" title="Wallpaper" icon="photo_device_wallpaper.png" tag="1132"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="music" title="Music" icon="" tag="1200">
+        <local>
+            <menuData name="music_web" title="Network Resources" icon="node_source" tag="1210">
+                <menuData name="music_web_musicsource" title="Music" icon="music_web_musicsource.png" tag="1211"/>
+                <menuData name="music_web_ringsource" title="Ring" icon="music_web_ringsource.png" tag="1212"/>
+            </menuData>
+            <menuData name="music_local" title="Local Resources" icon="node_local" tag="1220">
+                <menuData name="music_local_musiclibrary" title="Library" icon="music_local_musiclibrary.png" tag="1221"/>
+                <menuData name="music_local_phonelibrary" title="Phone Ring" icon="music_local_phonelibrary.png" tag="1222"/>
+                <menuData name="music_local_smslibrary" title="Sms Ring" icon="music_local_smslibrary.png" tag="1223"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="music_device" title="[DEVICENAME]" icon="node_device" tag="1230">
+                <menuData name="music_device_music" title="Music" icon="music_local_musiclibrary.png" tag="1231"/>
+                <menuData name="music_device_ring" title="Ring" icon="music_device_ring.png" tag="1232"/>
+                <menuData name="music_device_audio" title="Audiobooks" icon="music_device_audio.png" tag="1233"/>
+                <menuData name="music_device_note" title="Voice Memo" icon="music_device_note.png" tag="1234"/>
+                <menuData name="music_device_blog" title="Podcast" icon="music_device_blog.png" tag="1235"/>
+                <menuData name="music_device_itunes" title="iTunes U" icon="music_device_itunes.png" tag="1236"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="video" title="Video" icon="" tag="1300">
+        <local>
+            <menuData name="video_local" title="Local Resources" icon="node_local" tag="1320">
+                <menuData name="video_local_library" title="Library" icon="video_local_library.png" tag="1321"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="video_device" title="[DEVICENAME]" icon="node_device" tag="1330">
+                <menuData name="video_device_film" title="Video" icon="video_device_film.png" tag="1331"/>
+                <menuData name="video_device_tv" title="TV" icon="video_device_tv.png" tag="1332"/>
+                <menuData name="video_device_video" title="Music Video" icon="video_device_video.png" tag="1333"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="book" title="Book" icon="" tag="1400">
+        <local>
+            <menuData name="book_local" title="Local Resources" icon="node_local" tag="1420">
+                <menuData name="book_local_library" title="Library" icon="book_local_library.png" tag="1421"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="book_device" title="[DEVICENAME]" icon="node_device" tag="1430">
+                <menuData name="book_device_list" title="Books" icon="book_device_list.png" tag="1431"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="info" title="Infomation" icon="" tag="1500">
+        <device>
+            <menuData name="info_device" title="[DEVICENAME]" icon="node_device" tag="1530">
+                <menuData name="info_device_contact" title="Contact" icon="info_device_contact.png" tag="1531"/>
+                <menuData name="info_device_call" title="Call" icon="info_device_call.png" tag="1532"/>
+                <menuData name="info_device_sms" title="Sms" icon="info_device_sms.png" tag="1533"/>
+                <menuData name="info_device_calender" title="Calender" icon="info_device_calender.png" tag="1534"/>
+                <menuData name="info_device_bookmark" title="BookMark" icon="info_device_bookmark.png" tag="1535"/>
+                <menuData name="info_device_note" title="Memo" icon="info_device_note.png" tag="1536"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="tool" title="Tool" icon="" tag="1600">
+        <local>
+            <menuData name="tool_local" title="Local Resources" icon="node_local" tag="1620">
+                <menuData name="tool_local_list" title="Tools" icon="tool_local_library.png" tag="1621"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="tool_device" title="[DEVICENAME]" icon="node_device" tag="1630">
+                <menuData name="tool_device_collection" title="Tools" icon="tool_device_library.png" tag="1631"/>
+                <menuData name="tool_device_file" title="File Manager" icon="tool_device_file.png" tag="1632"/>
+                
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="download" title="Download" icon="" tag="1700">
+        <local>
+            <menuData name="download_local" title="Download" icon="node_local" tag="1710">
+                <menuData name="download_local_downloading" title="Downloading" icon="download_local_downloading.png" tag="1711"/>
+            </menuData>
+            <menuData name="download_local" title="Downloaded" icon="node_local" tag="1720">
+                <menuData name="download_local_program" title="Application" icon="download_local_program.png" tag="1721"/>
+                <menuData name="download_local_photo" title="Photo" icon="download_local_photo.png" tag="1722"/>
+                <menuData name="download_local_music" title="Music" icon="download_local_music.png" tag="1723"/>
+                <menuData name="download_local_ring" title="Ring" icon="download_local_ring.png" tag="1724"/>
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name="file_break" title="File Manager" icon="" tag="2600">
+        <local>
+            <menuData name="file_os" title="File System" icon="" tag="2610">
+                <menuData name="file_os_user" title="File System(User)" icon="file_os_user.png" tag="2611"/>
+                <menuData name="file_os_jailbreak" title="File System(System)" icon="file_os_jailbreak.png" tag="2612"/>
+            </menuData>
+            <menuData name="file_common" title="Directory" icon="" tag="2620">
+                <menuData name="file_common_user" title="Application(User)" icon="file_common_user.png" tag="2621"/>
+                <menuData name="file_common_sys" title="Application(System)" icon="file_common_sys.png" tag="2622"/>
+                <menuData name="file_common_pp" title="PP Directory" icon="file_common_pp.png" tag="2623"/>
+                <menuData name="file_common_pp2" title="PP2 Directory" icon="file_common_pp.png" tag="2633"/>
+                <menuData name="file_common_vrecord" title="Voice Memo" icon="file_common_vrecord.png" tag="2624"/>
+                <menuData name="file_common_mdisk" title="U Disk" icon="file_common_mdisk.png" tag="2625"/>
+                <menuData name="file_common_wpaper" title="Wallpaper" icon="file_common_wpaper.png" tag="2626"/>
+                <menuData name="file_common_cring" title="Phone Ring" icon="file_common_cring.png" tag="2627"/>
+                <menuData name="file_common_mring" title="Sms Ring" icon="file_common_mring.png" tag="2628"/>
+                <menuData name="file_common_cydia" title="Cydia" icon="file_common_cydia.png" tag="2629"/>
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name="file_apple" title="File Manager" icon="" tag="2600">
+        <local>
+            <menuData name="file_os" title="File System" icon="" tag="2610">
+                <menuData name="file_os_user" title="Application(User)" icon="file_os_user.png" tag="2611"/>
+            </menuData>
+            <menuData name="file_common" title="Directory" icon="" tag="2620">
+                
+                <menuData name="file_common_vrecord" title="Voice Memo" icon="file_common_vrecord.png" tag="2624"/>
+                <menuData name="file_common_mdisk" title="U Disk" icon="file_common_mdisk.png" tag="2625"/>
+                
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name = "dev_rings" title = "ringtones to replace" icon = "" tag = "3000">
+         <local>
+                <menuData name = "system_rings" title = "System Rings" icon = "" tag = "3010">
+                     <menuData name = "system_ring_phone" title = "Call Ringtones" icon = "music_local_phonelibrary.png" tag = "3011" />
+                     <menuData name = "system_ring_sms" title = "SMS Ringtones" icon = "music_local_smslibrary.png" tag = "3012" />
+                </menuData>
+                <menuData name = "ui_rings" title = "UI Sounds" icon = "" tag = "3020">
+                     <menuData name = "ui_ring_phone" title = "Phone UI Sound" icon = "music_device_audio.png" tag = "3021" />
+                     <menuData name = "ui_ring_system" title = "System UI Sound" icon = "music_device_ring.png" tag = "3022" />
+                </menuData>
+        </local>
+    </menuData>
+</root>

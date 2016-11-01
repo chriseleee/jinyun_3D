@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="channel02" id="teK-w6-ffa">
+                                <rect key="frame" x="83" y="28" width="154" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="d09-Qd-ZTQ" appends="YES" id="LVk-E8-Qdh"/>
+                                    <outletCollection property="gestureRecognizers" destination="19S-pB-4II" appends="YES" id="mT4-Ti-Tya"/>
+                                    <outletCollection property="gestureRecognizers" destination="MEQ-fy-oJd" appends="YES" id="bcK-UQ-m5x"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="teK-w6-ffa" id="z3P-Al-fUn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="d09-Qd-ZTQ">
+                    <connections>
+                        <action selector="Pinch:" destination="vXZ-lx-hvc" id="jRX-Aj-Ixn"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="Fd6-nq-OSi"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="19S-pB-4II">
+                    <connections>
+                        <action selector="rotation:" destination="vXZ-lx-hvc" id="i2r-PK-7CH"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="IbJ-dO-eSm"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="MEQ-fy-oJd">
+                    <connections>
+                        <action selector="pan:" destination="vXZ-lx-hvc" id="S1M-W7-7wJ"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="6vv-B6-6bK"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="134.40000000000001" y="214.89333333333335"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="channel02" width="154" height="142"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,199 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18020\viewh9680\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs36 \cf0 17\'c8\'d5\'a3\'ac18\'ba\'c5\'a1\'a3 \'d1\'a7\'cf\'b0storyboard\'b5\'c4\'d3\'c3\'b7\'a8\'a3\'ac\'cd\'ac\'ca\'b1\'b8\'b4\'cf\'b0\'d6\'ae\'c7\'b0\'b5\'c4\'c4\'da\'c8\'dd\'a1\'a3\
+19\'c8\'d5 \'bd\'b2\'b4\'f3\'d7\'f7\'d2\'b5\
+\'bb\'d8\'b9\'cb
+\f1 :\
+1.UICollectionViewController\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx12061\tx17711\pardirnatural
+\cf0 a.
+\f0 \'b0\'fc\'ba\'ac\'c1\'cb\'ca\'d3\'cd\'bc
+\f1 CollectionView 
+\f0 \'a3\'a8\'bc\'cc\'b3\'d0UIScrollView\'a3\'a9
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 b.item
+\f0 \'b5\'c4\'d1\'f9\'ca\'bd\'d0\'e8\'d2\'aa\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4
+\f1 \
+c.
+\f0 \'d0\'e8\'d2\'aa\'d2\'bb\'b8\'f6\'bc\'cc\'b3\'d0\'d3\'daUICollectionViewLayout\'b5\'c4UICollectionViewFlowLayout\'b6\'d4\'cf\'f3\'c0\'b4\'cd\'ea\'b3\'c9\'d7\'d4\'b6\'a8\'d2\'e5\'b2\'bc\'be\'d6\'a1\'a3
+\f1 \
+\
+2
+\f0 .Other Control\
+ UISegmentCotrol \'b7\'d6\'b6\'ce\'bf\'d8\'bc\'fe\
+ \'ba\'cb\'d0\'c4\'ca\'f4\'d0\'d4 selectedSegmentIndex\
+ UI
+\f1 Activity
+\f0 Indicator \'bb\'ee\'b6\'af\'d6\'b8\'ca\'be\'c6\'f7\
+
+\f1  start/stop animating\
+ UIProgressView 
+\f0 \'bd\'f8\'b6\'c8\'cc\'f5
+\f1 \
+	progress 
+\f0 \'b5\'b1\'c7\'b0\'bd\'f8\'b6\'c8\'a3\'ac\'c8\'a1\'d6\'b5\'b7\'b6\'ce\'a7
+\f1 0
+\f0 ~1\'a3\'ac 0~100%\
+ UIDatePicker \'c8\'d5\'c6\'da\'d1\'a1\'d4\'f1\'c6\'f7\
+	\'bf\'c9\'d2\'d4\'d3\'c3dateformat \'b0\'d1 date\'ca\'f4\'d0\'d4\'d7\'aa\'bb\'bb\'ce\'aa\'d7\'d6\'b7\'fb\'b4\'ae\
+
+\f1  UIPikerView 
+\f0 \'d1\'a1\'d4\'f1\'c6\'f7
+\f1 \
+	
+\f0 \'d3\'c9\'d3\'da\'ca\'fd\'be\'dd\'cf\'d4\'ca\'be\'bf\'c9\'d2\'d4\'ca\'c7\'b6\'e0\'d0\'d0\'b6\'e0\'c1\'d0\'a3\'ac\'cb\'f9\'d2\'d4\'ce\'aa\'c1\'cb\'cc\'ee\'b3\'e4\'ca\'fd\'be\'dd\'a3\'ac\'d0\'e8\'d2\'aa\'c9\'e8\'d6\'c3\'b4\'fa\'c0\'ed\'a3\'ac\'d7\'f1\'d1\'ad\'d0\'ad\'d2\'e9\'a3\'ac\'ca\'b5\'cf\'d6\'b7\'bd\'b7\'a8
+\f1 \
+\
+
+\f0 \'b2\'b9\'b3\'e4
+\f1 : NST
+\f0 imer
+\f1  
+\f0 \'b6\'a8\'ca\'b1\'c6\'f7
+\f1 \
+a.
+\f0 \'b4\'b4\'bd\'a8\'b6\'a8\'ca\'b1\'c6\'f7\'a3\'ac\'c9\'e8\'b6\'a8\'c4\'a3\'ca\'bd
+\f1 (
+\f0 \'d6\'d8\'b8\'b4\'a3\'ac\'d6\'bb\'d6\'b4\'d0\'d0\'d2\'bb\'b4\'ce
+\f1 )\
+  schedule \'85  
+\f0 \'b4\'b4\'bd\'a8
+\f1 +
+\f0 \'c6\'f4\'b6\'af
+\f1 \
+	timer 
+\f0 \'d6\'ae\'b4\'b4\'bd\'a8\'a3\'ac\'b2\'bb\'c6\'f4\'b6\'af\'a3\'ac\'d0\'e8\'d2\'aa\'ca\'d6\'b6\'af\'b7\'c5\'c8\'ebrunloop\
+b.\'ca\'b5\'cf\'d6\'c1\'cb \'b6\'a8\'ca\'b1\'d6\'b4\'d0\'d0\'c4\'b3\'b8\'f6\'b7\'bd\'b7\'a8\
+	\'c8\'e7\'b9\'fb\'d2\'aa\'cd\'a3\'d6\'b9 [timer invalidate];
+\f1 \
+\
+
+\f0 \'bd\'f1\'cc\'ec
+\f1 :\
+1.
+\f0 \'b9\'ca\'ca\'c2\'b0\'e5(storyboard)
+\f1 \
+12
+\f0 \'c4\'ea\'d6\'ae\'c7\'b0\'a3\'ac
+\f1 ios6
+\f0 \'d6\'ae\'c7\'b0\'a1\'a3 \'bf\'aa\'b7\'a2\'b6\'bc\'ca\'b9\'d3\'c3xib+\'b4\'fa\'c2\'eb,\'b4\'bf\'b4\'fa\'c2\'eb\'a1\'a3\
+12\'c4\'ea\'d6\'ae\'ba\'f3\'a3\'ac\'c6\'bb\'b9\'fb\'b9\'ab\'cb\'be\'b3\'f6\'c1\'cbstoryboard \'cc\'e6\'b4\'faxib\'a1\'a3\
+story\'ca\'c7xib\'c9\'fd\'bc\'b6\'b0\'e6\'a3\'ac\'c6\'bb\'b9\'fb\'b9\'ab\'cb\'be\'d2\'bb\'d6\'b1\'d4\'da\'cd\'ea\'c9\'c6storyboard\'b2\'a2\'c7\'bf\'c1\'d2\'cd\'c6\'bc\'f6\'d6\'bb\'d3\'c3\'a1\'a3\
+\
+\'ca\'b9\'d3\'c3\'c2\'ca: xib+\'b4\'fa\'c2\'eb> storyboard+\'b4\'fa\'c2\'eb>\'b4\'bf\'b4\'fa\'c2\'eb\
+\'b4\'f3\'b9\'ab\'cb\'be:\'b4\'bf\'b4\'fa\'c2\'eb >xib+\'b4\'fa\'c2\'eb\
+\'d6\'d0\'d0\'cd\'b9\'ab\'cb\'be\'a3\'ac\'cd\'e2\'b0\'fc\'b9\'ab\'cb\'be:  xib+\'b4\'fa\'c2\'eb\'a3\'acstoryboard+\'b4\'fa\'c2\'eb\
+\'d0\'a1\'b9\'ab\'cb\'be\'a3\'ac\'b8\'f6\'c8\'cb\'bf\'aa\'b7\'a2\'d5\'df\'a1\'a3 storyboard +\'b4\'fa\'c2\'eb\
+\
+
+\f1 xib
+\f0 +\'b4\'fa\'c2\'eb\'a3\'ba\'ba\'c4\'ca\'b1\'d6\'d0\'b5\'c8\'a1\'a3\'b1\'e3\'d3\'da\'cd\'c5\'b6\'d3\'ba\'cf\'d7\'f7\'a3\'ac\'b6\'d4\'cf\'b5\'cd\'b3\'d7\'ca\'d4\'b4\'cf\'fb\'ba\'c4\'d6\'d0\'b5\'c8\'a1\'a3\
+\'b4\'bf\'b4\'fa\'c2\'eb:\'ba\'c4\'ca\'b1\'d7\'ee\'b3\'a4\'a3\'ac\'b1\'e3\'d3\'da\'cd\'c5\'b6\'d3\'ba\'cf\'d7\'f7\'a3\'ac\'b6\'d4\'cf\'b5\'cd\'b3\'d7\'ca\'d4\'b4\'cf\'fb\'ba\'c4\'d7\'ee\'c9\'d9\'a1\'a3\
+storyboard:\'ba\'c4\'ca\'b1\'d7\'ee\'b6\'cc\'a3\'ac\'b2\'bb\'c0\'fb\'d3\'da\'cd\'c5\'b6\'d3\'ba\'cf\'d7\'f7\'a1\'a3\'b6\'d4\'cf\'b5\'cd\'b3\'d7\'ca\'d4\'b4\'cf\'fb\'ba\'c4\'d7\'ee\'b4\'f3\'a1\'a3
+\f1 \
+\
+
+\f0 \'d3\'c9\'d3\'da\'c6\'bb\'b9\'fb\'b9\'ab\'cb\'be\'c1\'a6\'cd\'c6\'a3\'ac\'be\'f8\'b4\'f3\'b6\'e0\'ca\'fd\'b9\'ab\'cb\'be\'b6\'bc\'d4\'da\'cf\'f2
+\f1 storyboard
+\f0 \'d7\'aa\'d0\'cd
+\f1 \
+\
+1.1
+\f0 \'ce\'aa\'ca\'b2\'c3\'b4\'d3\'d0\'b9\'ca\'ca\'c2\'b0\'e5
+\f1 \
+	
+\f0 \'d2\'f2\'ce\'aa
+\f1 xib
+\f0 \'bc\'bc\'ca\'f5\'d3\'d0\'d2\'bb\'d0\'a9\'c8\'b1\'cf\'dd\'a1\'a3
+\f1 \
+	a.
+\f0 \'b9\'a4\'b3\'cc\'d6\'d0\'b4\'f3\'c1\'bf\'b5\'c4
+\f1 xib
+\f0 \'ce\'c4\'bc\'fe\'a3\'ac\'ce\'de\'b7\'a8\'b1\'ed\'b4\'ef\'cb\'fb\'c3\'c7\'d6\'ae\'bc\'e4\'b5\'c4\'b2\'e3\'bc\'b6\'b9\'d8\'cf\'b5\'a3\'ac\'ba\'cd\'bd\'e7\'c3\'e6\'b5\'c4\'d0\'d0\'bd\'f8\'c2\'b7\'cf\'df\
+	b.\'b9\'a4\'b3\'cc\'d6\'d0\'d0\'e8\'d2\'aa\'b4\'f3\'c1\'bf\'b5\'c4 alloc+init, new, initWithNibName\'b5\'c8\'b7\'bd\'b7\'a8\'a3\'ac\'b6\'d4\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'bd\'f8\'d0\'d0\'b3\'f5\'ca\'bc\'bb\'af\'a1\'a3\
+	\'bb\'f9\'d3\'da\'c9\'cf\'c3\'e6\'b5\'c4\'c8\'b1\'cf\'dd\'a3\'ac\'cf\'a3\'cd\'fb\'d3\'c3\'b9\'ca\'ca\'c2\'b0\'e5\'c0\'b4\'cd\'ea\'b3\'c9\'b6\'d4\'d5\'fb\'b8\'f6\'d3\'a6\'d3\'c3\'b6\'e0\'b8\'f6\'bd\'e7\'c3\'e6\'d6\'ae\'bc\'e4\'d0\'d0\'bd\'f8\'c2\'b7\'cf\'df\'b5\'c4\'c3\'e8\'ca\'f6\'a3\'ac\'cd\'ac\'ca\'b1\'c3\'bf\'d0\'e8\'d2\'aa\'cd\'c6\'b3\'f6\'d0\'c2\'b5\'c4\'bd\'e7\'c3\'e6\'ca\'b1\'a3\'ac\'b6\'bc\'d3\'c9\'b9\'ca\'ca\'c2\'b0\'e5\'d7\'d4\'b6\'af\'b4\'b4\'bd\'a8\'d2\'aa\'b6\'d4\'b3\'f6\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'ca\'b5\'c0\'fd\'a3\'ac\'b6\'f8\'b2\'bb\'d0\'e8\'d2\'aa\'d4\'d9\'b1\'e0\'d0\'b4\'b8\'fa\'b4\'b4\'bd\'a8\'d3\'d0\'b9\'d8\'b5\'c4\'b4\'fa\'c2\'eb\'c1\'cb\'a1\'a3\
+\
+1.2\'b9\'ca\'ca\'c2\'b0\'e5\'b5\'c4\'cc\'d8\'b5\'e3\
+	\'ca\'b9\'d3\'c3\'d2\'bb\'b8\'f6\'ba\'f3\'d7\'ba\'ca\'c7storyboard\'b5\'c4\'ce\'c4\'bc\'fe\'c0\'b4\'b4\'e6\'b4\'a2\'cb\'f9\'d3\'d0\'b5\'c4\'bd\'e7\'c3\'e6\'a3\'ac\'b2\'a2\'c7\'d2\'bc\'c7\'c2\'bc\'bd\'e7\'c3\'e6\'d6\'ae\'bc\'e4\'b5\'c4\'d0\'d0\'bd\'f8\'c2\'b7\'cf\'df\'a3\'ac\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'b5\'c4\'c3\'bf\'b8\'f6\'bd\'e7\'c3\'e6\'d2\'bb\'b6\'a8\'bb\'e1\'d3\'eb\'d2\'bb\'b8\'f6\'bf\'d8\'d6\'c6\'c6\'f7\'b9\'d8\'c1\'aa\'d4\'da\'d2\'bb\'c6\'f0\'a1\'a3\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'b5\'c4\'bd\'e7\'c3\'e6\'a3\'ac\'d0\'e8\'d2\'aa\'d3\'c3\'ca\'b1\'a3\'ac\'b2\'bb\'d0\'e8\'d2\'aa\'d3\'c3\'b4\'fa\'c2\'eb\'b4\'b4\'bd\'a8\'a3\'ac\'b9\'ca\'ca\'c2\'b0\'e5\'bb\'e1\'d7\'d4\'b6\'af\'cd\'ea\'b3\'c9\'b4\'b4\'bd\'a8\'b9\'a4\'d7\'f7\'a1\'a3\
+	\
+1.4 \'c9\'e8\'d6\'c3\'b9\'ca\'ca\'c2\'b0\'e5\'b5\'c4\'c6\'f4\'b6\'af\'bf\'d8\'d6\'c6\'c6\'f7\
+		step1.\'d1\'a1\'d6\'d0\'c6\'f4\'b6\'af\'bf\'d8\'d6\'c6\'c6\'f7(\'bd\'e7\'c3\'e6\'c9\'cf\'b7\'bd\'d7\'ee\'d7\'f3\'b5\'c4\'d0\'a1\'bb\'c6\'c7\'f2)\
+		setp2.\'b5\'e3\'bb\'f7\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'a3\'ac\'d4\'da is initial view controller\'b5\'c4\'c7\'b0\'c3\'e6\'b9\'b4\'d1\'a1\'bc\'b4\'bf\'c9\'a1\'a3\
+		\'c8\'e7\'b9\'fb\'d2\'d1\'be\'ad\'d3\'d0\'c1\'cb\'c6\'f4\'b6\'af\'bc\'fd\'cd\'b7\'a3\'ac\'b5\'ab\'ca\'c7\'cf\'eb\'b8\'fc\'b8\'c4\'c6\'f4\'b6\'af\'bf\'d8\'d6\'c6\'c6\'f7\'ce\'aa\'c6\'e4\'cb\'fb\'b5\'c4\'a3\'ac\'d4\'f2\'bf\'c9\'d2\'d4\'cd\'cf\'d7\'a7\'bc\'fd\'cd\'b7\'b5\'bd\'c4\'bf\'b1\'ea\'bf\'d8\'d6\'c6\'c6\'f7\'c9\'cf\'bc\'b4\'bf\'c9\'a1\'a3\
+\
+1.5 \'d4\'da\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'b5\'c4\'b3\'a3\'d3\'c3\'ca\'f5\'d3\'ef\
+	 a.\'b3\'a1\'be\'b0(Scene) \'b6\'d4\'d3\'a6\'b5\'c4\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'b5\'c4\'d2\'bb\'b8\'f6\'bd\'e7\'c3\'e6\'a3\'ac\'b3\'a1\'be\'b0\'b0\'fc\'ba\'ac\'c1\'cb\'b8\'c3\'bd\'e7\'c3\'e6\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'a3\'ac\'cc\'f8\'d7\'aa\'b6\'d4\'cf\'f3\'a3\'ac\'b5\'da\'d2\'bb\'cf\'ec\'d3\'a6\'d5\'df\'a3\'ac\'b3\'f6\'bf\'da\'a3\'ac\'d4\'bc\'ca\'f8\
+	b.\'b9\'fd\'b6\'c9(\'cc\'f8\'d7\'aa\'a3\'a9segue\'b6\'d4\'d3\'a6\'b5\'c4\'ca\'c7\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'b5\'c4\'bf\'b4\'b5\'c4\'bc\'fb\'b5\'c4\'d0\'d0\'bd\'f8\'b5\'c4\'c2\'b7\'cf\'df\'a3\'ac\'b1\'be\'d6\'ca\'c9\'cf\'d5\'e2\'b8\'f9\'cf\'df\'b6\'d4\'d3\'a6\'b5\'c4\'bb\'b9\'ca\'c7\'d2\'bb\'b8\'f6\'b6\'d4\'cf\'f3\'a1\'a3\
+	\'c1\'ac\'cf\'df\'cc\'f8\'d7\'aa\'ca\'b1\'b5\'c4\'d1\'a1\'cf\'ee\'d1\'a1\'d4\'f1\'a3\'ac \'b7\'d6\'c1\'bd\'b4\'f3\'bf\'e9\'a1\'a3 \'d3\'d0deprecated\'b1\'ea\'ca\'b6\'b5\'c4\'a3\'ac \'ba\'cd \'c3\'bb\'d3\'d0\'d5\'e2\'b8\'f6\'b1\'ea\'ca\'b6\'b5\'c4\'a1\'a3\
+\'d5\'e2\'b8\'f6\'b1\'ea\'ca\'b6\'ca\'c7ios8\'d0\'c2\'b3\'f6\'b5\'c4\'a3\'ac\'c3\'bb\'d3\'d0deprecated\'b1\'ea\'ca\'b6\'b5\'c4\'d1\'a1\'cf\'ee\'d6\'bb\'ca\'ca\'d3\'a6iOS8\'a3\'ac\'c8\'e7\'b9\'fb\'d4\'daiOS7\'c9\'cf\'d4\'cb\'d0\'d0\'a3\'ac\'bb\'e1\'d3\'d0\'b2\'bb\'bc\'e6\'c8\'dd\'b5\'c4\'c7\'e9\'bf\'f6\'b7\'a2\'c9\'fa\'a1\'a3 \'cb\'f9\'d2\'d4\'ce\'aa\'c1\'cb\'bc\'e6\'c8\'dd\'bf\'bc\'c2\'c7\'a3\'ac\'d4\'dd\'ca\'b1\'b6\'bc\'ca\'b9\'d3\'c3deprecated\'b7\'bd\'ca\'bd\'a1\'a3\
+\
+1.6 \'d0\'e8\'d2\'aa\'ce\'aa\'b3\'a1\'be\'b0\'b0\'f3\'b6\'a8\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'c7\'b0\'cc\'e1\
+	\'c8\'e7\'b9\'fb\'b8\'c3\'b3\'a1\'be\'b0\'d0\'e8\'d2\'aa\'cc\'ed\'bc\'d3\'d7\'d4\'bc\'ba\'b1\'e0\'d0\'b4\'b5\'c4\'b4\'fa\'c2\'eb\'ca\'b1\'a3\'ac\'d2\'bb\'b6\'a8\'d2\'aa\'cf\'c8\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'bf\'d8\'d6\'c6\'c6\'f7\'a3\'ac\'c8\'bb\'ba\'f3\'cd\'a8\'b9\'fd\'b5\'da\'c8\'fd\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'b0\'f3\'b6\'a8class\
+\
+1.7 \'c8\'e7\'ba\'ce\'d4\'da\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'c5\'e4\'d6\'c3\'b5\'bc\'ba\'bd\'bf\'d8\'d6\'c6\'c6\'f7\
+    a.\'cc\'ed\'bc\'d3\'b5\'bc\'ba\'bd\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'b7\'bd\'ca\'bd\
+		\'b7\'bd\'ca\'bd\'d2\'bb:\'d1\'a1\'d6\'d0\'b3\'a1\'be\'b0\'b5\'c4\'d0\'a1\'bb\'c6\'c7\'f2\'a1\'aa>\'d1\'a1\'d4\'f1\'b2\'cb\'b5\'a5\'d6\'d0\'b5\'c4editor\'a1\'aa>embed in\'a1\'aa>Navigation Controller\
+		\'b7\'bd\'ca\'bd\'b6\'fe:\'d1\'a1\'d6\'d0\'d7\'ca\'d4\'b4\'bf\'e2\'d6\'d0\'b5\'c4\'b5\'bc\'ba\'bd\'bf\'d8\'d6\'c6\'c6\'f7\'a1\'aa>\'cd\'cf\'d7\'a7\'b5\'bd\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'a1\'aa>\'d7\'d4\'b4\'f8\'b5\'c4\'b8\'f9\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'ca\'c7\'b1\'ed\'ca\'d3\'cd\'bc\'a3\'ac\'b2\'bb\'d0\'e8\'d2\'aa\'bf\'c9\'d2\'d4\'c9\'be\'b5\'f4\'a1\'aa>\'c9\'be\'b5\'f4\'ba\'f3\'c1\'ac\'cf\'df\'b5\'bc\'ba\'bd\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'bd\'c6\'e4\'cb\'fb\'b5\'c4 \'bf\'d8\'d6\'c6\'c6\'f7\'c9\'cf\'a1\'aa\'a1\'aa>\'b5\'af\'b3\'f6\'b2\'cb\'b5\'a5\'d1\'a1\'d4\'f1 rootViewController\'a1\'a3\
+	b.\'c5\'e4\'d6\'c3\'b5\'bc\'ba\'bd\'c0\'b8\
+		\'d7\'f3\'d3\'d2:\'b4\'d3\'d7\'ca\'d4\'b4\'bf\'e2\'d6\'d0\'cd\'cf\'d7\'a7Bar Button Item\'b5\'bd\'b5\'bc\'ba\'bd\'c0\'b8\'b5\'c4\'d7\'f3\'d3\'d2\'b2\'bf\'b7\'d6\'a1\'a3 \'cd\'a8\'b9\'fd\'b4\'fa\'c2\'eb\'bf\'c9\'d2\'d4\'cc\'ed\'bc\'d3\'c1\'bd\'b8\'f6item\'b5\'bd\'b5\'bc\'ba\'bd\'c0\'b8\'b5\'c4\'d2\'bb\'b2\'e0\'a3\'ac\'b5\'ab\'ca\'c7xib\'d5\'e2\'d6\'d6\'d0\'ce\'ca\'bd\'be\'cd\'d6\'bb\'c4\'dc\'d7\'a7\'d2\'bb\'b8\'f6\'c9\'cf\'c8\'a5\'a3\'ac\'d3\'d0\'c8\'b1\'cf\'dd\'a1\'a3\
+	\'d6\'d0\'bc\'e4:\'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'cb\'ab\'bb\'f7\'d0\'de\'b8\'c4\'b1\'ea\'cc\'e2 \'bb\'f2\'d5\'df \'cd\'cf\'d7\'a7\'bf\'d8\'bc\'fe\'b5\'bd\'b5\'bc\'ba\'bd\'c0\'b8\'d6\'d0\'bc\'e4\
+	c.\'c5\'e4\'d6\'c3\'b9\'a4\'be\'df\'c0\'b8\
+	\'d1\'a1\'d6\'d0\'b5\'bc\'ba\'bd\'bf\'d8\'d6\'c6\'c6\'f7\'a1\'aa>\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'a1\'aa>\'b9\'b4\'d1\'a1show tool bar\
+	b.\'d4\'da\'c4\'b3\'b8\'f6\'be\'df\'cc\'e5\'b5\'c4vc\'d6\'d0\'d2\'fe\'b2\'d8\'b9\'a4\'be\'df\'cc\'f5\
+		\'d1\'a1\'d6\'d0\'be\'df\'cc\'e5\'b5\'c4vc\'a1\'aa>\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'a1\'aa>\'b9\'b4\'d1\'a1hide bottom bar on push\
+	\
+1.8 \'c8\'e7\'ba\'ce\'d4\'da\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'c5\'e4\'d6\'c3tabbar\
+		a.\'c8\'e7\'ba\'ce\'cc\'ed\'bc\'d3tabbarController\
+			\'c1\'bd\'d6\'d6\'b7\'bd\'b7\'a8 \'cd\'ac \'b5\'bc\'ba\'bd\'bf\'d8\'d6\'c6\'c6\'f7\
+		b.\'c8\'e7\'ba\'ce\'c5\'e4\'d6\'c3tabbarItem			\'c5\'e4\'d6\'c3\'b1\'ea\'cc\'e2\'a3\'ac\'c5\'e4\'d6\'c3\'cd\'bc\'c6\'ac\'a1\'a3\'d2\'bb\'b6\'a8\'d2\'aa\'d4\'da\'d7\'d3VC\'d6\'d0\'b8\'c4\'a1\'a3\
+				\
+\'d7\'a2\'d2\'e2: \'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'bf\'c9\'d2\'d4\'b9\'d8\'c1\'aa\'b6\'e0\'b8\'f6\'b3\'a1\'be\'b0\'a3\'ac \'d2\'bb\'b8\'f6\'b3\'a1\'be\'b0\'d6\'bb\'c4\'dc\'b9\'d8\'c1\'aa\'d2\'bb\'b8\'f6\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\
+\
+\
+		1.9 \'c8\'e7\'ba\'ce\'d4\'da\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'c5\'e4\'d6\'c3\'b1\'ed\'ca\'d3\'cd\'bc\
+				a\'a1\'a3\'be\'b2\'cc\'ac\'b1\'ed\'b8\'f1\
+					\'a1\'beDemo4_Static_TableView\'a1\'bf\
+					  step1\'a3\'ba\'d1\'a1\'d6\'d0\'b1\'ed\'ca\'d3\'cd\'bc\'a3\'ac\'d4\'da\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'d6\'d0\'a3\'ac\'d1\'a1\'d4\'f1contents\'ba\'f3\'c3\'e6\'ce\'aastatic Cells\'a3\'ac\'c9\'e8\'d6\'c3sections\'b5\'c4\'ca\'fd\'c4\'bf\'a3\'ac\'c9\'e8\'d6\'c3style\'ce\'aagrouped\
+						step2\'a3\'ba\'d2\'c0\'b4\'ce\'d1\'a1\'d6\'d0\'c3\'bf\'d2\'bb\'b8\'f6section\'a3\'ac\'d4\'da\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'d6\'d0\'a3\'ac\'c9\'e8\'d6\'c3\'b8\'c3section\'b5\'c4\'d0\'d0\'ca\'fd\'bc\'b0\'b7\'d6\'c7\'f8\'cd\'b7 \'b7\'d6\'c7\'f8\'ce\'b2\
+						step3\'a3\'ba\'d2\'c0\'b4\'ce\'d1\'a1\'d6\'d0\'c3\'bf\'d2\'bb\'b8\'f6cell\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'a3\'ac\'c9\'e8\'d6\'c3cell\'b5\'c4style\'ba\'cdaccessory\
+						step4\'a3\'ba\'c8\'e7\'b9\'fb\'d0\'e8\'d2\'aa\'b8\'a8\'d6\'fa\'ca\'d3\'cd\'bc\'ca\'c7\'b8\'f6switch\'bf\'aa\'b9\'d8\'a3\'ac\'d4\'f2\'cf\'c8\'cd\'cf\'d7\'a7switch\'b5\'bd\'b3\'a1\'be\'b0\'b6\'a5\'b2\'bf\'b5\'c4\'a1\'b0\'cc\'f5\'c4\'bf\'a1\'b1\'d6\'d0\'a3\'ac\'c8\'bb\'ba\'f3\'d1\'a1\'d6\'d0cell\'a3\'ac\'b5\'da6\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'a3\'ac\'bd\'ab accessory view\'ba\'f3\'c3\'e6\'b5\'c4\'bf\'d5\'d0\'c4\'d4\'b2\'bd\'f8\'d0\'d0\'c1\'ac\'cf\'df\'b5\'bd\'cc\'f5\'c4\'bf\'d6\'d0\'b5\'c4switch\'bc\'b4\'bf\'c9\
+						step5\'a3\'ba\'c8\'e7\'b9\'fb\'d0\'e8\'d2\'aa\'c9\'e8\'d6\'c3\'b1\'ed\'cd\'b7\'ca\'d3\'cd\'bc\'a3\'ac\'d4\'f2\'cd\'cf\'d7\'a7UIView\'b5\'bd\'b1\'ed\'b8\'f1\'b5\'c4\'b6\'a5\'b2\'bf\'a3\'ac\'b3\'ca\'c0\'b6\'c9\'ab\'cf\'df\'cc\'f5\'ca\'b1\'a3\'ac\'cb\'c9\'bf\'aa\'a3\'ac\'bf\'c9\'d2\'d4\'cd\'cf\'d7\'a7\'b1\'ed\'cd\'b7\'b5\'c4\'b4\'f3\'d0\'a1\
+						step6\'a3\'ba\'c8\'e7\'b9\'fb\'d0\'e8\'d2\'aa\'bd\'ab\'b1\'ed\'b8\'f1\'d6\'d0\'b5\'c4\'bf\'d8\'bc\'fe\'b9\'ab\'bf\'aa\'a3\'ac\'d4\'da\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'c4\'dc\'b9\'bb\'d0\'de\'b8\'c4\'c6\'e4\'c4\'da\'c8\'dd\'a3\'ac\'d4\'f2\'d0\'e8\'d2\'aa\'cf\'c8\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'c0\'e0\'a3\'ac\'bc\'cc\'b3\'d0\'d7\'d4UITableViewController\'a3\'ac\'d1\'a1\'d6\'d0 \'b3\'a1\'be\'b0\'a3\'ac\'b5\'da\'c8\'fd\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'a3\'ac\'d0\'de\'b8\'c4class\'ca\'f4\'d0\'d4\'a3\'ac\'b9\'d8\'c1\'aa\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'c0\'e0\
+						step7\'a3\'ba\'bd\'f8\'c8\'eb\'b2\'f0\'b7\'d6\'ca\'d3\'cd\'bc\'a3\'ac\'bd\'ab\'d2\'aa\'c9\'e8\'d6\'c3\'c4\'da\'c8\'dd\'b5\'c4\'bf\'d8\'bc\'fe\'c1\'ac\'cf\'df\'b5\'bd \'bf\'d8\'d6\'c6\'c6\'f7\'c0\'e0\'d6\'d0\'b3\'c9\'ce\'aa\'ca\'f4\'d0\'d4\'a3\'ac\'bb\'f2\'cc\'ed\'bc\'d3\'b7\'bd\'b7\'a8\
+						step8\'a3\'ba\'d7\'a2\'d2\'e2\'a3\'ba\'d2\'f2\'ce\'aa\'b1\'ed\'b8\'f1\'ce\'aa\'be\'b2\'cc\'ac\'b1\'ed\'b8\'f1\'a3\'ac\'cb\'f9\'d2\'d4\'d2\'aa\'bd\'ab\'b0\'f3\'b6\'a8\'c4\'c7\'b8\'f6\'d7\'d4\'b6\'a8\'d2\'e5\'bf\'d8\'d6\'c6\'c6\'f7\'c0\'e0\'d6\'d0\'b5\'c4\'c8\'fd\'ce\'ca\'cd\'b3\'cd\'b3\'c9\'be\'b3\'fd\'b5\'f4\
+						step9\'a3\'ba\'c8\'e7\'b9\'fb\'b5\'e3\'bb\'f7\'c4\'b3\'b8\'f6\'b5\'a5\'d4\'aa\'b8\'f1\'a3\'ac\'cf\'a3\'cd\'fb\'c4\'dc\'b9\'bb\'cd\'c6\'b3\'f6\'cf\'c2\'d2\'bb\'b8\'f6\'b3\'a1\'be\'b0\'a3\'ac\'d4\'f2\'d6\'b1\'bd\'d3\'d1\'a1\'d6\'d0cell\'a3\'ac\'c1\'ac\'cf\'df\'b5\'bd\'c4\'bf\'b1\'ea\'b3\'a1\'be\'b0\'bc\'b4\'bf\'c9\'a3\'ac\'b5\'af\'b3\'f6\'b5\'c4\'b2\'cb\'b5\'a5\'d6\'d0\'a3\'ac\'c9\'cf\'c3\'e6\'b5\'c4push\'d6\'b8\'b5\'c4\'ca\'c7\'b5\'e3\'bb\'f7cell\'d6\'d0\'d4\'b2\'c8\'a6i\'d2\'e2\'cd\'e2\'b5\'c4\'b2\'bf\'b7\'d6\'a3\'ac\'cf\'c2\'c3\'e6\'b5\'c4push\'d6\'b8\'b5\'c4\'ca\'c7\'b5\'e3\'bb\'f7cell\'d6\'d0\'d4\'b2\'c8\'a6i\'ca\'b1\'d4\'d9\'cf\'ec\'d3\'a6\
+	\
+				b\'a1\'a3\'b6\'af\'cc\'ac\'b1\'ed\'b8\'f1\
+					\'a1\'beDemo5_Dynamic_TableView\'a1\'bf\
+\
+						\'b5\'da\'d2\'bb\'d6\'d6\'a3\'ba\'cf\'b5\'cd\'b3\'d4\'ad\'d0\'cd\'b5\'c4\'b6\'af\'cc\'ac\'b1\'ed\'b8\'f1\
+							step1: \'cd\'cf\'d7\'a7\'d2\'bb\'b8\'f6\'b1\'ed\'ca\'d3\'cd\'bc\'a3\'ac\'d1\'a1\'d6\'d0\'b1\'ed\'ca\'d3\'cd\'bc\'a3\'ac\'d4\'da\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'d6\'d0\'bf\'c9\'d2\'d4\'c9\'e8\'d6\'c3 Prototype cell\'b5\'c4\'b8\'f6\'ca\'fd\
+							step2\'a3\'ba\'d1\'a1\'d6\'d0\'b1\'ed\'ca\'d3\'cd\'bc\'d6\'d0\'b5\'c4\'d4\'ad\'d0\'cdcell\'a3\'ac\'d4\'da\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'e4\'d6\'d0\'c9\'e8\'d6\'c3 style\'ce\'aa\'cf\'b5\'cd\'b3\'b5\'c4basic\'bb\'f2\'c6\'e4\'cb\'fb\'d1\'f9\'ca\'bd\
+							step3\'a3\'ba\'d6\'d8\'d2\'aa  \'a3\'ba\'d2\'bb\'b6\'a8\'d2\'aa\'ce\'aa\'b5\'a5\'d4\'aa\'b8\'f1cell \'c9\'e8\'b6\'a8identifier \'a3\'ac\'b4\'cb\'b2\'bd\'b5\'c8\'cd\'ac\'d3\'da\'ce\'aa\'b4\'cb\'bf\'ee\'d4\'ad\'d0\'cd\'d7\'f6\'d7\'a2\'b2\'e1\'a3\'ac\'be\'cd\'ce\'de\'d0\'e8\'d4\'d9\'d4\'dadidLoad\'d6\'d0register\'c1\'cb\
+							step4\'a3\'ba\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'c0\'e0\'a3\'ac\'bc\'cc\'b3\'d0\'d7\'d4UITableViewController\'a3\'ac\'d1\'a1\'d6\'d0\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'b5\'c4\'b3\'a1\'be\'b0\'a3\'ac\'d4\'da\'b5\'da\'c8\'fd\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'e4\'d6\'d0\'d3\'eb\'d0\'c2\'bd\'a8\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'c0\'e0\'b0\'f3\'b6\'a8\'d4\'da\'d2\'bb\'c6\'f0\
+							step5\'a3\'ba\'bb\'d8\'b4\'f0\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'c8\'fd\'ce\'ca\'a3\'ac\'c6\'e4\'d6\'d0\'b5\'da\'c8\'fd\'ce\'ca\'d6\'d0dequeue\'b5\'c4\'b1\'ea\'ca\'b6\'bc\'b4\'ce\'aa \'d4\'da\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'d6\'d0\'ce\'aacell\'c6\'f0\'b5\'c4identifier\'b5\'c4\'d6\'b5\
+\
+						\'b5\'da\'b6\'fe\'d6\'d6\'a3\'ba\'d7\'d4\'b6\'a8\'d2\'e5\'d4\'ad\'d0\'cd\'b5\'c4\'b6\'af\'cc\'ac\'b1\'ed\'b8\'f1\
+							step1\'a3\'ba\'cd\'cf\'d7\'a7\'d2\'bb\'b8\'f6\'b1\'ed\'ca\'d3\'cd\'bc\'a3\'ac\'d1\'a1\'d6\'d0\'b1\'ed\'ca\'d3\'cd\'bc\'a3\'ac\'d4\'da\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'d6\'d0\'bf\'c9\'d2\'d4\'c9\'e8\'d6\'c3 Prototype cell\'b5\'c4\'b8\'f6\'ca\'fd\
+							step2\'a3\'ba\'d1\'a1\'d6\'d0\'b1\'ed\'ca\'d3\'cd\'bc\'d6\'d0\'b5\'c4\'d4\'ad\'d0\'cdcell\'a3\'ac\'d4\'da\'b5\'da\'cb\'c4\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'e4\'d6\'d0\'c9\'e8\'d6\'c3 style\'ce\'aacustom\
+							step3\'a3\'ba\'d6\'d8\'d2\'aa\'a3\'ba\'ce\'aacell\'d4\'ad\'d0\'cd\'c9\'e8\'d6\'c3identifier\'b5\'c8\'cd\'ac\'d3\'da\'d7\'a2\'b2\'e1\
+							step4\'a3\'ba\'c9\'e8\'bc\'c6cell\'d4\'ad\'d0\'cd\'a3\'ac\'cd\'cf\'c8\'eb\'bf\'d8\'bc\'fe\
+							step5\'a3\'ba\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6\'c0\'e0\'a3\'ac\'bc\'cc\'b3\'d0\'d7\'d4UITableViewCell, \'b5\'bd\'b9\'ca\'ca\'c2\'b0\'e5\'d6\'d0\'d1\'a1\'d6\'d0cell\'d4\'ad\'d0\'cd\'a3\'ac\'b5\'da\'c8\'fd\'b8\'f6\'bc\'ec\'b2\'e9\'c6\'f7\'d6\'d0\'a3\'ac\'b0\'f3\'b6\'a8\'c9\'cf \'b8\'d5\'b8\'d5 \'d7\'d4\'b6\'a8\'d2\'e5 \'b5\'c4\'b5\'a5\'d4\'aa\'b8\'f1\'c0\'e0\
+							step6\'a3\'ba\'bd\'f8\'c8\'eb\'b2\'f0\'b7\'d6\'ca\'d3\'cd\'bc\'a3\'ac\'bd\'ab\'d7\'d4\'b6\'a8\'d2\'e5cell\'d4\'ad\'d0\'cd\'d6\'d0\'b5\'c4\'d2\'aa\'b9\'ab\'bf\'aa\'b5\'c4\'bf\'d8\'bc\'fe\'a3\'ac\'c1\'ac\'cf\'df\'b5\'bd\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b5\'a5\'d4\'aa\'b8\'f1\'c0\'e0\'b5\'c4h\'ce\'c4\'bc\'fe\'d6\'d0\
+							step7\'a3\'ba\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6\'c0\'e0\'a3\'ac\'bc\'cc\'b3\'d0\'d7\'d4UITableViewController\'a3\'ac\'d3\'eb\'d6\'b8\'b6\'a8\'b3\'a1\'be\'b0\'b0\'f3\'b6\'a8\
+							step8\'a3\'ba\'bb\'d8\'b4\'f0\'c8\'fd\'ce\'ca\
+									\'b5\'da\'c8\'fd\'ce\'ca\'d6\'d0\'a3\'ac\'b4\'b4\'bd\'a8\'b5\'c4cell\'b5\'c4\'c0\'e0\'d0\'cd\'a3\'ac\'d2\'bb\'b6\'a8\'ca\'c7\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b5\'a5\'d4\'aa\'b8\'f1\'c0\'e0\'c0\'e0\'d0\'cd\'a3\'ac\'c8\'bb\'ba\'f3\'bb\'f1\'b5\'c3\'d0\'d0\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac\'bd\'ab\'ca\'fd\'be\'dd\'cf\'d4\'ca\'be\'b5\'bdcell\'b9\'ab\'bf\'aa\'b5\'c4\'bf\'d8\'bc\'fe\'d6\'d0\'bc\'b4\'bf\'c9\
+\
+
+\f1 \
+\
+\
+\
+\
+\
+}

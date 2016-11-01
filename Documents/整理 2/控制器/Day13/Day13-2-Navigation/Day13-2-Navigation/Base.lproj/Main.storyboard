@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tSd-iy-t3g">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mk7-zj-fCx">
+            <objects>
+                <navigationController toolbarHidden="NO" id="tSd-iy-t3g" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BXS-rB-nCp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xlV-7c-LUE">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="DmM-4A-gcD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNW-w3-aHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="319"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="8eP-cE-0Dw"/>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="TWk-J6-xhQ"/>
+                        <barButtonItem systemItem="rewind" id="ph3-T0-XWR"/>
+                        <barButtonItem width="52" style="plain" systemItem="fixedSpace" id="nwp-dc-Vud"/>
+                        <barButtonItem systemItem="play" id="geJ-3D-1wO"/>
+                        <barButtonItem width="50" style="plain" systemItem="fixedSpace" id="cMm-QR-CMe"/>
+                        <barButtonItem systemItem="fastForward" id="ZS2-kI-fF0"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ktz-vN-1fy"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="5Zk-uE-zLw">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DOg-1p-D2e">
+                            <rect key="frame" x="99" y="7" width="123" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="0Wu-Qu-vb5">
+                            <connections>
+                                <segue destination="STr-Hm-CpO" kind="push" id="XLW-LS-C2e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="319"/>
+        </scene>
+        <!--第二页-->
+        <scene sceneID="gQv-kb-f2H">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="STr-Hm-CpO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wsP-Bu-4v3"/>
+                        <viewControllerLayoutGuide type="bottom" id="OVY-nk-Tko"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhH-vG-73F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="第二页" id="pqu-Y2-Ouu"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmW-Jp-Bcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="319"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,142 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red63\green110\blue116;\red38\green71\blue75;\red92\green38\blue153;
+\red134\green19\blue62;\red0\green116\blue0;\red170\green13\blue145;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17360\viewh11160\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 Day18\
+\
+TRFindDeals-V4:\
+\
+\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4UITableViewCell\'b5\'c4\'b7\'e2\'d7\'b0\
+a. \'b4\'b4\'bd\'a8TRTableViewCell.h/.m\'c0\'e0\'a3\'ac\'d3\'c3\'d3\'da\'bd\'abcell\'b5\'c4\'b4\'b4\'bd\'a8\'ba\'cd\'d6\'d8\'d3\'c3\'b7\'e2\'d7\'b0\'c6\'f0\'c0\'b4\'a3\'ac\'b2\'a2\'b0\'fc\'ba\'accell\'b5\'c4\'b1\'b3\'be\'b0\'cd\'bc\'c6\'ac\'b5\'c4\'c9\'e8\'d6\'c3\
+\
+1. \'ca\'b5\'cf\'d6\'c7\'f8\'d3\'f2\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7
+\f1\fs60 \CocoaLigature0 TRRegionViewController.h/.m/.xib\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs72 \cf0 a.
+\f0 \'d4\'da
+\f1 xib
+\f0 \'bd\'e7\'c3\'e6\'c9\'cf\'cc\'ed\'bc\'d3\'b6\'a5\'b2\'bf
+\f1 view
+\f0 \'ba\'cd\'c1\'bd\'b8\'f6
+\f1 table view\
+b.
+\f0 \'c8\'b7\'b6\'a8\'c7\'f8\'d3\'f2\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'ca\'fd\'be\'dd\'c0\'b4\'d4\'b4(\'b8\'f8\'b6\'a8\'b3\'c7\'ca\'d0\'c3\'fb\'d7\'d6\'a3\'ac\'b7\'b5\'bb\'d8\'b5\'b1\'c7\'b0\'b3\'c7\'ca\'d0\'b5\'c4\'cb\'f9\'d3\'d0\'c7\'f8\'d3\'f2\'ca\'fd\'d7\'e9)
+\f1 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf0 [\cf2 TRMetaDataTool\cf0  \cf3 regionsWithCityName\cf0 :cityName];\
+c.
+\f0 \'d4\'da\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4
+\f1 TRTableViewCell
+\f0 \'cc\'ed\'bc\'d3region\'ca\'f4\'d0\'d4\'a3\'ac\'d3\'c3\'d3\'da\'bd\'ab\'b6\'d4cell\'b5\'c4\'c9\'e8\'d6\'c3(cell\'b5\'c4\'ce\'c4\'b1\'be\'a3\'accell\'b5\'c4\'cd\'bc\'c6\'ac)\'b7\'e2\'d7\'b0\'d4\'da\'d7\'d4\'b6\'a8\'d2\'e5cell\'b5\'c4.m\'ca\'b5\'cf\'d6\'ce\'c4\'bc\'fe\'d6\'d0
+\f1 \
+d.
+\f0 \'ca\'b5\'cf\'d6
+\f1 table view
+\f0 \'b6\'d4\'d3\'a6\'b5\'c4
+\f1 dataSource
+\f0 \'ba\'cd
+\f1 delegate
+\f0 \'b5\'c4\'b7\'bd\'b7\'a8
+\f1 \
+e.
+\f0 \'ca\'b5\'cf\'d6
+\f1\fs60 clickChangeCity
+\f0\fs72 \'b7\'bd\'b7\'a8\'a3\'ac\'b5\'af\'b3\'f6\'c7\'d0\'bb\'bb\'b3\'c7\'ca\'d0\'b5\'c4\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7
+\f1\fs60 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \CocoaLigature1 \
+2. \'ca\'b5\'cf\'d6\'b3\'c7\'ca\'d0\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7TRChangeCityViewController.h/.m/.xib\
+a.\'d4\'daxib\'c9\'cf\'cc\'ed\'bc\'d3UIView/table view/\'b9\'d8\'b1\'d5\'b0\'b4\'c5\'a5\
+b. \'b4\'b4\'bd\'a8\'b3\'c7\'ca\'d0\'d7\'e9\'c4\'a3\'d0\'cd\'c0\'e0TRCityGroup.h/.m\
+c. \'d4\'daTRMataDataTool.h\'d6\'d0\'cc\'e1\'b9\'a9\'c0\'e0\'b7\'bd\'b7\'a8\'a3\'ac\'b7\'b5\'bb\'d8\'cb\'f9\'d3\'d0\'b3\'c7\'ca\'d0\'d7\'e9\'b5\'c4\'ca\'fd\'d7\'e9\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\fs60 \cf0 \CocoaLigature0 + (\cf4 NSArray\cf0  *)cityGroups;\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\fs72 \cf0 d.
+\f0 \CocoaLigature1 \'cd\'a8\'b9\'fd
+\f1 \CocoaLigature0 cityGroups
+\f0 \CocoaLigature1 \'b5\'c4\'c0\'e0\CocoaLigature0 \'b7\'bd\'b7\'a8\'b7\'b5\'bb\'d8\'b5\'c4\'ca\'fd\'d7\'e9\'c0\'b4\'c8\'b7\'b6\'a8TR\CocoaLigature1 Change\CocoaLigature0 CityViewController\'d6\'d0\'b5\'c4table view\'b5\'c4dataSource\'ba\'cddelegate\'b5\'c4\'b7\'bd\'b7\'a8\
+e. \'d4\'da
+\f1\fs60 didSelectRowAtIndexPath
+\f0\fs72 \'b7\'bd\'b7\'a8\'d6\'d0\'a3\'ac\'bd\'ab\'d3\'c3\'bb\'a7\'d1\'a1\'d4\'f1\'b5\'c4\'b3\'c7\'ca\'d0\'c3\'fb\'d7\'d6\'cd\'a8\'b9\'fd\cf5 \'cd\'a8\'d6\'aa\'b7\'bd\'ca\'bd\cf0 \'b7\'a2\'cb\'cd\'b8\'f8TRRegionViewController\'c0\'e0\
+d.\CocoaLigature1 \'d4\'da\CocoaLigature0 TRRegionViewController\'d6\'d0\'a3\'ac\'cc\'ed\'bc\'d3\'bc\'e0\'cc\'fd\'d3\'c3\'bb\'a7\'d1\'a1\'d4\'f1\'b5\'c4\'cd\'a8\'d6\'aa\'a3\'ac\'cd\'a8\'b9\'fd\'d3\'c3\'bb\'a7\'d1\'a1\'d4\'f1\'b5\'c4\'b3\'c7\'ca\'d0\'c3\'fb\'d7\'d6\'a3\'ac\'c0\'b4\'b8\'fc\'d0\'c2\'c7\'f8\'d3\'f2\'b5\'c4\'cb\'f9\'d3\'d0\'ca\'fd\'be\'dd\CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+3. \'ca\'b5\'cf\'d6TRCategoryViewController.h/.m/.xib\
+a. \'d4\'daxib\'ce\'c4\'bc\'fe\'d6\'d0\'cc\'ed\'bc\'d3\'c1\'bd\'b8\'f6table view\
+b. \'cd\'a8\'b9\'fd\'d4\'aa\'ca\'fd\'be\'dd\'b5\'c4\'b9\'a4\'be\'df\'c0\'e0\'b5\'c4categories\'c0\'e0\'b7\'bd\'b7\'a8\'d7\'f7\'ce\'aa\'b8\'c3table view\'b5\'c4\'ca\'fd\'be\'dd\'c0\'b4\'d4\'b4\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\fs60 \cf0 \CocoaLigature0 [\cf2 TRMetaDataTool\cf0  \cf3 categories\cf0 ];\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\fs72 \cf0 c.
+\f0 \'d4\'da\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4
+\f1 TRTableViewCell
+\f0 \'cc\'ed\'bc\'d3category\'ca\'f4\'d0\'d4\'a3\'ac\'d3\'c3\'d3\'da\'bd\'ab\'b6\'d4cell\'b5\'c4\'c9\'e8\'d6\'c3(cell\'b5\'c4\'ce\'c4\'b1\'be\'a3\'accell accessoryView\'cd\'bc\'c6\'ac, cell\'b5\'c4imageView\'cd\'bc\'c6\'ac)\'b7\'e2\'d7\'b0\'d4\'da\'d7\'d4\'b6\'a8\'d2\'e5cell\'b5\'c4.m\'ca\'b5\'cf\'d6\'ce\'c4\'bc\'fe\'d6\'d0
+\f1\fs60 \
+
+\fs72 d
+\f0 .\'ca\'b5\'cf\'d6table view\'b5\'c4data source\'ba\'cddelegate\'b5\'c4\'b7\'bd\'b7\'a8\
+\
+4. \'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\
+a. \'cc\'ed\'bc\'d3\'bc\'e0\'cc\'fd\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'bc\'e0\'cc\'fd\'d3\'c3\'bb\'a7\'d1\'a1\'d4\'f1\'b3\'c7\'ca\'d0/\'c7\'f8\'d3\'f2/\'d7\'d3\'c7\'f8\'d3\'f2\'b5\'c4\'cd\'a8\'d6\'aa\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\fs60 \cf6 //
+\f0 \'bc\'e0\'cc\'fd\'cd\'a8\'d6\'aa
+\f1 \cf0 \
+[\cf7 self\cf0  \cf3 listenNotifications\cf0 ];\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\fs72 \cf0 b.
+\f0 \'cd\'a8\'b9\'fd\'bc\'e0\'cc\'fd\'b5\'c4\'b7\'bd\'b7\'a8\'bb\'f1\'c8\'a1\'d3\'c3\'bb\'a7\'d1\'a1\'d4\'f1\'b5\'c4\'b3\'c7\'ca\'d0
+\f1 /
+\f0 \'c7\'f8\'d3\'f2
+\f1 /
+\f0 \'d7\'d3\'c7\'f8\'d3\'f2\'b5\'c4\'ca\'f4\'d0\'d4
+\f1 \
+c.
+\f0 \'ca\'b5\'cf\'d6
+\f1\fs60 cityDidChange
+\f0 \'ba\'cd
+\f1 regionDidChange
+\f0\fs72 \'b7\'bd\'b7\'a8\'a3\'ac\'bd\'ab\'cd\'a8\'d6\'aa\'d6\'d0
+\f1 userInfo
+\f0 \'b5\'c4\'b2\'ce\'ca\'fd\'b8\'b3\'d6\'b5\'b8\'f8\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'b5\'c4\'ca\'f4\'d0\'d4
+\f1 (selectedCity/selectedRegion/selectedSubRegion)\
+d.
+\f0 \'d4\'da
+\f1 regionDidChange
+\f0 \'b7\'bd\'b7\'a8\'d6\'d0\'a3\'ac\'cc\'ed\'bc\'d3\'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3\'b5\'c4\'b7\'bd\'b7\'a8\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\fs60 \cf0 [\cf7 self\cf0  \cf3 loadNewDeals\cf0 ];\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\fs72 \cf0 e.
+\f0 \'d7\'f1\'d1\'ad\'b5\'e3\'c6\'c0\'cd\'f8\'b5\'c4\'d0\'ad\'d2\'e9
+\f1 \cf2 DPRequestDelegate\cf0 , 
+\f0 \'ca\'b5\'cf\'d6\'d0\'ad\'d2\'e9\'b5\'c4\'b7\'bd\'b7\'a8\CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

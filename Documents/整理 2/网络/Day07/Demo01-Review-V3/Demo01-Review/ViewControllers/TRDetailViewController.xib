@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRDetailViewController">
+            <connections>
+                <outlet property="indicatorView" destination="KuY-Lu-YA6" id="LRg-ZV-nje"/>
+                <outlet property="navigationBar" destination="gYn-9s-50d" id="8jB-6e-Z1p"/>
+                <outlet property="scrollView" destination="bAh-1h-TC4" id="nWj-o9-liK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KuY-Lu-YA6">
+                    <rect key="frame" x="150" y="274" width="20" height="20"/>
+                </activityIndicatorView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-1h-TC4">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                </scrollView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64Z-mQ-TzG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DUv-S4-PXv"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="展示图片" id="gYn-9s-50d">
+                            <barButtonItem key="leftBarButtonItem" title="返回" id="FGj-D1-9AR">
+                                <connections>
+                                    <action selector="clickReturn:" destination="-1" id="278-YO-XjJ"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="64Z-mQ-TzG" secondAttribute="trailing" id="2LA-Zb-hiF"/>
+                <constraint firstAttribute="trailing" secondItem="bAh-1h-TC4" secondAttribute="trailing" id="7RN-8B-Qsg"/>
+                <constraint firstItem="bAh-1h-TC4" firstAttribute="top" secondItem="64Z-mQ-TzG" secondAttribute="bottom" id="FTK-un-iUA"/>
+                <constraint firstItem="64Z-mQ-TzG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LeQ-d3-enm"/>
+                <constraint firstItem="64Z-mQ-TzG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mms-qQ-cgf"/>
+                <constraint firstAttribute="bottom" secondItem="bAh-1h-TC4" secondAttribute="bottom" id="X0F-KW-quL"/>
+                <constraint firstItem="bAh-1h-TC4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YVY-4O-SwZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="152" y="317"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

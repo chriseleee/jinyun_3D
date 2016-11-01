@@ -1,0 +1,148 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red100\green56\blue32;\red46\green13\blue110;\red0\green116\blue0;
+\red63\green110\blue116;\red100\green14\blue47;\red92\green38\blue153;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18700\viewh11700\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 Day16\
+\'cd\'c5\'b9\'ba\'ca\'fd\'be\'dd\'c0\'b4\'d4\'b4\'a3\'ba\
+1. \'cd\'f8\'c2\'e7\'ca\'fd\'be\'dd\'c0\'b4\'d4\'b4(\'cd\'c5\'b9\'ba\'ca\'fd\'be\'dd)\'a3\'ba\'b5\'e3\'c6\'c0\'cd\'f8\'bf\'aa\'b7\'a2\'d5\'dfSDK  (key/secret)\
+2. \'cd\'f8\'c2\'e7\'ca\'fd\'be\'dd\'c0\'b4\'d4\'b4(\'d4\'aa\'ca\'fd\'be\'dd) \'a1\'aa> cities.plist(\'b3\'c7\'ca\'d0\'c3\'fb\'d7\'d6)\
+\
+1. Mode\'b2\'e3\'a3\'ba\'cf\'c8\'b4\'a6\'c0\'ed\'ca\'fd\'be\'dd\
+2. Controller/View\
+\
+SDK: Software Development Kit (Sample\'d1\'f9\'c0\'fd\'a3\'ac.h/.m; readme.md) \'c8\'ed\'bc\'fe\'bf\'aa\'b7\'a2\'b0\'fc\
+API: Application Programming Interface: \'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2\'bd\'d3\'bf\'da\
+IDE: Intergted Development Environment: Xcode/Eclipse\
+\
+\'cf\'c2\'d4\'d8\'b5\'e3\'c6\'c0\'cd\'f8\'b5\'c4SDK -> \'c8\'e7\'ba\'ce\'ca\'b9\'d3\'c3 -> \'b5\'bc\'c8\'eb\'b5\'bd\'d7\'d4\'bc\'ba\'b5\'c4\'cf\'ee\'c4\'bf\'d6\'d0\
+\
+\'b5\'e3\'c6\'c0\'cd\'f8\'b5\'c4\'b4\'ed\'ce\'f3:\
+1. \'ca\'b9\'d3\'c3NSUserDefaults\'c3\'bf\'b4\'ce\'b6\'bc\'b4\'d3\'c9\'b3\'ba\'d0\'d6\'d0\'b6\'c1\'c8\'a1\'a3\'ac\'ce\'de\'b7\'a8\'ca\'b9\'d3\'c3\'d0\'c2\'b8\'fc\'b8\'c4\'b5\'c4key/secret\
+2. \'b5\'bc\'c8\'eb\'b2\'bb\'d3\'a6\'b8\'c3\'b5\'bc\'c8\'eb\'b5\'c4DPAppDelegate.h\'cd\'b7\'ce\'c4\'bc\'fe\
+
+\f1\fs60 \cf2 \CocoaLigature0 kDPAppKey/kDPAppSecret
+\f0\fs72 \cf0 \CocoaLigature1 \
+3. \'d2\'fd\'c8\'eb\'c1\'cb\'b2\'bb\'d3\'a6\'b8\'c3\'d2\'fd\'c8\'eb\'b5\'c4\'b5\'da\'c8\'fd\'b7\'bd\'bf\'e2SBJSON\
+\
+\'c8\'e7\'ba\'ce\'bd\'ab\'b5\'e3\'c6\'c0SDK\'d6\'d0\'b5\'c4\'c0\'e0\'d2\'fd\'c8\'eb\'b5\'bdproject?\
+1. \'ce\'e5\'b8\'f6\'ce\'c4\'bc\'fe\'d7\'a7\'bd\'f8\'c0\'b4(\'d0\'de\'b8\'c4\'cd\'ea\'b4\'ed\'ce\'f3\'b5\'c4)\
+2. \'d7\'f1\'d1\'ad\'d0\'ad\'d2\'e9\
+3. \'ca\'b5\'cf\'d6\'d0\'ad\'d2\'e9\'b5\'c4\'b7\'bd\'b7\'a8\
+\
+\'bf\'cd\'bb\'a7\'b6\'cb\'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3->\'b7\'fe\'ce\'f1\'c6\'f7 -> JSON\'ca\'fd\'be\'dd (\'cd\'c5\'b9\'ba\'b6\'a9\'b5\'a5\'ca\'fd\'be\'dd)\
+\
+\'b4\'b4\'bd\'a8TRDeal.h/.m\'c4\'a3\'d0\'cd\'c0\'e0, .h\'d6\'d0\'b5\'c4\'ca\'f4\'d0\'d4\'d5\'eb\'b6\'d4\'ba\'cd\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'b5\'c4JOSN\'d6\'d0\'b5\'c4key\'d2\'aa\'d2\'bb\'d2\'bb\'b6\'d4\'d3\'a6\
+\
+\'bd\'e2\'ce\'f6JSON\'ca\'fd\'be\'dd (\'b6\'d4\'cf\'f3NSDictionary\'d7\'aa\'c4\'a3\'d0\'cd)\
+1. \'d5\'eb\'b6\'d4\'cd\'c5\'b9\'ba\'b6\'a9\'b5\'a5\'b4\'b4\'bd\'a8\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3TRDeal.h/.m:NSObject\
+2. \'ca\'b9\'d3\'c3
+\f1\fs60 \cf3 \CocoaLigature0 setValuesForKeysWithDictionary
+\f0\fs72 \cf0 \CocoaLigature1 \'b7\'bd\'b7\'a8\'ba\'cd\'d4\'ad\'c0\'b4\'bd\'e2\'ce\'f6JSON\'ca\'fd\'be\'dd\'b5\'c4\'b2\'bb\'cd\'ac/\'d7\'a2\'d2\'e2\'ca\'c2\'cf\'ee\'a3\'ba\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\fs60 \cf4 \CocoaLigature0   a.
+\f0 \'d4\'da\'b8\'c3\'ce\'c4\'bc\'fe\'cf\'c2\'c9\'f9\'c3\'f7\'b5\'c4\'ca\'f4\'d0\'d4\'b5\'c4\'c3\'fb\'d7\'d6\'d0\'e8\'d2\'aa\'ba\'cd\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'b5\'c4
+\f1 key
+\f0 \'d2\'aa\'d2\'bb\'c4\'a3\'d2\'bb\'d1\'f9
+\f1 \
+  b.
+\f0 \'c8\'e7\'b9\'fb\'d3\'f6\'b5\'bd\'d3\'d0
+\f1 OC
+\f0 \'d6\'d0\'b5\'c4\'b9\'d8\'bc\'fc\'d7\'d6\'a3\'ac\'d0\'e8\'d2\'aa\'b8\'c4\'b3\'c9\'c6\'e4\'cb\'fb\'b5\'c4
+\f1 (description--->desc)\
+  c.
+\f0 \'d3\'f6\'b5\'bd\'b5\'da
+\f1 2
+\f0 \'d6\'d0\'c7\'e9\'bf\'f6\'a3\'ac\'b1\'d8\'d0\'eb\'ca\'d6\'b6\'af\'c0\'b4\'b0\'f3\'b6\'a8
+\f1 description
+\f0 \'ba\'cd
+\f1 desc
+\f0 \'a3\'ac\'b1\'d8\'d0\'eb\'d2\'aa\'ca\'b5\'cf\'d6
+\f1 setValue:forUndefinedKey:
+\f0 \'b7\'bd\'b7\'a8
+\fs72 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 3. \'b5\'f7\'d3\'c3\'bd\'e2\'ce\'f6\'b2\'bd\'d6\'e8\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\fs60 \cf0 \CocoaLigature0 a.
+\f0 \'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3
+\f1  \
+\cf5 TRDeal\cf0  *deal = [\cf5 TRDeal\cf0  \cf3 new\cf0 ];\
+b.
+\f0 \'ca\'b9\'d3\'c3
+\f1 setValues
+\f0 \'b7\'bd\'b7\'a8\'bd\'ab\'b4\'ab\'c8\'eb\'b5\'c4\'d7\'d6\'b5\'e4\'b6\'d4\'cf\'f3\'d7\'d4\'b6\'af\'b5\'d8\'ba\'cddeal\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3\'c6\'a5\'c5\'e4 (\'cd\'a8\'b9\'fddealDic\'d6\'d0\'b5\'c4key\'ba\'cdTRDeal\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3.h\'d6\'d0\'b5\'c4\'ca\'f4\'d0\'d4\'d2\'bb\'d2\'bb\'b6\'d4\'d3\'a6)
+\f1 \
+[deal \cf3 setValuesForKeysWithDictionary\cf0 :dealDic];
+\f0\fs72 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\
+\'b4\'a6\'c0\'ed\'cd\'f8\'c2\'e7JSON\'ca\'fd\'be\'dd \'a1\'aa Done\
+\
+\'b4\'a6\'c0\'ed\'cd\'f8\'c2\'e7\'d6\'d0\'b5\'c4\'a1\'b0\'d4\'aa\'ca\'fd\'be\'dd\'a1\'b1\
+1. \'cb\'c4\'b8\'f6plist\'ce\'c4\'bc\'fe (\'b7\'d6\'c0\'e0\'d4\'aa\'ca\'fd\'be\'dd\'a3\'bb\'b3\'c7\'ca\'d0\'d4\'aa\'ca\'fd\'be\'dd\'a3\'bb\'c7\'f8\'d3\'f2\'d4\'aa\'ca\'fd\'be\'dd\'a3\'bb\'c5\'c5\'d0\'f2\'d4\'aa\'ca\'fd\'be\'dd)\
+2.\'c8\'e7\'ba\'ce\'b6\'c1\'c8\'a1plist\'ce\'c4\'bc\'fe\'b5\'c4\'ca\'fd\'be\'dd\'a3\'bf\
+\'b5\'a5\'c0\'fd\'b7\'bd\'ca\'bd\'b6\'c1\'c8\'a1 (\'b6\'c1\'c8\'a1\'d2\'bb\'b4\'ce)\
+3. \'c0\'e0\'b5\'c4\'bb\'ae\'b7\'d6\
+viewController.h/.m\
+\cf6 TRMetaDataTool.h/.m ->\cf0  \'b4\'a6\'c0\'ed\'cb\'f9\'d3\'d0\'ba\'cd\'d4\'aa\'ca\'fd\'be\'dd\'cf\'e0\'b9\'d8\'b5\'c4\'c2\'df\'bc\'ad\
+TRCity.h/.m; TRCategory.h/.m; TRSort.h/.m\
+TRDeal.h/.m\
+\
+\'bd\'ab\'b3\'cc\'d0\'f2\'d0\'e8\'d2\'aa\'b5\'c4\'cb\'c4\'b8\'f6plist\'ce\'c4\'bc\'fe\'ba\'cd\'cb\'f9\'d3\'d0\'b5\'c4\'cd\'bc\'c6\'ac\'cd\'cf\'d7\'a7\'b5\'bd\'cf\'ee\'c4\'bf\'d6\'d0\
+\
+\'b4\'b4\'bd\'a8\'c8\'fd\'b8\'f6\'c4\'a3\'d0\'cd\'c0\'e0:\
+a. TRCity.h/.m; TRCategory.h/.m; TRSort.h/.m\
+b. \'d5\'eb\'b6\'d4\'d5\'e2\'c8\'fd\'b8\'f6\'c4\'a3\'d0\'cd\'c0\'e0\'b5\'c4.h\'d6\'d0\'c9\'f9\'c3\'f7\'ca\'f4\'d0\'d4(\'d0\'e8\'d2\'aa\'ba\'cdplist\'ce\'c4\'bc\'fe\'d6\'d0\'b5\'c4key\'d2\'bb\'d2\'bb\'b6\'d4\'d3\'a6)\
+\
+TRMetaDataTool.h\'cc\'e1\'b9\'a9\'c8\'fd\'b8\'f6\'c0\'e0\'b7\'bd\'b7\'a8\'a3\'ac\'b7\'d6\'b1\'f0\'b6\'d4\'d3\'a6\'b7\'d6\'c0\'e0\'a1\'a2\'b3\'c7\'ca\'d0\'a1\'a2\'c5\'c5\'d0\'f2\'b7\'bd\'b7\'a8\cf6 \
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\fs60 \cf4 \CocoaLigature0 a.
+\f0 \'c5\'c5\'d0\'f2\'ca\'fd\'be\'dd
+\f1 (
+\f0 \'b7\'b5\'bb\'d8\'cb\'f9\'d3\'d0\'c5\'c5\'d0\'f2\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3
+\f1 )\cf0 \
++ (\cf7 NSArray\cf0  *)sorts;\
+\cf4 b.
+\f0 \'b3\'c7\'ca\'d0\'ca\'fd\'be\'dd
+\f1 (
+\f0 \'b7\'b5\'bb\'d8\'cb\'f9\'d3\'d0\'b3\'c7\'ca\'d0\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3
+\f1 )\cf0 \
++ (\cf7 NSArray\cf0  *)cities;\
+\cf4 c.
+\f0 \'b7\'d6\'c0\'e0\'ca\'fd\'be\'dd
+\f1 (
+\f0 \'b7\'b5\'bb\'d8\'cb\'f9\'d3\'d0\'b7\'d6\'c0\'e0\'c4\'a3\'d0\'cd\'b6\'d4\'cf\'f3
+\f1 )\cf0 \
++ (\cf7 NSArray\cf0  *)categories;
+\f0\fs72 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\
+Model\'b2\'e3\'a3\'baDone\
+\
+View\'b2\'e3\'a3\'ba\
+1. \'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b5\'bc\'ba\'bd\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\
+a. \'c9\'e8\'b6\'a8\'b5\'bc\'ba\'bd\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4\'b1\'b3\'be\'b0\'cd\'bc\'c6\'ac\
+2.\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'bc\'cc\'b3\'d0\'d3\'daUICollectionViewController\'b5\'c4\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'a3\'ac\'ba\'cdstoryboard\'d6\'d0\'b5\'c4collectionViewController\'bd\'f8\'d0\'d0\'b0\'f3\'b6\'a8\
+a. \'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'b5\'c4viewDidLoad\'d6\'d0\'cc\'ed\'bc\'d3\'b7\'bd\'b7\'a8\'a3\'ac\'b4\'b4\'bd\'a8\'d3\'d2\'b1\'df\'b5\'c4\'c1\'bd\'b8\'f6items\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

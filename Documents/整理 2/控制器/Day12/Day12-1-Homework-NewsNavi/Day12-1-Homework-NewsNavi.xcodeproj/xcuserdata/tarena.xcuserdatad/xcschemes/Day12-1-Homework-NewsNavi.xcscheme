@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0630"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "85DDB1AC1B7D7743008E396F"
+               BuildableName = "Day12-1-Homework-NewsNavi.app"
+               BlueprintName = "Day12-1-Homework-NewsNavi"
+               ReferencedContainer = "container:Day12-1-Homework-NewsNavi.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "85DDB1C51B7D7743008E396F"
+               BuildableName = "Day12-1-Homework-NewsNaviTests.xctest"
+               BlueprintName = "Day12-1-Homework-NewsNaviTests"
+               ReferencedContainer = "container:Day12-1-Homework-NewsNavi.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "85DDB1C51B7D7743008E396F"
+               BuildableName = "Day12-1-Homework-NewsNaviTests.xctest"
+               BlueprintName = "Day12-1-Homework-NewsNaviTests"
+               ReferencedContainer = "container:Day12-1-Homework-NewsNavi.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "85DDB1AC1B7D7743008E396F"
+            BuildableName = "Day12-1-Homework-NewsNavi.app"
+            BlueprintName = "Day12-1-Homework-NewsNavi"
+            ReferencedContainer = "container:Day12-1-Homework-NewsNavi.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "85DDB1AC1B7D7743008E396F"
+            BuildableName = "Day12-1-Homework-NewsNavi.app"
+            BlueprintName = "Day12-1-Homework-NewsNavi"
+            ReferencedContainer = "container:Day12-1-Homework-NewsNavi.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "85DDB1AC1B7D7743008E396F"
+            BuildableName = "Day12-1-Homework-NewsNavi.app"
+            BlueprintName = "Day12-1-Homework-NewsNavi"
+            ReferencedContainer = "container:Day12-1-Homework-NewsNavi.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

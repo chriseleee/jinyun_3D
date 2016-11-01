@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minimumValue="12" maximumValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="0dX-Kj-Ds4">
+                                <rect key="frame" x="113" y="20" width="94" height="29"/>
+                                <connections>
+                                    <action selector="changeStep:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Fwh-PN-Z25"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfV-l2-7d8">
+                                <rect key="frame" x="51" y="57" width="218" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="l3A-nG-A88">
+                                <rect key="frame" x="32" y="106" width="257" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="vMK-Gf-gFO"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qxy-hz-5Fp">
+                                <rect key="frame" x="32" y="144" width="257" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="dmf-YO-8Qv"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lgO-up-aZj">
+                                <rect key="frame" x="32" y="182" width="257" height="31"/>
+                                <connections>
+                                    <action selector="changeSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Zit-GA-Sat"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJH-BF-04y">
+                                <rect key="frame" x="136" y="240" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeSwitch2:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Jsn-Sq-5Wa"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIv-KT-VYg">
+                                <rect key="frame" x="136" y="279" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="labelForStepper" destination="rfV-l2-7d8" id="R72-uC-W9F"/>
+                        <outlet property="slider0" destination="l3A-nG-A88" id="K6D-Zm-lzW"/>
+                        <outlet property="slider1" destination="Qxy-hz-5Fp" id="PzR-ig-W82"/>
+                        <outlet property="slider2" destination="lgO-up-aZj" id="xKv-5E-3nw"/>
+                        <outlet property="switch1" destination="bJH-BF-04y" id="sHV-vt-Az2"/>
+                        <outlet property="switch2" destination="eIv-KT-VYg" id="Mon-zt-4XH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="259"/>
+        </scene>
+    </scenes>
+</document>

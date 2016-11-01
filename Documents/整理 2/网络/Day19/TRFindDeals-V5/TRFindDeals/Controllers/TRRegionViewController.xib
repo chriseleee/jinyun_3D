@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRRegionViewController">
+            <connections>
+                <outlet property="mainTableView" destination="2Cd-O6-LMo" id="kPf-Fn-gYE"/>
+                <outlet property="secondTableView" destination="MwS-ab-vhy" id="bvf-O3-Vbp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-8g-UcL" userLabel=" 头部View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_cell_rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="K8T-p5-tU8">
+                            <rect key="frame" x="276" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="ZyC-lN-j5c"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7l-LU-dWc">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="切换城市" image="btn_changeCity">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="btn_changeCity_selected"/>
+                            <connections>
+                                <action selector="clickChangeCity:" destination="-1" eventType="touchUpInside" id="WYy-AX-al0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="K8T-p5-tU8" firstAttribute="top" secondItem="BzL-8g-UcL" secondAttribute="top" id="EMB-rL-3Nk"/>
+                        <constraint firstAttribute="height" constant="44" id="N8k-KE-M0C"/>
+                        <constraint firstItem="S7l-LU-dWc" firstAttribute="top" secondItem="BzL-8g-UcL" secondAttribute="top" id="Op9-g6-irt"/>
+                        <constraint firstAttribute="bottom" secondItem="K8T-p5-tU8" secondAttribute="bottom" id="bIN-Mm-tx0"/>
+                        <constraint firstAttribute="trailing" secondItem="S7l-LU-dWc" secondAttribute="trailing" id="gWp-cA-wb8"/>
+                        <constraint firstAttribute="bottom" secondItem="S7l-LU-dWc" secondAttribute="bottom" id="i5B-Dw-hA7"/>
+                        <constraint firstItem="S7l-LU-dWc" firstAttribute="leading" secondItem="BzL-8g-UcL" secondAttribute="leading" id="u4Z-jW-FmT"/>
+                        <constraint firstAttribute="trailing" secondItem="K8T-p5-tU8" secondAttribute="trailing" id="zb1-Lq-uUr"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Cd-O6-LMo" userLabel="主TableView">
+                    <rect key="frame" x="0.0" y="44" width="160" height="516"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="thd-Dc-5J9"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SkC-jA-uUK"/>
+                        <outlet property="delegate" destination="-1" id="09c-ot-2xK"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MwS-ab-vhy" userLabel="次TableView">
+                    <rect key="frame" x="160" y="44" width="160" height="516"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="wkt-ld-0RL"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uY6-4Z-rkp"/>
+                        <outlet property="delegate" destination="-1" id="wRI-yz-rAq"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Cd-O6-LMo" secondAttribute="bottom" id="1lL-Bh-5yQ"/>
+                <constraint firstItem="2Cd-O6-LMo" firstAttribute="width" secondItem="MwS-ab-vhy" secondAttribute="width" id="9QO-wM-5je"/>
+                <constraint firstItem="BzL-8g-UcL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hpp-jR-9bp"/>
+                <constraint firstItem="2Cd-O6-LMo" firstAttribute="top" secondItem="BzL-8g-UcL" secondAttribute="bottom" id="ZrY-Bb-u0v"/>
+                <constraint firstAttribute="bottom" secondItem="MwS-ab-vhy" secondAttribute="bottom" id="cDr-Fe-kkK"/>
+                <constraint firstItem="2Cd-O6-LMo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jLW-dE-mEU"/>
+                <constraint firstAttribute="trailing" secondItem="BzL-8g-UcL" secondAttribute="trailing" id="oOZ-fo-Sb1"/>
+                <constraint firstItem="MwS-ab-vhy" firstAttribute="top" secondItem="BzL-8g-UcL" secondAttribute="bottom" id="uHm-fL-Nal"/>
+                <constraint firstAttribute="trailing" secondItem="MwS-ab-vhy" secondAttribute="trailing" id="yXL-bD-XXc"/>
+                <constraint firstItem="BzL-8g-UcL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yem-Lc-ABr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_changeCity" width="30" height="30"/>
+        <image name="btn_changeCity_selected" width="30" height="30"/>
+        <image name="icon_cell_rightArrow" width="17" height="17"/>
+    </resources>
+</document>

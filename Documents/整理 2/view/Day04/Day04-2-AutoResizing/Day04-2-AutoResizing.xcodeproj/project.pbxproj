@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85CBDF1F1B8AF8A00089063F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CBDF1E1B8AF8A00089063F /* main.m */; };
+		85CBDF221B8AF8A00089063F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CBDF211B8AF8A00089063F /* AppDelegate.m */; };
+		85CBDF251B8AF8A00089063F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CBDF241B8AF8A00089063F /* ViewController.m */; };
+		85CBDF281B8AF8A00089063F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CBDF261B8AF8A00089063F /* Main.storyboard */; };
+		85CBDF2A1B8AF8A00089063F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CBDF291B8AF8A00089063F /* Images.xcassets */; };
+		85CBDF2D1B8AF8A00089063F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85CBDF2B1B8AF8A00089063F /* LaunchScreen.xib */; };
+		85CBDF391B8AF8A00089063F /* Day04_2_AutoResizingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CBDF381B8AF8A00089063F /* Day04_2_AutoResizingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85CBDF331B8AF8A00089063F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85CBDF111B8AF89F0089063F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85CBDF181B8AF89F0089063F;
+			remoteInfo = "Day04-2-AutoResizing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85CBDF191B8AF89F0089063F /* Day04-2-AutoResizing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day04-2-AutoResizing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85CBDF1D1B8AF8A00089063F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85CBDF1E1B8AF8A00089063F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85CBDF201B8AF8A00089063F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85CBDF211B8AF8A00089063F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85CBDF231B8AF8A00089063F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85CBDF241B8AF8A00089063F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85CBDF271B8AF8A00089063F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85CBDF291B8AF8A00089063F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85CBDF2C1B8AF8A00089063F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		85CBDF321B8AF8A00089063F /* Day04-2-AutoResizingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day04-2-AutoResizingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85CBDF371B8AF8A00089063F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85CBDF381B8AF8A00089063F /* Day04_2_AutoResizingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day04_2_AutoResizingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85CBDF161B8AF89F0089063F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85CBDF2F1B8AF8A00089063F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85CBDF101B8AF89F0089063F = {
+			isa = PBXGroup;
+			children = (
+				85CBDF1B1B8AF89F0089063F /* Day04-2-AutoResizing */,
+				85CBDF351B8AF8A00089063F /* Day04-2-AutoResizingTests */,
+				85CBDF1A1B8AF89F0089063F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85CBDF1A1B8AF89F0089063F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85CBDF191B8AF89F0089063F /* Day04-2-AutoResizing.app */,
+				85CBDF321B8AF8A00089063F /* Day04-2-AutoResizingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85CBDF1B1B8AF89F0089063F /* Day04-2-AutoResizing */ = {
+			isa = PBXGroup;
+			children = (
+				85CBDF201B8AF8A00089063F /* AppDelegate.h */,
+				85CBDF211B8AF8A00089063F /* AppDelegate.m */,
+				85CBDF231B8AF8A00089063F /* ViewController.h */,
+				85CBDF241B8AF8A00089063F /* ViewController.m */,
+				85CBDF261B8AF8A00089063F /* Main.storyboard */,
+				85CBDF291B8AF8A00089063F /* Images.xcassets */,
+				85CBDF2B1B8AF8A00089063F /* LaunchScreen.xib */,
+				85CBDF1C1B8AF8A00089063F /* Supporting Files */,
+			);
+			path = "Day04-2-AutoResizing";
+			sourceTree = "<group>";
+		};
+		85CBDF1C1B8AF8A00089063F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85CBDF1D1B8AF8A00089063F /* Info.plist */,
+				85CBDF1E1B8AF8A00089063F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85CBDF351B8AF8A00089063F /* Day04-2-AutoResizingTests */ = {
+			isa = PBXGroup;
+			children = (
+				85CBDF381B8AF8A00089063F /* Day04_2_AutoResizingTests.m */,
+				85CBDF361B8AF8A00089063F /* Supporting Files */,
+			);
+			path = "Day04-2-AutoResizingTests";
+			sourceTree = "<group>";
+		};
+		85CBDF361B8AF8A00089063F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85CBDF371B8AF8A00089063F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85CBDF181B8AF89F0089063F /* Day04-2-AutoResizing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85CBDF3C1B8AF8A00089063F /* Build configuration list for PBXNativeTarget "Day04-2-AutoResizing" */;
+			buildPhases = (
+				85CBDF151B8AF89F0089063F /* Sources */,
+				85CBDF161B8AF89F0089063F /* Frameworks */,
+				85CBDF171B8AF89F0089063F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day04-2-AutoResizing";
+			productName = "Day04-2-AutoResizing";
+			productReference = 85CBDF191B8AF89F0089063F /* Day04-2-AutoResizing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85CBDF311B8AF8A00089063F /* Day04-2-AutoResizingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85CBDF3F1B8AF8A00089063F /* Build configuration list for PBXNativeTarget "Day04-2-AutoResizingTests" */;
+			buildPhases = (
+				85CBDF2E1B8AF8A00089063F /* Sources */,
+				85CBDF2F1B8AF8A00089063F /* Frameworks */,
+				85CBDF301B8AF8A00089063F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85CBDF341B8AF8A00089063F /* PBXTargetDependency */,
+			);
+			name = "Day04-2-AutoResizingTests";
+			productName = "Day04-2-AutoResizingTests";
+			productReference = 85CBDF321B8AF8A00089063F /* Day04-2-AutoResizingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85CBDF111B8AF89F0089063F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					85CBDF181B8AF89F0089063F = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					85CBDF311B8AF8A00089063F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 85CBDF181B8AF89F0089063F;
+					};
+				};
+			};
+			buildConfigurationList = 85CBDF141B8AF89F0089063F /* Build configuration list for PBXProject "Day04-2-AutoResizing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85CBDF101B8AF89F0089063F;
+			productRefGroup = 85CBDF1A1B8AF89F0089063F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85CBDF181B8AF89F0089063F /* Day04-2-AutoResizing */,
+				85CBDF311B8AF8A00089063F /* Day04-2-AutoResizingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85CBDF171B8AF89F0089063F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CBDF281B8AF8A00089063F /* Main.storyboard in Resources */,
+				85CBDF2D1B8AF8A00089063F /* LaunchScreen.xib in Resources */,
+				85CBDF2A1B8AF8A00089063F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85CBDF301B8AF8A00089063F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85CBDF151B8AF89F0089063F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CBDF251B8AF8A00089063F /* ViewController.m in Sources */,
+				85CBDF221B8AF8A00089063F /* AppDelegate.m in Sources */,
+				85CBDF1F1B8AF8A00089063F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85CBDF2E1B8AF8A00089063F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CBDF391B8AF8A00089063F /* Day04_2_AutoResizingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85CBDF341B8AF8A00089063F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85CBDF181B8AF89F0089063F /* Day04-2-AutoResizing */;
+			targetProxy = 85CBDF331B8AF8A00089063F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85CBDF261B8AF8A00089063F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85CBDF271B8AF8A00089063F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85CBDF2B1B8AF8A00089063F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85CBDF2C1B8AF8A00089063F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85CBDF3A1B8AF8A00089063F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85CBDF3B1B8AF8A00089063F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85CBDF3D1B8AF8A00089063F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day04-2-AutoResizing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85CBDF3E1B8AF8A00089063F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day04-2-AutoResizing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85CBDF401B8AF8A00089063F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day04-2-AutoResizingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day04-2-AutoResizing.app/Day04-2-AutoResizing";
+			};
+			name = Debug;
+		};
+		85CBDF411B8AF8A00089063F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day04-2-AutoResizingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day04-2-AutoResizing.app/Day04-2-AutoResizing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85CBDF141B8AF89F0089063F /* Build configuration list for PBXProject "Day04-2-AutoResizing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85CBDF3A1B8AF8A00089063F /* Debug */,
+				85CBDF3B1B8AF8A00089063F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85CBDF3C1B8AF8A00089063F /* Build configuration list for PBXNativeTarget "Day04-2-AutoResizing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85CBDF3D1B8AF8A00089063F /* Debug */,
+				85CBDF3E1B8AF8A00089063F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85CBDF3F1B8AF8A00089063F /* Build configuration list for PBXNativeTarget "Day04-2-AutoResizingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85CBDF401B8AF8A00089063F /* Debug */,
+				85CBDF411B8AF8A00089063F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85CBDF111B8AF89F0089063F /* Project object */;
+}

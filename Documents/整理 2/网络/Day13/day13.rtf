@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica-Light;}
+{\colortbl;\red255\green255\blue255;\red100\green14\blue47;\red32\green0\blue99;\red41\green0\blue130;
+\red155\green44\blue1;\red206\green59\blue0;\red134\green19\blue62;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18700\viewh11140\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 Day13\
+\'bb\'d8\'b9\'cb\'a3\'ba\
+\'ba\'cd\'b5\'d8\'cd\'bc\'cf\'e0\'b9\'d8\'b5\'c4\'b6\'a8\'ce\'bb\
+\'d0\'ad\'d2\'e9\'a3\'baMKMapViewDelegate\
+\'c0\'e0\'a3\'ba    MKMapView\
+\
+didUpdateUserLocation:(MKUserLocation *)userLocation\
+\
+didReginChange\
+\
+\'b4\'f3\'cd\'b7\'d5\'eb\'b5\'c4\'cc\'ed\'bc\'d3\
+1. \'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b4\'f3\'cd\'b7\'d5\'eb\'b6\'d4\'cf\'f3(\'c4\'a3\'d0\'cd\'c0\'e0)\
+TRAnnotation:NSObject <MKAnnotation>\
+TRAnnotation *annotation = [[TRAnnotation alloc] init];\
+[self.mapView addAnnotation:annotation];\
+2. \'cc\'ed\'bc\'d3\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b4\'f3\'cd\'b7\'d5\'eb\
+    \'c7\'b0\'cc\'e1\'a3\'ba\'ca\'b5\'cf\'d6viewForAnnotation\
+ a MKPinAnnotationView\
+ b MKAnnotationView\
+\
+\'d1\'f9\'c0\'fd\'a3\'ba\'b8\'f8\'b6\'a8\'c6\'f0\'ca\'bc\'b5\'e3\'ba\'cd\'d6\'d5\'b5\'e3\'a3\'ac\'d4\'da\'b5\'d8\'cd\'bc\'c9\'cf\'bb\'ad\'b3\'f6\'b5\'bc\'ba\'bd\'c2\'b7\'cf\'df\
+\'a1\'beDemo01-Routes\'a1\'bf\
+\'b1\'b1\'be\'a9 \'a1\'aa> \'c9\'cf\'ba\'a3\
+\'b5\'d8\'c0\'ed\'b1\'e0\'c2\'eb\'a3\'ba\'b1\'b1\'be\'a9\'be\'ad\'ce\'b3\'b6\'c8 \'a1\'aa> \'c9\'cf\'ba\'a3\'b5\'c4\'be\'ad\'ce\'b3\'b6\'c8\
+MKRouteStep  steps: \'b1\'b1\'be\'a9\'b5\'bd\'c9\'cf\'ba\'a3\'b5\'c4\'d0\'a1\'b5\'c4\'bd\'d7\'b6\'ce\'b6\'d4\'d3\'a6\'b5\'c4\'c0\'e0\
+MKRoute: \'b1\'b1\'be\'a9\'b5\'bd\'c9\'cf\'ba\'a3\'b5\'c4\'d7\'dc\'c2\'b7\'cf\'df\'b6\'d4\'d3\'a6\'b5\'c4\'c0\'e0\
+MKOverlay(\'d5\'da\'b8\'c7\'ce\'ef: \'cf\'df\'b5\'c4\'d1\'d5\'c9\'ab/\'cf\'df\'b5\'c4\'b4\'d6\'cf\'b8)\
+\
+\'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3\'a3\'ba\'c6\'bb\'b9\'fb\'b9\'ab\'cb\'be\'c4\'b3\'cc\'a8\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3\
+\
+\'d1\'f9\'c0\'fd\'a3\'ba\
+\'b0\'d9\'b6\'c8\'b5\'d8\'cd\'bcSDK (\'d6\'aa\'ca\'b6\'b5\'e3)\
+\'b3\'cc\'d0\'f2\'d4\'b1\'b5\'c4\'d2\'bb\'b8\'f6\'bb\'f9\'b1\'be/\'d6\'d8\'d2\'aa\'bc\'bc\'c4\'dc\'a3\'ba\
+\'b4\'d3\'d2\'bb\'b8\'f6\'d2\'d1\'d3\'d0\'b5\'c4\'cf\'ee\'c4\'bf\'d6\'d0\'bb\'f1\'c8\'a1\'b8\'d0\'d0\'cb\'c8\'a4\'b5\'c4\'c4\'c7\'b2\'bf\'b7\'d6\'a3\'ac\'ce\'aa\'ce\'d2\'cb\'f9\'d3\'c3\
+\
+1.\'d4\'cb\'d0\'d0\'b0\'d9\'b6\'c8\'cc\'e1\'b9\'a9\'b5\'c4Sample: \'c0\'fd\'d7\'d3\
+     S2x0Ge2tYnSrekFkolKc5SGY\
+     cn.tarena.test\
+\
+SDK: Software Development Kit\
+a. \'d2\'bb\'d7\'e9\'c0\'e0/\'bf\'e2(.h/.m/.a)\
+b. Sample\'a3\'ba\'d1\'f9\'c0\'fd (\'c8\'e7\'ba\'ce\'ca\'b9\'d3\'c3SDK\'cc\'e1\'b9\'a9\'b5\'c4\'b9\'a6\'c4\'dc)\
+c. \'c6\'e4\'cb\'fb\'d2\'bb\'d0\'a9\'cd\'bc\'c6\'ac/\'c5\'e4\'d6\'c3\'d0\'c5\'cf\'a2\'b5\'c8\'ce\'c4\'bc\'fe\
+\
+.h:\'cd\'b7\'ce\'c4\'bc\'fe\
+.m: OC + C\
+.mm: OC + C + C++\
+\
+.h/.m \'a1\'aa> xxx.o/.out \'a1\'aa> \'d6\'b4\'d0\'d0\
+\
+POI: Point Of Interest: \'b8\'d0\'d0\'cb\'c8\'a4\'b5\'e3\
+\
+\'bb\'b7\'be\'b3\'c5\'e4\'d6\'c3\'a3\'ba\
+bundle display name\'a3\'ba\
+\
+\
+Info.plist:\
+Bundle name: AngryBird\
+AngryBird.app /\
+\'ca\'d6\'b6\'af\'cc\'ed\'bc\'d3\'d2\'bb\'d0\'d0\
+Bundle display name: AngryBird\
+\'cf\'d4\'ca\'be\'d4\'da\'c9\'e8\'b1\'b8\'d6\'f7\'bd\'e7\'c3\'e6\'b3\'cc\'d0\'f2\'b5\'c4\'d5\'fd\'cf\'c2\'b7\'bd\
+\'bd\'a8\'d2\'e9\'a3\'baBundle name\'ba\'cdBundle display name\'d2\'aa\'be\'a1\'bf\'c9\'c4\'dc\'b5\'c4\'d2\'bb\'d6\'c2\
+\
+\
+keyword: Runkeeper\
+{\field{\*\fldinst{HYPERLINK "http://www.raywenderlich.com/?s=runkeeper&cof=FORID%3A10"}}{\fldrslt http://www.raywenderlich.com/?s=runkeeper&cof=FORID%3A10}}\
+\
+\
+\'cc\'ec\'c6\'f8\
+NSOperation + JSON\'bd\'e2\'ce\'f6 + UITableView + CoreLocation + \'cd\'bc\'c6\'ac\'bb\'ba\'b4\'e6\'d4\'ad\'c0\'ed(\'c4\'da\'b4\'e6/\'c9\'b3\'ba\'d0)\
+\'cb\'b3\'d0\'f2\'a3\'ba\'cf\'c8\'b4\'ee\'bd\'e7\'c3\'e6(View) -> \'d2\'b5\'ce\'f1\'c2\'df\'bc\'ad(Controller) -> \'b4\'a6\'c0\'edJSON\'ca\'fd\'be\'dd(Model)\
+\'bd\'e7\'c3\'e6\'b5\'c4\'b4\'ee\'bd\'a8\'a3\'ba\'b4\'bf\'b4\'fa\'c2\'eb\'b7\'bd\'ca\'bd\
+\'ca\'fd\'be\'dd\'b5\'c4\'c0\'b4\'d4\'b4JSON\'b8\'f1\'ca\'bd\'ca\'fd\'be\'dd\'a3\'ba\
+
+\f1\fs62 \expnd0\expndtw0\kerning0
+http://api.worldweatheronline.com \
+
+\f0\fs72 \cf2 \kerning1\expnd0\expndtw0 \'d7\'a2\'b2\'e1
+\fs62 \cf0 \expnd0\expndtw0\kerning0
+\'a3\'ba\'c3\'bf\'cc\'ec\'b2\'bb\'b3\'ac\'b9\'fd250
+\fs72 \kerning1\expnd0\expndtw0 \
+\
+\'cd\'c5\'b9\'ba\
+\'cb\'b3\'d0\'f2\'a3\'ba\'b4\'a6\'c0\'ed\'ca\'fd\'be\'dd(Model: \'cd\'f8\'c2\'e7+Bundle) -> \'d2\'b5\'ce\'f1\'c2\'df\'bc\'ad(Controller) -> \'d7\'ee\'ba\'f3\'b4\'ee\'bd\'e7\'c3\'e6\
+\'bd\'e7\'c3\'e6\'b5\'c4\'b4\'ee\'bd\'a8\'a3\'bastoryboard(\'d6\'f7\'bd\'e7\'c3\'e6) + xib(\'c6\'e4\'cb\'fb\'b5\'c4\'bd\'e7\'c3\'e6)\
+\'ca\'fd\'be\'dd\'b5\'c4\'c0\'b4\'d4\'b4JSON\'b8\'f1\'ca\'bd\'ca\'fd\'be\'dd\'a3\'ba\
+\'b5\'e3\'c6\'c0\'cd\'f8\'b5\'c4SDK\'a3\'ba\
+\'d7\'a2\'b2\'e1\'a3\'ba\
+\
+DeadLine\
+\'cf\'ee\'c4\'bf\'b6\'e0\'ba\'c3 (\'cd\'f8\'c2\'e7+\'c1\'c4\'cc\'ec+\'b5\'d8\'cd\'bc) 30%~50%/100%\
+\
+\
+\'cf\'ee\'c4\'bf\'d6\'ae\'c7\'b0\'b5\'c4\'b9\'e6\'d4\'f2\'a3\'ba\
+1. \'ba\'cf\'c0\'ed\'b5\'c4\'c3\'fc\'c3\'fb\'b9\'e6\'d4\'f2\
+    a. \'c0\'e0\'d2\'aa\'d3\'c9\'c0\'e0\'c7\'b0\'d7\'ba Class prefix (\'b7\'c0\'d6\'b9\'ba\'cd\'b5\'da\'c8\'fd\'b7\'bd\'b5\'c4\'c0\'e0\'d6\'d8\'c3\'fb)\
+    b. \'b1\'e4\'c1\'bf\'b5\'c4\'c3\'fc\'c3\'fb\'a3\'ba\'d0\'a1\'d0\'b4\'d7\'d6\'c4\'b8\'bf\'aa\'cd\'b7\'a3\'ac\'cd\'d5\'b7\'e5\'ca\'bd\'c3\'fc\'c3\'fb\
+    c. \'b7\'bd\'b7\'a8\'b5\'c4\'c3\'fc\'c3\'fb\'a3\'ba\'d0\'a1\'d0\'b4\'d7\'d6\'c4\'b8\'bf\'aa\'cd\'b7\'a3\'ac\'cd\'d5\'b7\'e5\'ca\'bd\'c3\'fc\'c3\'fb(\'d2\'bb\'b0\'e3\'d2\'d4\'b6\'af\'b4\'ca\'bf\'aa\'cd\'b7)\
+    d. \'c0\'e0\'c3\'fb\'b5\'c4\'c3\'fc\'c3\'fb\'a3\'ba\'c0\'e0\'c7\'b0\'d7\'ba+\'b4\'f3\'d0\'b4\'d7\'d6\'c4\'b8\'bf\'aa\'cd\'b7, \'cd\'d5\'b7\'e5\'ca\'bd\'c3\'fc\'c3\'fb\
+2. Project\'b7\'d6\'d7\'e9\
+    a. group\'a3\'ba\'b8\'f7\'d6\'d6\'b5\'c4\'c0\'e0\'b5\'c4\'b7\'d6\'c0\'e0\
+    b. group\'c1\'bd\'d6\'d6\'b7\'bd\'ca\'bd\'b4\'b4\'bd\'a8\'a3\'ba\
+         1\'a3\'a9\'b7\'bd\'ca\'bd\'d2\'bb\'a3\'ba\
+          \cf2 /Views\cf0 /LogIn/\
+          \cf2 /Views/\cf0 Chat/\
+          \cf3 /Controllers\cf0 /LogIn/\
+          \cf4 /Controllers\cf0 /Chat/\
+          \cf5 /Models\cf0 /LogIn/\
+          \cf6 /Models\cf0 /Chat/\
+         2) \'b7\'bd\'ca\'bd\'b6\'fe\'a3\'ba\
+         \cf7 /LogIn\cf0 /Views/\
+          \cf2 /LogIn\cf0 /Controllers/\
+          \cf7 /LogIn\cf0 /Models/\
+         \cf3 /Chat\cf0 /Views/\
+         \cf4 /Chat\cf0 /Controllers/\
+         \cf4 /Chat\cf0 /Models    \
+3. \'b3\'a3\'d3\'c3\'b5\'c4\'b4\'fa\'c2\'eb\'b7\'e2\'d7\'b0 (taste)\
+    \'b8\'b4\'d6\'c6\'d5\'b3\'cc\'f9(\'c0\'e0\'cb\'c6\'b5\'c4\'b4\'fa\'c2\'eb) \'a1\'aa> \'b7\'e2\'d7\'b0(\'b7\'bd\'b7\'a8/\'c0\'e0/\'b4\'b4\'bd\'a8\'b7\'d6\'c0\'e0Category)\
+4. comments\'d7\'a2\'ca\'cd: \'ba\'c3\'c0\'ed\'bd\'e2/\'b7\'bd\'b7\'a8\'b5\'c4\'c2\'df\'bc\'ad; \'d2\'bb\'c4\'bf\'c1\'cb\'c8\'bb\
+     \
+\'b4\'ee\'bd\'a8\'cc\'ec\'c6\'f8UI\
+1. TRWeather-V1\
+    TRWeather-V2 \'a1\'ad\'a1\'ad\
+2. \'d6\'d8\'b8\'b4\'b3\'f6\'cf\'d6\'b5\'c4\'c2\'df\'bc\'ad\'a3\'ac\'b8\'f815~20\'ca\'b1\'bc\'e4\'d7\'d4\'bc\'ba\'d7\'f6(\'be\'a1\'c1\'bf\'cb\'bc\'bf\'bc)\'a3\'ac\'d6\'ae\'ba\'f3\'bd\'b2(a little)\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

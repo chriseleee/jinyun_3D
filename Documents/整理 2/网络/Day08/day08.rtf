@@ -1,0 +1,147 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica-Light;\f2\fnil\fcharset134 STSongti-SC-Regular;
+\f3\froman\fcharset0 Times-Roman;\f4\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red100\green14\blue47;\red134\green19\blue62;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18580\viewh9940\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 Day08\
+\'bb\'d8\'b9\'cb\'a3\'ba\
+NSOperation\'a3\'ba\
+1. \'d6\'b8\'b6\'a8\'cd\'ac\'d2\'bb\'ca\'b1\'bc\'e4\'d7\'ee\'b4\'f3\'d6\'b4\'d0\'d0\'b5\'c4\'b2\'d9\'d7\'f7\'ca\'fd\
+queue.max\'a1\'ad\'a1\'ad \
+2. \'c9\'e8\'b6\'a8\'b6\'d3\'c1\'d0\'d6\'d0\'b5\'c4\'c8\'ce\'ce\'f1\'ca\'b1\'bc\'e4\'b5\'c4\'d2\'c0\'c0\'b5\'b9\'d8\'cf\'b5\
+task1 \'d2\'c0\'c0\'b5\'d3\'da task2\'a3\'ba task2 \'a1\'aa> task1\
+3. \'bb\'d8\'b5\'bd\'d6\'f7\'cf\'df\'b3\'cc(\'d5\'d2\'b5\'bd\'c8\'e7\'ba\'ce\'bb\'f1\'c8\'a1\'d6\'f7\'b6\'d3\'c1\'d0\'b5\'c4\'b7\'bd\'ca\'bd)[NSOperation mainQueue]: \
+\
+keyword: iOS main queue\
+\
+Google: \
+\
+Socket: \'cd\'f8\'c2\'e7\'d6\'d0\'b5\'c4\'c1\'bd\'b8\'f6\'b3\'cc\'d0\'f2\'cd\'a8\'b9\'fd\'cb\'ab\'cf\'f2\'b5\'c4\'cd\'a8\'d1\'b6\'a3\'ac\'b4\'ef\'b5\'bd\'bd\'bb\'bb\'bb\'ca\'fd\'be\'dd\'b5\'c4\'c4\'bf\'b5\'c4\'a1\'a3\
+\
+\'b7\'a2\'cb\'cd(\'bf\'cd\'bb\'a7\'b6\'cb)\'a3\'ba\'d6\'d5\'b6\'cb\'bf\'d8\'d6\'c6\'cc\'a8\
+\'bd\'d3\'ca\'d5(\'b7\'fe\'ce\'f1\'c6\'f7\'b6\'cb):  \'d6\'d5\'b6\'cb\'bf\'d8\'d6\'c6\'cc\'a8(sever.py)\
+\
+\'d7\'ca\'d4\'b4\'a3\'ba\'cd\'f8\'d2\'b3(www.sina.com.cn)/\'cd\'bc\'c6\'ac/\'c8\'ed\'bc\'fe/.......\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf2 1. \'b7\'fe\'ce\'f1\'c6\'f7\'bc\'e0\'cc\'fd\'d7\'b4\'cc\'ac standby (\'bf\'aa\'bb\'fa+\'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2\'c6\'f4\'b6\'af)\cf0 \
+\cf2 2. \'bf\'cd\'bb\'a7\'b6\'cb\'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3Request\'b8\'f8\'b7\'fe\'ce\'f1\'c6\'f7\'b6\'cb\
+3. \'c1\'ac\'bd\'d3\'c8\'b7\'c8\'cf, \'bf\'cd\'bb\'a7\'b6\'cb\'bd\'d3\'ca\'d5\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'b5\'c4\'ca\'fd\'be\'dd\
+\
+\cf0 \'bc\'cc\'d0\'f8\'d7\'f2\'cc\'ec\'b5\'c4Demo \'a1\'beDemo01-Socket\'a1\'bf\
+\'bf\'cd\'bb\'a7\'b6\'cb\'a3\'baiOS\'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2\
+\'b7\'fe\'ce\'f1\'c6\'f7\'b6\'cb\'a3\'ba\'c6\'f4\'b6\'afserver.py\
+\
+NSInputStream:       \'b6\'c1\'c8\'a1\'ca\'fd\'be\'dd\
+NSOutputStream\'a3\'ba\'d0\'b4\'ca\'fd\'be\'dd\
+\
+\
+\'b7\'a2\'cb\'cd\'cf\'fb\'cf\'a2:\
+\'b9\'a6\'c4\'dc\'a3\'ba\
+\'b4\'e6\'b7\'c5\'bd\'d3\'ca\'d5\'cf\'fb\'cf\'a2 \'a1\'aa> NSArray \'a1\'aa> UITableView\
+\
+\'d7\'bc\'b1\'b8\'b9\'a4\'d7\'f7\'a3\'ba\
+UITableView\'d7\'bc\'b1\'b8(datasource\'a3\'ac delegate)\
+\'c1\'bd\'b8\'f6stream\'b5\'c4delegate (NSStreamDelegate)\
+\
+\
+\'d7\'f7\'d2\'b5\'a3\'ba\
+1. \'b5\'e3\'d6\'d0UITextFiled\'a3\'ac\'bc\'fc\'c5\'cc\'b5\'af\'b3\'f6\'a3\'actable view\'ba\'cd\'c6\'e4\'cb\'fb\'bf\'d8\'bc\'fe\'c9\'cf\'d2\'c6\
+2. \'c8\'c3table view\'d7\'ee\'ba\'f3\'d2\'bb\'d0\'d0\'a3\'ac\'ca\'bc\'d6\'d5\'cf\'d4\'ca\'be\'d3\'c3\'bb\'a7\'b7\'a2\'cb\'cd\'b5\'c4\'d7\'ee\'d0\'c2\'b5\'c4\'cf\'fb\'cf\'a2\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\'b9\'d9\'b7\'bdsocket\'ca\'b5\'c0\'fd\'b4\'fa\'c2\'eb\'c1\'b4\'bd\'d3\'a3\'ba\
+{\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Conceptual/Streams/Articles/NetworkStreams.html#//apple_ref/doc/uid/20002277-BCIDFCDI"}}{\fldrslt https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Conceptual/Streams/Articles/NetworkStreams.html#//apple_ref/doc/uid/20002277-BCIDFCDI}}\
+\
+\
+URL: 
+\f1 \expnd0\expndtw0\kerning0
+(Uniform Resource Locator) 
+\f2 \expnd0\expndtw0\kerning0
+\'cd\'b3\uc0\u12032 \'d7\'ca\'d4\'b4\'b6\'a8\'ce\'bb\'b7\'fb
+\f3\fs96  
+\fs24 \expnd0\expndtw0\kerning0
+\
+
+\f0\fs72 \kerning1\expnd0\expndtw0 \'d7\'ee\'cd\'ea\'d5\'fb\'b8\'f1\'ca\'bd\'a3\'ba\
+\'d0\'ad\'d2\'e9://IP\'b5\'d8\'d6\'b7:\'b6\'cb\'bf\'da/\'c2\'b7\'be\'b6/\'ce\'c4\'bc\'fe\'c3\'fb\'d7\'d6\
+\'d2\'bb\'b0\'e3\'b8\'f1\'ca\'bd\'a3\'ba\
+IP\'b5\'d8\'d6\'b7(\'d3\'f2\'c3\'fb)/\'c2\'b7\'be\'b6/\'ce\'c4\'bc\'fe\'c3\'fb\'d7\'d6\
+\
+\'d0\'ad\'d2\'e9\'b5\'c4\'cd\'a8\'cb\'d7\'cb\'b5\'b7\'a8\'a3\'ba\'b7\'a2\'cb\'cd\'ca\'fd\'be\'dd\'b7\'bd\'ba\'cd\'bd\'d3\'ca\'d5\'ca\'fd\'be\'dd\'b7\'bd\'b9\'e6\'b6\'a8\'b5\'c4\'b4\'ab\'cb\'cd\'ca\'fd\'be\'dd\'b5\'c4\'b9\'e6\'d4\'f2\
+\
+File\'d0\'ad\'d2\'e9\'a3\'ba\'b4\'d3\'b1\'be\'b5\'d8\'b2\'e9\'d5\'d2\'cf\'e0\'d3\'a6\'b5\'c4\'ce\'c4\'bc\'fe\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f4 \cf0 \CocoaLigature0 URL \'97>\
+file:///Users/tarena/Downloads/testImages
+\f0 /aa.jpg\CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+HTTP\'d0\'ad\'d2\'e9\'c4\'da\'b2\'bf\'ca\'fd\'be\'dd\
+\
+\'d0\'a1\'c0\'fd\'d7\'d3\'a3\'ba\
+\'b0\'d1\'b1\'be\'b5\'d8mac\'bb\'fa\'c6\'f7\'b8\'c4\'d7\'b0\'b3\'c9\'cc\'e1\'b9\'a9web\'b7\'fe\'ce\'f1(Apache\'c8\'ed\'bc\'fe)\'b5\'c4\'b7\'fe\'ce\'f1\'c6\'f7\'b2\'bd\'d6\'e8\'a3\'ba\
+1. \'b2\'e9\'bf\'b4Apache\'c8\'ed\'bc\'fe\'ca\'c7\'b7\'f1\'b0\'b2\'d7\'b0\
+sudo apachectl -v\
+\'ca\'e4\'c8\'ebmac\'cf\'b5\'cd\'b3\'b5\'c4\'c3\'dc\'c2\'eb\
+2. \'c6\'f4\'b6\'afapache\'c8\'ed\'bc\'fe\
+sudo apachectl start\
+3. \'d4\'da\'e4\'af\'c0\'c0\'c6\'f7\'d6\'d0\'ca\'e4\'c8\'eblocalhost\'a3\'ac\'cf\'d4\'ca\'beIt works!\'be\'cd\'b1\'ed\'ca\'bemac\'bb\'fa\'c6\'f7\'b3\'c9\'ce\'aa\'c1\'cb\'bf\'c9\'d2\'d4\'cc\'e1\'b9\'a9\'cd\'f8\'d2\'b3\'b7\'fe\'ce\'f1\'b5\'c4\'bb\'fa\'c6\'f7\
+\
+http://IP\'b5\'d8\'d6\'b7:\'b6\'cb\'bf\'da/\'c2\'b7\'be\'b6/\'ce\'c4\'bc\'fe\'c3\'fb\'d7\'d6\
+\
+\
+MIME: \'bf\'cd\'bb\'a7\'b6\'cb(\'e4\'af\'c0\'c0\'c6\'f7)\'d6\'b8\'b6\'a8\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'b5\'c4\'c0\'e0\'d0\'cd(xxx.html)\
+\'ce\'c4\'b1\'be\'c0\'e0\'d0\'cd\'a3\'ba\
+text/html\'a3\'ba\'b2\'bb\'bd\'f6\'b0\'fc\'ba\'ac\'ce\'c4\'b1\'be\'a3\'ac\'d2\'b2\'b0\'fc\'ba\'ac.jpg/.gif/.....\
+text/xml\
+text/plain: \'d6\'bb\'c4\'dc\'b0\'fc\'ba\'ac\'ce\'c4\'b1\'be\
+\
+http\'d0\'ad\'d2\'e9\'b5\'c4\'b9\'e6\'d4\'f2\'a3\'ba\
+1. \'d6\'b8\'b6\'a8MIME\'c0\'e0\'d0\'cd: text/html\
+2. \'b7\'bd\'b7\'a8\'a3\'ba\
+    a. GET (\'bb\'f1\'c8\'a1\'d7\'ca\'d4\'b4\'a3\'bahtml\'ce\'c4\'bc\'fe)\
+    b. DELETE (\'c9\'be\'b3\'fd\'d7\'ca\'d4\'b4\'a3\'ba\'cd\'bc\'c6\'ac)\
+    c. POST: \'b5\'c7\'c2\'bc(\'d3\'c3\'bb\'a7\'c3\'fb/\'c3\'dc\'c2\'eb)\
+    d. PUT: \'c9\'cf\'b4\'ab\'ce\'c4\'bc\'fe/\'c9\'cf\'b4\'ab\'d0\'c5\'cf\'a2\
+3. status code: \'b7\'fe\'ce\'f1\'b7\'b5\'bb\'d8\'b5\'c4\'d7\'b4\'cc\'ac\'c2\'eb\
+     a. \'b3\'c9\'b9\'a6\'a3\'ba200/OK \
+     c. \'ca\'a7\'b0\'dc\'a3\'ba\
+     404 -> \'ce\'b4\'d5\'d2\'b5\'bd\'d7\'ca\'d4\'b4(html\'ce\'c4\'bc\'fe)\
+     400 -> \'bf\'cd\'bb\'a7\'b6\'cb\'b5\'c4\'c7\'eb\'c7\'f3\'a3\'ac\'b7\'fe\'ce\'f1\'c6\'f7\'b6\'cb\'ce\'de\'b7\'a8\'bd\'e2\'ce\'f6\
+     501 -> \'b7\'fe\'ce\'f1\'c6\'f7\'b4\'ed\'ce\'f3\
+4.\'cf\'ec\'d3\'a6Response (\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8):\
+content-length: \'d7\'dc\'b3\'a4\'b6\'c8\'b6\'e0\'c9\'d9\
+content-range (****): \'c4\'ac\'c8\'cf\'b7\'fe\'ce\'f1\'c6\'f7\'bb\'e1\'b7\'b5\'bb\'d8\'bf\'cd\'bb\'a7\'b6\'cb\'c7\'eb\'c7\'f3\'b5\'c4\'d7\'ca\'d4\'b4\'b5\'c4\'d7\'dc\'ca\'fd\'be\'dd\
+\
+\
+\
+iOS\'d6\'d0\'b7\'a2\'cb\'cd\'cd\'f8\'c2\'e7\'c7\'eb\'c7\'f3\'b5\'c4\'b7\'bd\'b0\'b8\'a3\'ba\
+\'b7\'bd\'b0\'b8\'d2\'bb\'a3\'ba\
+NSURLConnection (\'cf\'e0\'b6\'d4\'c2\'e9\'b7\'b3/\'b8\'fc\'bc\'d3\cf2 \'c0\'ed\'bd\'e2\cf0 http\cf3 \'d4\'ad\'c0\'ed\cf0 ):\
+\
+\'b7\'bd\'b0\'b8\'b6\'fe\
+NSURLSession (\'bc\'f2\'b5\'a5/\'b7\'e2\'d7\'b0\'d0\'d4\'b8\'df):\
+\
+\
+\'d1\'f9\'c0\'fd\'a3\'ba\'bd\'e7\'c3\'e6\'c9\'cf\'ca\'e4\'c8\'eb\'c8\'ce\'d2\'e2\'d2\'bb\'b8\'f6\'cd\'f8\'d6\'b7(URL), \'bd\'ab\'b7\'b5\'bb\'d8\'b5\'c4\'cd\'f8\'d2\'b3\'cf\'d4\'ca\'be\'b5\'bd\'bd\'e7\'c3\'e6\'c9\'cf(xxx.html) \'a3\'a8NSURLConnection\'a3\'a9\
+\'a1\'beDemo02-Network\'a1\'bf\
+UI\'bd\'e7\'c3\'e6\'a3\'baUITextField; UIButton; UIWebView(\'c4\'da\'c7\'b6\'e4\'af\'c0\'c0\'c6\'f7)\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

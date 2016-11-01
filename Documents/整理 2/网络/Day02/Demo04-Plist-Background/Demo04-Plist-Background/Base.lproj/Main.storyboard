@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPx-Bw-NSU">
+                                <rect key="frame" x="16" y="52" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年龄" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04C-uH-rop">
+                                <rect key="frame" x="16" y="156" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcN-bf-jUQ">
+                                <rect key="frame" x="16" y="95" width="288" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-Zw-wTy">
+                                <rect key="frame" x="16" y="191" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DPx-Bw-NSU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="52" id="2cz-Wi-oCk"/>
+                            <constraint firstItem="bcN-bf-jUQ" firstAttribute="top" secondItem="DPx-Bw-NSU" secondAttribute="bottom" constant="22" id="4c6-1O-exw"/>
+                            <constraint firstAttribute="trailing" secondItem="04C-uH-rop" secondAttribute="trailing" constant="16" id="5N5-2n-pzj"/>
+                            <constraint firstAttribute="trailing" secondItem="bcN-bf-jUQ" secondAttribute="trailing" constant="16" id="9gI-pC-x5w"/>
+                            <constraint firstItem="bcN-bf-jUQ" firstAttribute="top" secondItem="DPx-Bw-NSU" secondAttribute="bottom" constant="22" id="BTQ-FW-TMG"/>
+                            <constraint firstItem="04C-uH-rop" firstAttribute="top" secondItem="bcN-bf-jUQ" secondAttribute="bottom" constant="24" id="ERN-VJ-VIX"/>
+                            <constraint firstAttribute="trailing" secondItem="jFt-Zw-wTy" secondAttribute="trailing" constant="16" id="Q4g-6y-Khw"/>
+                            <constraint firstItem="jFt-Zw-wTy" firstAttribute="top" secondItem="04C-uH-rop" secondAttribute="bottom" constant="14" id="QRC-ju-xkp"/>
+                            <constraint firstItem="DPx-Bw-NSU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Rt9-8V-xeE"/>
+                            <constraint firstItem="04C-uH-rop" firstAttribute="top" secondItem="bcN-bf-jUQ" secondAttribute="bottom" constant="24" id="SB6-Aa-Lbe"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jFt-Zw-wTy" secondAttribute="bottom" constant="347" id="Tgo-GU-Cqr"/>
+                            <constraint firstAttribute="trailing" secondItem="DPx-Bw-NSU" secondAttribute="trailing" constant="16" id="V44-cF-aU6"/>
+                            <constraint firstItem="jFt-Zw-wTy" firstAttribute="top" secondItem="04C-uH-rop" secondAttribute="bottom" constant="14" id="VG9-g1-dXx"/>
+                            <constraint firstItem="04C-uH-rop" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="aNM-Js-D8t"/>
+                            <constraint firstItem="bcN-bf-jUQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="ebK-g5-WOE"/>
+                            <constraint firstItem="jFt-Zw-wTy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="uVU-3c-wc6"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="jFt-Zw-wTy" id="QdH-CR-rl9"/>
+                        <outlet property="nameTextField" destination="bcN-bf-jUQ" id="OiZ-K2-H9k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="283"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

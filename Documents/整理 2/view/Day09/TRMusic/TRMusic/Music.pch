@@ -1,0 +1,18 @@
+//
+//  Music.pch
+//  TRMusic
+//
+//  Created by tarena on 15/8/31.
+//  Copyright (c) 2015年 tarena. All rights reserved.
+//
+
+#ifndef TRMusic_Music_pch
+#define TRMusic_Music_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//下方文件会自动的被引入到所有的.h文件中
+#import "UIViewController+Category.h"
+#endif
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRCategoryViewController">
+            <connections>
+                <outlet property="mainTableView" destination="x3M-Qc-Qub" id="nzh-TE-Q03"/>
+                <outlet property="secondTableView" destination="d3v-eG-XZD" id="LVY-xF-c9o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="x3M-Qc-Qub" userLabel="主TableView">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="560"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="F9Y-7M-V6Z"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JHl-Iu-Tep"/>
+                        <outlet property="delegate" destination="-1" id="ex4-1h-NEM"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="d3v-eG-XZD" userLabel="次TableView">
+                    <rect key="frame" x="160" y="0.0" width="160" height="560"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="ccL-FQ-aAq"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CGg-Mg-QXk"/>
+                        <outlet property="delegate" destination="-1" id="HTE-dg-1hk"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="d3v-eG-XZD" secondAttribute="bottom" id="8Oo-1n-6sa"/>
+                <constraint firstAttribute="trailing" secondItem="d3v-eG-XZD" secondAttribute="trailing" id="DEC-cl-lga"/>
+                <constraint firstItem="x3M-Qc-Qub" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F6M-zb-zgb"/>
+                <constraint firstItem="d3v-eG-XZD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KPY-Qa-6Tg"/>
+                <constraint firstAttribute="bottom" secondItem="x3M-Qc-Qub" secondAttribute="bottom" id="Zen-Zw-Z8A"/>
+                <constraint firstItem="x3M-Qc-Qub" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dhh-Mh-gQK"/>
+                <constraint firstItem="x3M-Qc-Qub" firstAttribute="width" secondItem="d3v-eG-XZD" secondAttribute="width" id="iQ2-7F-gV6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

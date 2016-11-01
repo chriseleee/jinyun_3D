@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <menuData name="userinfo" title="用户中心" icon="" tag="2000">
+        <local>
+            <menuData name="user_web" title="用户中心" icon="" tag="2010">
+                <menuData name="user_web_collect" title="最爱应用" icon="" tag="2011"/>
+                <menuData name="user_web_history" title="下载历史" icon="" tag="2012"/>
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name="application" title="游戏应用" icon="" tag="1000">
+        <local>
+            <menuData name="app_web" title="网络资源" icon="node_source" tag="1010">
+                <menuData name="app_web_jailbreak" title="越狱应用" icon="app_web_jailbreak.png" tag="1011"/>
+                <menuData name="app_web_appstore" title="正版应用" icon="app_web_appstore.png" tag="1012"/>
+                <menuData name="app_web_deb" title="越狱插件" icon="jbreakplug.png" tag="1013"/>
+            </menuData>
+            <menuData name="app_local" title="本地资源" icon="node_local" tag="1020">
+                <menuData name="app_local_iphoneprogram" title="本地应用" icon="download_local_program.png" tag="1021"/>
+                <menuData name="app_local_update" title="可升级应用" icon="app_local_update.png" tag="1022"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="app_device" title="[DEVICENAME]" icon="node_device" tag="1030">
+                <menuData name="app_device_list" title="应用列表" icon="app_device_list.png" tag="1031"/>
+                <menuData name="app_device_update" title="可升级应用" icon="app_local_update.png" tag="1032"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="photo" title="照片壁纸" icon="" tag="1100">
+        <local>
+            <menuData name="photo_web" title="网络资源" icon="" tag="1110">
+                <menuData name="photo_web_source" title="墙纸资源" icon="photo_web_resource" tag="1111"/>
+            </menuData>
+            <menuData name="photo_local" title="本地资源" icon="" tag="1120">
+                <menuData name="photo_local_library" title="墙纸库" icon="photo_local_resource.png" tag="1121"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="photo_device" title="[DEVICENAME]" icon="" tag="1130">
+                <menuData name="photo_device_photo" title="照片" icon="photo_device_photo.png" tag="1131"/>
+                <menuData name="photo_device_wallpaper" title="墙纸" icon="photo_device_wallpaper.png" tag="1132"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="music" title="音乐铃声" icon="" tag="1200">
+        <local>
+            <menuData name="music_web" title="网络资源" icon="node_source" tag="1210">
+                <menuData name="music_web_musicsource" title="音乐资源" icon="music_web_musicsource.png" tag="1211"/>
+                <menuData name="music_web_ringsource" title="铃声资源" icon="music_web_ringsource.png" tag="1212"/>
+            </menuData>
+            <menuData name="music_local" title="本地资源" icon="node_local" tag="1220">
+                <menuData name="music_local_musiclibrary" title="音乐库" icon="music_local_musiclibrary.png" tag="1221"/>
+                <menuData name="music_local_phonelibrary" title="手机铃声" icon="music_local_phonelibrary.png" tag="1222"/>
+                <menuData name="music_local_smslibrary" title="短信铃声" icon="music_local_smslibrary.png" tag="1223"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="music_device" title="[DEVICENAME]" icon="node_device" tag="1230">
+                <menuData name="music_device_music" title="音乐" icon="music_local_musiclibrary.png" tag="1231"/>
+                <menuData name="music_device_ring" title="铃声" icon="music_device_ring.png" tag="1232"/>
+                <menuData name="music_device_audio" title="有声读物" icon="music_device_audio.png" tag="1233"/>
+                <menuData name="music_device_note" title="语音备忘录" icon="music_device_note.png" tag="1234"/>
+                <menuData name="music_device_blog" title="播客" icon="music_device_blog.png" tag="1235"/>
+                <menuData name="music_device_itunes" title="iTunes U" icon="music_device_itunes.png" tag="1236"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="video" title="电影视频" icon="" tag="1300">
+        <local>
+            <menuData name="video_local" title="本地资源" icon="node_local" tag="1320">
+                <menuData name="video_local_library" title="影片库" icon="video_local_library.png" tag="1321"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="video_device" title="[DEVICENAME]" icon="node_device" tag="1330">
+                <menuData name="video_device_film" title="影片" icon="video_device_film.png" tag="1331"/>
+                <menuData name="video_device_tv" title="电视节目" icon="video_device_tv.png" tag="1332"/>
+                <menuData name="video_device_video" title="音乐视频" icon="video_device_video.png" tag="1333"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="book" title="图书" icon="" tag="1400">
+        <local>
+            <menuData name="book_local" title="本地资源" icon="node_local" tag="1420">
+                <menuData name="book_local_library" title="图书库" icon="book_local_library.png" tag="1421"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="book_device" title="[DEVICENAME]" icon="node_device" tag="1430">
+                <menuData name="book_device_list" title="图书" icon="book_device_list.png" tag="1431"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="info" title="信息" icon="" tag="1500">
+        <device>
+            <menuData name="info_device" title="[DEVICENAME]" icon="node_device" tag="1530">
+                <menuData name="info_device_contact" title="通讯录" icon="info_device_contact.png" tag="1531"/>
+                <menuData name="info_device_call" title="通话记录" icon="info_device_call.png" tag="1532"/>
+                <menuData name="info_device_sms" title="短信" icon="info_device_sms.png" tag="1533"/>
+                <menuData name="info_device_calender" title="日历" icon="info_device_calender.png" tag="1534"/>
+                <menuData name="info_device_bookmark" title="书签" icon="info_device_bookmark.png" tag="1535"/>
+                <menuData name="info_device_note" title="备忘录" icon="info_device_note.png" tag="1536"/>
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="tool" title="工具" icon="" tag="1600">       
+        <local>
+            <menuData name="tool_local" title="本地资源" icon="node_local" tag="1620">
+                <menuData name="tool_local_list" title="工具列表" icon="tool_local_library.png" tag="1621"/>
+            </menuData>
+        </local>
+        <device>
+            <menuData name="tool_device" title="[DEVICENAME]" icon="node_device" tag="1630">
+                <menuData name="tool_device_collection" title="设备工具" icon="tool_device_library.png" tag="1631"/>
+                <menuData name="tool_device_file" title="文件管理" icon="tool_device_file.png" tag="1632"/>
+               
+            </menuData>
+        </device>
+    </menuData>
+    
+    <menuData name="download" title="下载管理" icon="" tag="1700">
+        <local>
+            <menuData name="download_local" title="下载管理" icon="node_local" tag="1710">
+                <menuData name="download_local_downloading" title="正在下载" icon="download_local_downloading.png" tag="1711"/>
+            </menuData>
+            <menuData name="download_local" title="已下载资源" icon="node_local" tag="1720">
+                <menuData name="download_local_program" title="应用" icon="download_local_program.png" tag="1721"/>
+                <menuData name="download_local_photo" title="图片" icon="download_local_photo.png" tag="1722"/>
+                <menuData name="download_local_music" title="音乐" icon="download_local_music.png" tag="1723"/>
+                <menuData name="download_local_ring" title="铃声" icon="download_local_ring.png" tag="1724"/>
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name="file_break" title="文件管理" icon="" tag="2600">
+        <local>
+            <menuData name="file_os" title="文件系统" icon="" tag="2610">
+                <menuData name="file_os_user" title="文件系统(用户)" icon="file_os_user.png" tag="2611"/>
+                <menuData name="file_os_jailbreak" title="文件系统(系统)" icon="file_os_jailbreak.png" tag="2612"/>
+            </menuData>
+            <menuData name="file_common" title="常用目录" icon="" tag="2620">
+                <menuData name="file_common_user" title="程序(用户)" icon="file_common_user.png" tag="2621"/>
+                <menuData name="file_common_sys" title="程序(系统)" icon="file_common_sys.png" tag="2622"/>
+                <menuData name="file_common_pp" title="PP助手目录" icon="file_common_pp.png" tag="2623"/>
+                <menuData name="file_common_pp2" title="PP助手2目录" icon="file_common_pp.png" tag="2633"/>
+                <menuData name="file_common_vrecord" title="语音备忘录" icon="file_common_vrecord.png" tag="2624"/>
+                <menuData name="file_common_mdisk" title="移动硬盘" icon="file_common_mdisk.png" tag="2625"/>
+                <menuData name="file_common_wpaper" title="墙纸" icon="file_common_wpaper.png" tag="2626"/>
+                <menuData name="file_common_cring" title="来电铃声" icon="file_common_cring.png" tag="2627"/>
+                <menuData name="file_common_mring" title="短信铃声" icon="file_common_mring.png" tag="2628"/>
+                <menuData name="file_common_cydia" title="cydia安装目录" icon="file_common_cydia.png" tag="2629"/>
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name="file_apple" title="文件管理" icon="" tag="2600">
+        <local>
+            <menuData name="file_os" title="文件系统" icon="" tag="2610">
+                <menuData name="file_os_user" title="文件系统(用户)" icon="file_os_user.png" tag="2611"/>
+            </menuData>
+            <menuData name="file_common" title="常用目录" icon="" tag="2620">
+                <menuData name="file_common_vrecord" title="语音备忘录" icon="file_common_vrecord.png" tag="2624"/>
+                <menuData name="file_common_mdisk" title="移动硬盘" icon="file_common_mdisk.png" tag="2625"/>                
+            </menuData>
+        </local>
+    </menuData>
+    
+    <menuData name="dev_rings" title="铃声替换" icon="" tag="3000">
+        <local>
+            <menuData name="system_rings" title="系统铃声" icon="" tag="3010">
+                <menuData name="system_ring_phone" title="来电铃声" icon="music_local_phonelibrary.png" tag="3011"/>
+                <menuData name="system_ring_sms" title="短信铃声" icon="music_local_smslibrary.png" tag="3012"/>
+            </menuData>
+            <menuData name="ui_rings" title="UI声音" icon="" tag="3020">
+                <menuData name="ui_ring_phone" title="电话UI声音" icon="music_device_audio.png" tag="3021"/>
+                <menuData name="ui_ring_system" title="系统UI声音" icon="music_device_ring.png" tag="3022"/>
+            </menuData>
+        </local>
+    </menuData>
+    
+</root>

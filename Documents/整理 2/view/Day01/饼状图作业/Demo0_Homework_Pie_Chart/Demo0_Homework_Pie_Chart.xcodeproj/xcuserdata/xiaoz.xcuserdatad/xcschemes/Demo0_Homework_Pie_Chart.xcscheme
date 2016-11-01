@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0610"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "802644D41A556D900033552E"
+               BuildableName = "Demo0_Homework_Pie_Chart.app"
+               BlueprintName = "Demo0_Homework_Pie_Chart"
+               ReferencedContainer = "container:Demo0_Homework_Pie_Chart.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "802644ED1A556D910033552E"
+               BuildableName = "Demo0_Homework_Pie_ChartTests.xctest"
+               BlueprintName = "Demo0_Homework_Pie_ChartTests"
+               ReferencedContainer = "container:Demo0_Homework_Pie_Chart.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "802644ED1A556D910033552E"
+               BuildableName = "Demo0_Homework_Pie_ChartTests.xctest"
+               BlueprintName = "Demo0_Homework_Pie_ChartTests"
+               ReferencedContainer = "container:Demo0_Homework_Pie_Chart.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "802644D41A556D900033552E"
+            BuildableName = "Demo0_Homework_Pie_Chart.app"
+            BlueprintName = "Demo0_Homework_Pie_Chart"
+            ReferencedContainer = "container:Demo0_Homework_Pie_Chart.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "802644D41A556D900033552E"
+            BuildableName = "Demo0_Homework_Pie_Chart.app"
+            BlueprintName = "Demo0_Homework_Pie_Chart"
+            ReferencedContainer = "container:Demo0_Homework_Pie_Chart.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "802644D41A556D900033552E"
+            BuildableName = "Demo0_Homework_Pie_Chart.app"
+            BlueprintName = "Demo0_Homework_Pie_Chart"
+            ReferencedContainer = "container:Demo0_Homework_Pie_Chart.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

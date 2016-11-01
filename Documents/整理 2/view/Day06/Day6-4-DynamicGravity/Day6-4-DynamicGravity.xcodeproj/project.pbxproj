@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		851616F11B8DAA5E0012E1D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 851616F01B8DAA5E0012E1D5 /* main.m */; };
+		851616F41B8DAA5E0012E1D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 851616F31B8DAA5E0012E1D5 /* AppDelegate.m */; };
+		851616F71B8DAA5E0012E1D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851616F61B8DAA5E0012E1D5 /* ViewController.m */; };
+		851616FA1B8DAA5E0012E1D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851616F81B8DAA5E0012E1D5 /* Main.storyboard */; };
+		851616FC1B8DAA5E0012E1D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851616FB1B8DAA5E0012E1D5 /* Images.xcassets */; };
+		851616FF1B8DAA5E0012E1D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 851616FD1B8DAA5E0012E1D5 /* LaunchScreen.xib */; };
+		8516170B1B8DAA5E0012E1D5 /* Day6_4_DynamicGravityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8516170A1B8DAA5E0012E1D5 /* Day6_4_DynamicGravityTests.m */; };
+		851617161B8DB6F10012E1D5 /* BackGroudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 851617151B8DB6F10012E1D5 /* BackGroudView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		851617051B8DAA5E0012E1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851616E31B8DAA5E0012E1D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851616EA1B8DAA5E0012E1D5;
+			remoteInfo = "Day6-4-DynamicGravity";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		851616EB1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day6-4-DynamicGravity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		851616EF1B8DAA5E0012E1D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851616F01B8DAA5E0012E1D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		851616F21B8DAA5E0012E1D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		851616F31B8DAA5E0012E1D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		851616F51B8DAA5E0012E1D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		851616F61B8DAA5E0012E1D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		851616F91B8DAA5E0012E1D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		851616FB1B8DAA5E0012E1D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		851616FE1B8DAA5E0012E1D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		851617041B8DAA5E0012E1D5 /* Day6-4-DynamicGravityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day6-4-DynamicGravityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		851617091B8DAA5E0012E1D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8516170A1B8DAA5E0012E1D5 /* Day6_4_DynamicGravityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day6_4_DynamicGravityTests.m; sourceTree = "<group>"; };
+		851617141B8DB6F10012E1D5 /* BackGroudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackGroudView.h; sourceTree = "<group>"; };
+		851617151B8DB6F10012E1D5 /* BackGroudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackGroudView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		851616E81B8DAA5E0012E1D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851617011B8DAA5E0012E1D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		851616E21B8DAA5E0012E1D5 = {
+			isa = PBXGroup;
+			children = (
+				851616ED1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity */,
+				851617071B8DAA5E0012E1D5 /* Day6-4-DynamicGravityTests */,
+				851616EC1B8DAA5E0012E1D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		851616EC1B8DAA5E0012E1D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				851616EB1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity.app */,
+				851617041B8DAA5E0012E1D5 /* Day6-4-DynamicGravityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		851616ED1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity */ = {
+			isa = PBXGroup;
+			children = (
+				851616F21B8DAA5E0012E1D5 /* AppDelegate.h */,
+				851616F31B8DAA5E0012E1D5 /* AppDelegate.m */,
+				851616F51B8DAA5E0012E1D5 /* ViewController.h */,
+				851616F61B8DAA5E0012E1D5 /* ViewController.m */,
+				851617141B8DB6F10012E1D5 /* BackGroudView.h */,
+				851617151B8DB6F10012E1D5 /* BackGroudView.m */,
+				851616F81B8DAA5E0012E1D5 /* Main.storyboard */,
+				851616FB1B8DAA5E0012E1D5 /* Images.xcassets */,
+				851616FD1B8DAA5E0012E1D5 /* LaunchScreen.xib */,
+				851616EE1B8DAA5E0012E1D5 /* Supporting Files */,
+			);
+			path = "Day6-4-DynamicGravity";
+			sourceTree = "<group>";
+		};
+		851616EE1B8DAA5E0012E1D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				851616EF1B8DAA5E0012E1D5 /* Info.plist */,
+				851616F01B8DAA5E0012E1D5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		851617071B8DAA5E0012E1D5 /* Day6-4-DynamicGravityTests */ = {
+			isa = PBXGroup;
+			children = (
+				8516170A1B8DAA5E0012E1D5 /* Day6_4_DynamicGravityTests.m */,
+				851617081B8DAA5E0012E1D5 /* Supporting Files */,
+			);
+			path = "Day6-4-DynamicGravityTests";
+			sourceTree = "<group>";
+		};
+		851617081B8DAA5E0012E1D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				851617091B8DAA5E0012E1D5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		851616EA1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8516170E1B8DAA5E0012E1D5 /* Build configuration list for PBXNativeTarget "Day6-4-DynamicGravity" */;
+			buildPhases = (
+				851616E71B8DAA5E0012E1D5 /* Sources */,
+				851616E81B8DAA5E0012E1D5 /* Frameworks */,
+				851616E91B8DAA5E0012E1D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day6-4-DynamicGravity";
+			productName = "Day6-4-DynamicGravity";
+			productReference = 851616EB1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		851617031B8DAA5E0012E1D5 /* Day6-4-DynamicGravityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851617111B8DAA5E0012E1D5 /* Build configuration list for PBXNativeTarget "Day6-4-DynamicGravityTests" */;
+			buildPhases = (
+				851617001B8DAA5E0012E1D5 /* Sources */,
+				851617011B8DAA5E0012E1D5 /* Frameworks */,
+				851617021B8DAA5E0012E1D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851617061B8DAA5E0012E1D5 /* PBXTargetDependency */,
+			);
+			name = "Day6-4-DynamicGravityTests";
+			productName = "Day6-4-DynamicGravityTests";
+			productReference = 851617041B8DAA5E0012E1D5 /* Day6-4-DynamicGravityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		851616E31B8DAA5E0012E1D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					851616EA1B8DAA5E0012E1D5 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					851617031B8DAA5E0012E1D5 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 851616EA1B8DAA5E0012E1D5;
+					};
+				};
+			};
+			buildConfigurationList = 851616E61B8DAA5E0012E1D5 /* Build configuration list for PBXProject "Day6-4-DynamicGravity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 851616E21B8DAA5E0012E1D5;
+			productRefGroup = 851616EC1B8DAA5E0012E1D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				851616EA1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity */,
+				851617031B8DAA5E0012E1D5 /* Day6-4-DynamicGravityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		851616E91B8DAA5E0012E1D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851616FA1B8DAA5E0012E1D5 /* Main.storyboard in Resources */,
+				851616FF1B8DAA5E0012E1D5 /* LaunchScreen.xib in Resources */,
+				851616FC1B8DAA5E0012E1D5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851617021B8DAA5E0012E1D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		851616E71B8DAA5E0012E1D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851616F71B8DAA5E0012E1D5 /* ViewController.m in Sources */,
+				851616F41B8DAA5E0012E1D5 /* AppDelegate.m in Sources */,
+				851616F11B8DAA5E0012E1D5 /* main.m in Sources */,
+				851617161B8DB6F10012E1D5 /* BackGroudView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851617001B8DAA5E0012E1D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8516170B1B8DAA5E0012E1D5 /* Day6_4_DynamicGravityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		851617061B8DAA5E0012E1D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851616EA1B8DAA5E0012E1D5 /* Day6-4-DynamicGravity */;
+			targetProxy = 851617051B8DAA5E0012E1D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		851616F81B8DAA5E0012E1D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				851616F91B8DAA5E0012E1D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		851616FD1B8DAA5E0012E1D5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				851616FE1B8DAA5E0012E1D5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8516170C1B8DAA5E0012E1D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8516170D1B8DAA5E0012E1D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8516170F1B8DAA5E0012E1D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day6-4-DynamicGravity/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		851617101B8DAA5E0012E1D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day6-4-DynamicGravity/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		851617121B8DAA5E0012E1D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day6-4-DynamicGravityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day6-4-DynamicGravity.app/Day6-4-DynamicGravity";
+			};
+			name = Debug;
+		};
+		851617131B8DAA5E0012E1D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Day6-4-DynamicGravityTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day6-4-DynamicGravity.app/Day6-4-DynamicGravity";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		851616E61B8DAA5E0012E1D5 /* Build configuration list for PBXProject "Day6-4-DynamicGravity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8516170C1B8DAA5E0012E1D5 /* Debug */,
+				8516170D1B8DAA5E0012E1D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8516170E1B8DAA5E0012E1D5 /* Build configuration list for PBXNativeTarget "Day6-4-DynamicGravity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8516170F1B8DAA5E0012E1D5 /* Debug */,
+				851617101B8DAA5E0012E1D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		851617111B8DAA5E0012E1D5 /* Build configuration list for PBXNativeTarget "Day6-4-DynamicGravityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851617121B8DAA5E0012E1D5 /* Debug */,
+				851617131B8DAA5E0012E1D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 851616E31B8DAA5E0012E1D5 /* Project object */;
+}

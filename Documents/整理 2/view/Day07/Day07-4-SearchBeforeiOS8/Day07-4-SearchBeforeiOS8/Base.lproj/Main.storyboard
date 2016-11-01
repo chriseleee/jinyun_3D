@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1Lf-5v-E9E">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="w6q-Vh-WzE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="请输入搜索内容" showsScopeBar="YES" id="d7M-Ik-Ja5">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="88"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <scopeButtonTitles>
+                                        <string>设备</string>
+                                        <string>软件</string>
+                                        <string>其他</string>
+                                    </scopeButtonTitles>
+                                    <connections>
+                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="Bbd-Ir-VVl"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell0" textLabel="gAN-l3-Sgf" style="IBUITableViewCellStyleDefault" id="ssQ-AN-k0t">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ssQ-AN-k0t" id="JUY-KS-Unp">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gAN-l3-Sgf">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="fWn-QK-n0z"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="duO-5z-8y3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w6q-Vh-WzE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MTP-Uy-3X2"/>
+                            <constraint firstItem="w6q-Vh-WzE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="eKZ-n5-V3E"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="w6q-Vh-WzE" secondAttribute="bottom" id="kaL-Pr-cFD"/>
+                            <constraint firstAttribute="trailing" secondItem="w6q-Vh-WzE" secondAttribute="trailing" id="sdm-Ii-aMA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SZ0-I5-oJG"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="86D-EW-f9g" id="L3U-kf-YDN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="86D-EW-f9g">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="6yc-64-I2g"/>
+                        <outlet property="searchBar" destination="d7M-Ik-Ja5" id="8ju-fF-or0"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="B3F-lx-xy1"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="K5P-6X-vRG"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="Cwn-3K-LlR"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="560" y="211"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iPu-rg-ak6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Lf-5v-E9E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mEA-eM-Rbd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="6ri-cv-40E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sy0-1D-TPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="211"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

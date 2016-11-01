@@ -1,0 +1,277 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red170\green13\blue145;\red63\green110\blue116;\red92\green38\blue153;
+\red46\green13\blue110;\red100\green56\blue32;\red196\green26\blue22;\red0\green116\blue0;\red38\green71\blue75;
+\red28\green0\blue207;\red134\green19\blue62;\red100\green14\blue47;\red41\green0\blue130;\red110\green5\blue0;
+\red164\green8\blue0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19120\viewh20180\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs36 \cf0 Day20\
+Bugs: TRMapViewController.m\
+1. \'b4\'f3\'cd\'b7\'d5\'eb\'d6\'d8\'b8\'b4\'cc\'ed\'bc\'d3\
+a.\'d4\'daTRMapViewController.m\'d6\'d0\'cc\'ed\'bc\'d3\'b4\'f3\'cd\'b7\'d5\'eb\'b5\'c4\'c2\'df\'bc\'ad\'c7\'b0\'c3\'e6\'cc\'ed\'bc\'d3\'c8\'e7\'cf\'c2\'c2\'df\'bc\'ad\'a3\'bb
+\f1 \CocoaLigature0            \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf2 if\cf0  ([\cf2 self\cf0 .\cf3 mapView\cf0 .\cf4 annotations\cf0  \cf5 containsObject\cf0 :annotation]) \{ \cf2 break\cf0 ;\}
+\f0 \CocoaLigature1 \
+b. \'d4\'da\'d7\'d4\'b6\'a8\'d2\'e5\'b4\'f3\'cd\'b7\'d5\'eb\'c0\'e0TRAnnotation.m\'d6\'d0\'d6\'d8\'d0\'b4isEqual\'b7\'bd\'b7\'a8(\'ca\'d6\'b6\'af\'c9\'e8\'b6\'a8\'c1\'bd\'b8\'f6\'b4\'f3\'cd\'b7\'d5\'eb\'cf\'e0\'b5\'c8\'b5\'c4\'b9\'e6\'d4\'f2)
+\f1 \CocoaLigature0 ; 
+\f0 \'c8\'e7\'b9\'fb\'c1\'bd\'b8\'f6\'b4\'f3\'cd\'b7\'d5\'eb\'b5\'c4title\'d2\'bb\'d1\'f9\'a3\'ac\'c8\'cf\'ce\'aa\'c1\'bd\'b8\'f6\'b4\'f3\'cd\'b7\'d5\'eb\'ca\'c7\'cd\'ac\'d2\'bb\'b8\'f6\'b6\'d4\'cf\'f3\CocoaLigature1 \
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1 \cf0 \CocoaLigature0 - (\cf2 BOOL\cf0 )isEqual:(\cf3 TRAnnotation\cf0  *)object \{\
+    \cf2 return\cf0  [\cf2 self\cf0 .\cf3 title\cf0  \cf5 isEqual\cf0 :object.\cf3 title\cf0 ];\
+\}
+\f0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+2. \'d7\'d4\'b6\'a8\'d2\'e5\'b4\'f3\'cd\'b7\'d5\'eb(MKAnnotationView; \'d6\'d8\'d3\'c3\'bb\'fa\'d6\'c6)\
+a.\'d4\'da\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b4\'f3\'cd\'b7\'d5\'eb\'c0\'e0TRAnnotation.h\'d6\'d0\'cc\'ed\'bc\'d3UIImage\'ca\'f4\'d0\'d4\
+b.\'d4\'daTRMapViewController.m\'d6\'d0\'ca\'b5\'cf\'d6
+\f1 \CocoaLigature0 viewForAnnotation
+\f0 \'b7\'bd\'b7\'a8\
+c. \'d4\'da
+\f1 didFinishLoadingWithResult
+\f0 \'b7\'bd\'b7\'a8\'d6\'d0\'cc\'ed\'bc\'d3\'b4\'f3\'cd\'b7\'d5\'eb\'cd\'bc\'c6\'ac\'b5\'c4\'c9\'e8\'d6\'c3\'c2\'df\'bc\'ad\CocoaLigature1 \
+\
+www.code4app.com\
+www.github.com\
+keyword: button refresh\
+\
+UIRefreshControl(\'d6\'bb\'d6\'a7\'b3\'d6\'cf\'c2\'c0\'ad\'cb\'a2\'d0\'c2)\
+\'c9\'cf\'c0\'ad\'bc\'d3\'d4\'d8: \'b5\'da\'c8\'fd\'b7\'bd\'bf\'e2\
+a. \'bd\'abButtomFresh\'d6\'d0\'cd\'cf\'d7\'a7\'b5\'bd\'cf\'ee\'c4\'bf\'d6\'d0\'a3\'bb\'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'d6\'d0\'b5\'bc\'c8\'eb\'cd\'b7\'ce\'c4\'bc\'fe\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1 \cf6 \CocoaLigature0 #import \cf7 "UIScrollView+BottomRefreshControl.h"
+\f0 \cf0 \CocoaLigature1 \
+b. \'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'b5\'c4viewDidLoad\'b7\'bd\'b7\'a8\'d6\'d0\'a3\'ac\'cc\'ed\'bc\'d3\'b4\'b4\'bd\'a8\'c9\'cf\'c0\'ad\'bc\'d3\'d4\'d8\'b5\'c4\'bf\'d8\'bc\'fe\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1 \cf8 \CocoaLigature0 //
+\f0 \'cc\'ed\'bc\'d3\'cb\'a2\'d0\'c2\'bf\'d8\'bc\'fe
+\f1 \cf0 \
+[\cf2 self\cf0  \cf9 setupRefreshControl\cf0 ];
+\f0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 c. \'ce\'aa\'c1\'cb\'bd\'ab\'c9\'cf\'c0\'ad\'bc\'d3\'d4\'d8\'ba\'f3\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'b5\'c4\'d0\'c2\'cd\'c5\'b9\'ba\'b6\'a9\'b5\'a5\'cc\'ed\'bc\'d3\'b5\'bddealsArray\'ca\'fd\'d7\'e9\'d6\'d0\'a3\'ac\'d0\'e8\'d2\'aa\'bd\'abdealsArray\'b1\'e4\'b3\'c9\'bf\'c9\'b1\'e4\'ca\'fd\'d7\'e9\
+d. \'d4\'da
+\f1 \CocoaLigature0 didFinishLoadingWithResult
+\f0 \'b7\'bd\'b7\'a8\'d6\'d0\'a3\'ac\'cc\'ed\'bc\'d3\'c2\'df\'bc\'ad\'c0\'b4\'bd\'ab\'d0\'c2\'b7\'b5\'bb\'d8\'b5\'c4\'cd\'c5\'b9\'ba\'ca\'fd\'be\'dd\'cc\'ed\'bc\'d3\'b5\'bd\'bf\'c9\'b1\'e4\'ca\'fd\'d7\'e9\'d6\'d0\'a3\'bb\'b2\'a2\'c7\'d2\'bb\'b9\'d0\'e8\'d2\'aa\'b4\'a6\'c0\'ed\'cf\'c2\'b4\'ce\'d0\'c2\'c7\'eb\'c7\'f3\'b5\'c4\'c7\'e9\'bf\'f6(\'b4\'cb\'ca\'b1\'d0\'e8\'d2\'aa\'bd\'ab\'d4\'ad\'c0\'b4\'b5\'c4\'be\'c9\'ca\'fd\'be\'dd\'c7\'e5\'bf\'d5)\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1 \cf2 if\cf0  (\cf2 self\cf0 .\cf3 page\cf0  == \cf10 1\cf0 ) \{\
+  \cf8 //
+\f0 \'ca\'d7\'b4\'ce\'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3
+\f1 ; 
+\f0 \'c9\'be\'b3\'fd\'d4\'ad\'c0\'b4\'be\'c9\'b5\'c4\'cd\'c5\'b9\'ba\'ca\'fd\'be\'dd
+\f1 \cf0 \
+  [\cf2 self\cf0 .\cf3 dealsArray\cf0  \cf5 removeAllObjects\cf0 ];\
+\}  \
+[\cf2 self\cf0 .\cf3 dealsArray\cf0  \cf5 addObjectsFromArray\cf0 :dealsArray];
+\f0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 e. \'d4\'da\'d6\'f7\'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'cc\'ed\'bc\'d3\'c9\'cf\'c0\'ad\'bc\'d3\'d4\'d8\'b5\'c4\'c2\'df\'bc\'ad\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1 \cf8 \CocoaLigature0 //
+\f0 \'bc\'d3\'d4\'d8\'b8\'fc\'b6\'e0\'b5\'c4\'cd\'c5\'b9\'ba\'b6\'a9\'b5\'a5
+\f1 (
+\f0 \'d6\'b4\'d0\'d0\'c9\'cf\'c0\'ad\'b5\'c4\'b6\'af\'d7\'f7
+\f1 )\cf0 \
+- (\cf2 void\cf0 )loadMoreDeals \{\
+    \cf2 self\cf0 .\cf3 page\cf0 ++;\
+    [\cf2 self\cf0  \cf9 sendRequestToServer\cf0 ];    \
+\}\
+\cf8 //
+\f0 \'b5\'da\'d2\'bb\'b4\'ce\'b7\'a2\'cb\'cd\'c7\'eb\'c7\'f3\'b8\'f8\'b7\'fe\'ce\'f1\'c6\'f7\'b5\'c4\'ca\'b1\'ba\'f2
+\f1 \cf0 \
+- (\cf2 void\cf0 )loadNewDeals \{\
+    \cf2 self\cf0 .\cf3 page\cf0  = \cf10 1\cf0 ;\
+    [\cf2 self\cf0  \cf9 sendRequestToServer\cf0 ]; \
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0 \cf0 \CocoaLigature1 \'c4\'ac\'c8\'cf\'b7\'fe\'ce\'f1\'c6\'f7\'d6\'bb\'b7\'b5\'bb\'d820\'cc\'f5\'cd\'c5\'b9\'ba\'b6\'a9\'b5\'a5\
+city/category/region/sort/\cf11 page\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1 \cf0 \CocoaLigature0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0 \cf11 \CocoaLigature1 @prperty() int page;\
+page=1 -> 0~19\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \'c9\'cf\'c0\'ad\cf11 \'a3\'ba\
+page=2 -> 20~39\
+page=3 -> 40~59\
+\
+loadNewDeals \{   \
+\}\
+//\cf0 \'bc\'d3\'d4\'d8\cf11 \'b8\'fc\'b6\'e0\
+loadMoreDeals \{\
+   self.page++;\
+\}\
+
+\f1 \cf0 \CocoaLigature0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f0 \cf0 \'b5\'e3\'d6\'d0\'c4\'b3\'b8\'f6collection cell\'b5\'c4\'cf\'ea\'c7\'e9\'b9\'a6\'c4\'dc\
+a.\CocoaLigature1 \'b4\'b4\'bd\'a8\CocoaLigature0 TRDetailViewController.h/.m/.xib\'c8\'fd\'b8\'f6\'ce\'c4\'bc\'fe\
+b.\'d4\'daxib\'d6\'d0\'cc\'ed\'bc\'d3\'bf\'d8\'bc\'feUIView/UIButton/UIWebView\
+c.\'d4\'daTRDeal.h\'d6\'d0\'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6\'c3\'e8\'ca\'f6\'b6\'a9\'b5\'a5\'cf\'ea\'c7\'e9\'b5\'c4\'ca\'f4\'d0\'d4deal_h5_url\
+d.\'d4\'daTRDetailViewController.m\'d6\'d0\'cc\'ed\'bc\'d3webView\'b5\'c4url\'c7\'eb\'c7\'f3\'c2\'df\'bc\'ad\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1 \cf0 [\cf2 self\cf0 .\cf3 webView\cf0  \cf5 loadRequest\cf0 :[\cf4 NSURLRequest\cf0  \cf5 requestWithURL\cf0 :[\cf4 NSURL\cf0  \cf5 URLWithString\cf0 :\cf2 self\cf0 .\cf3 deal\cf0 .\cf3 deal_h5_url\cf0 ]]];
+\f0 \CocoaLigature1 \
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf11 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf11 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \'ca\'fd\'be\'dd\'b3\'d6\'be\'c3\'bb\'af\'bc\'bc\'ca\'f5\
+NSUserDefault\
+Plist\'ca\'f4\'d0\'d4\'ce\'c4\'bc\'fe (cities.plist)\
+\'b9\'e9\'b5\'b5\
+\
+\'cf\'c2\'c3\'e6\'b5\'c4\'c7\'e9\'bf\'f6\'ce\'de\'b7\'a8\'ca\'b9\'d3\'c3\'c7\'b0\'c3\'e6\'c8\'fd\'d6\'d6\'bc\'bc\'ca\'f5\'a3\'ba\
+1. \'b6\'d4\'d3\'da\'b4\'f3\'c1\'bf\'b5\'c4\'ca\'fd\'be\'dd\
+2. \'ce\'de\'b7\'a8\'b0\'b4\'d5\'d5\'c4\'b3\'d6\'d6\'c9\'e8\'b6\'a8\'b5\'c4\'b9\'e6\'d4\'f2\'c8\'a1\'ca\'fd\'be\'dd\
+\
+\
+SQLite (\'ca\'fd\'be\'dd\'bf\'e2)\
+1. \'ca\'b2\'c3\'b4\'ca\'c7SQLite?\
+\'d2\'bb\'b8\'f6\cf12 \'bf\'aa\'d4\'b4\cf0 \'b5\'c4\cf13 \'c7\'b6\'c8\'eb\'ca\'bd\cf12 \'ca\'fd\'be\'dd\'bf\'e2\
+\cf0 \
+\'ca\'f5\'d3\'ef (\'c0\'ed\'bd\'e2)\'a3\'ba\
+\'ca\'fd\'be\'dd\'bf\'e2\'a3\'ba\
+\'b0\'b4\'d5\'d5\'ca\'fd\'be\'dd\'bd\'e1\'b9\'b9\'c0\'b4\'d7\'e9\'d6\'af\'a1\'a2\'b9\'dc\'c0\'ed\'ba\'cd\'b4\'e6\'b4\'a2\'b5\'c4\'ca\'fd\'be\'dd\'b2\'d6\'bf\'e2\
+\
+\'ca\'fd\'be\'dd\'bf\'e2\'b5\'c4\'b7\'d6\'c0\'e0\'a3\'ba\
+1. \'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'a3\'ba\'ca\'b9\'d3\'c3\'b5\'c4\'ca\'c7\cf11 \'b6\'fe\'ce\'ac\'b1\'ed\cf0 \'c4\'a3\'d0\'cd\'c0\'b4\'b4\'e6\'ca\'fd\'ca\'fd\'be\'dd (\'b0\'b2\'c8\'ab\'d0\'d4\'b8\'df)\
+Oracle; SQL Server; DB2; Mysql; \cf11 SQLite\cf0 ; Sybase\
+2. \'b7\'c7\'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2 NoSQL (\'b7\'c3\'ce\'ca\'cb\'d9\'b6\'c8\'bf\'ec)\
+MongoDB; Hbase\
+\
+SQLite\'a3\'ba\
+SQL: Structured Query Language \
+\'bd\'e1\'b9\'b9\'bb\'af\'b5\'c4\'b2\'e9\'d1\'af\cf12 \'d3\'ef\'d1\'d4\cf0 : \'d7\'aa\'ce\'aa\'ca\'fd\'be\'dd\'bf\'e2\'b6\'f8\'bd\'a8\'c1\'a2\'b5\'c4\'c3\'fc\'c1\'ee\'bc\'af\'ba\'cf\
+\
+\'d7\'dc\'bd\'e1\'a3\'ba\
+\'d6\'bb\'d2\'aa\'b7\'a2\'cb\'cd\'c3\'fc\'c1\'ee\'b8\'f8\'ca\'fd\'be\'dd\'bf\'e2(\'d7\'f6\'ca\'b2\'c3\'b4)\'a3\'ac\'c0\'b4\'bb\'f1\'c8\'a1\'cf\'eb\'d2\'aa\'b5\'c4\'ca\'fd\'be\'dd, \'b2\'bb\'d3\'c3\'b9\'d8\'d0\'c4\'d4\'f5\'c3\'b4\'d7\'f6\'b5\'c4\'ce\'ca\'cc\'e2\
+\
+\'ca\'f5\'d3\'ef\'a3\'ba\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf14 \'b1\'ed\'a3\'ba\cf0 \'ca\'fd\'be\'dd\'b4\'e6\'b4\'a2\'b5\'c4\'b6\'fe\'ce\'ac\'d0\'ce\'ca\'bd/\'bb\'f9\'b1\'be\'d4\'aa\'cb\'d8 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf12 \'d7\'d6\'b6\'ce\'a3\'ba\cf0 \'b1\'ed\'d6\'d0\'b5\'c4\'c1\'d0\'c3\'fb\'d7\'d6 (\CocoaLigature0 \'d7\'d6\'b6\'ce\CocoaLigature1 \'b2\'bb\'d4\'ca\'d0\'ed\'d3\'d0\'d6\'d0\'ce\'c4)\
+\cf12 \'bc\'c7\'c2\'bc:\cf0  \'b1\'ed\'d6\'d0\'d2\'bb\'d0\'d0\'d2\'bb\'d0\'d0\'b5\'c4\'ca\'fd\'be\'dd \
+\
+\'b2\'d9\'d7\'f7\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'ca\'fd\'be\'dd\'b5\'c4\'b7\'bd\'ca\'bd:\
+\'bf\'c9\'ca\'d3\'bb\'af\'b5\'c4\'c8\'ed\'bc\'fe: SQLite Free/ Navicat /\'a1\'ad\
+\'c3\'fc\'c1\'ee\'d0\'d0\'b5\'c4\'b7\'bd\'ca\'bd (\'c1\'cb\'bd\'e2 / SQL\'d3\'ef\'be\'e4)\
+\'b8\'f7\'d6\'d6\'bf\'aa\'b7\'a2\'d3\'ef\'d1\'d4OC(libsqlite3.0.dylib\'bf\'e2 -> \'be\'a1\'c1\'bf\'d5\'c6\'ce\'d5)\
+\
+\'b2\'d9\'d7\'f7\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'b5\'c4\'ca\'fd\'be\'dd\'b5\'c4\'b2\'bd\'d6\'e8\'a3\'ba\
+1. \'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'bf\'e2 (\'b2\'bb\'cd\'ac\'b5\'c4\'ca\'fd\'be\'dd\'bf\'e2\'d3\'d0\'b2\'bb\'cd\'ac\'b5\'c4\'b4\'b4\'bd\'a8\'b7\'bd\'ca\'bd)\
+\cf12 2. \'b4\'b4\'bd\'a8\'b1\'ed (SQL\'d3\'ef\'be\'e4\'a3\'ba\'d7\'d6\'b6\'ce\'c3\'fb\'d7\'d6)\
+3. \'b6\'d4\'b1\'ed\'d6\'d0\'b5\'c4\'ca\'fd\'be\'dd\'bd\'f8\'d0\'d0\'b2\'d9\'d7\'f7 (SQL\'d3\'ef\'be\'e4\'a3\'ba\'d4\'f6/\'c9\'be/\'b8\'c4/\'b2\'e9)\cf0 \
+\
+\'d4\'da\'d6\'d5\'b6\'cb\'b5\'c4\'b3\'a3\'d3\'c3SQLite\'c3\'fc\'c1\'ee\'a3\'ba\
+1.\'b4\'b4\'bd\'a8person.sqlite\'ca\'fd\'be\'dd\'bf\'e2\'ce\'c4\'bc\'fe (\'c6\'e4\'d6\'d0person.sqlite\'ca\'c7\'ce\'c4\'bc\'fe\'b5\'c4\'c3\'fb\'d7\'d6\'a3\'ac\'bf\'c9\'d2\'d4\'cb\'e6\'b1\'e3\'c9\'e8\'b6\'a8)\
+sqlite3 person.sqlite \
+2.\'b2\'e9\'d1\'af\'b5\'b1\'c7\'b0\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'b5\'c4\'cb\'f9\'d3\'d0\'b1\'ed\
+.tables\
+3.\'b2\'e9\'d1\'af\'c4\'b3\'b8\'f6\'ca\'fd\'be\'dd\'bf\'e2\'d0\'c5\'cf\'a2\
+.database\
+4.\'b2\'e9\'bf\'b4\'b0\'ef\'d6\'fa\
+.help\
+5.\'cd\'cb\'b3\'f6\
+.exit\
+\
+\
+SQLite\'b2\'d9\'d7\'f7\'c3\'fc\'c1\'ee\'a3\'ba\
+1. \'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'bf\'e2\'a3\'a8\'d4\'da\'d6\'d5\'b6\'cb\'c3\'fc\'c1\'ee\'d0\'d0\'c9\'cf\'ca\'e4\'c8\'eb\'a3\'a9\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1 \cf0 \CocoaLigature0 sqlite3 people.sqlite\
+\
+
+\f0 \cf11 \'cf\'c2\'c3\'e6\'ca\'c7\'cd\'a8\'d3\'c3\'b5\'c4
+\f1 SQL
+\f0 \'d3\'ef\'be\'e4\'a3\'ba
+\f1 \cf0 \
+2.
+\f0 \'b4\'b4\'bd\'a8\'b1\'ed (\'d4\'da\'d6\'d5\'b6\'cb\'c9\'cf\'ca\'e4\'c8\'eb\'bb\'f2\'d5\'df\'d4\'da\'bf\'c9\'ca\'d3\'bb\'af\'c8\'ed\'bc\'fe\'b5\'c4SQL\'b2\'bf\'b7\'d6)\'a3\'ba\
+\'b1\'ed\'b5\'c4\'d7\'d6\'b6\'ce\'b5\'c4\'c0\'e0\'d0\'cd\'a3\'ba\
+integer: \'d5\'fb\'d0\'cd\
+text:       \'ce\'c4\'b1\'be\
+real:       \'ca\'b5\'ca\'fd (float/double)
+\f1 \
+\cf11 create table \cf0 student (id integer, name text, age integer, height real);\
+
+\f0 \'d6\'f7\'bc\'fc\'a3\'ba
+\f1 primary key(
+\f0 \'d7\'d4\'b6\'af\'b5\'d8\'d7\'d4\'d4\'f6/\'ce\'a8\'d2\'bb\'d0\'d4
+\f1 )\
+\cf11 create table \cf0 boy (id integer \cf12 primary key\cf0 , name text, age integer, height real);\
+\
+3.
+\f0 \'b6\'d4\'b1\'ed\'d6\'d0\'b5\'c4\'ca\'fd\'be\'dd\'d7\'f6\'b2\'d9\'d7\'f7 CRUD (Create/Retrieve/Update/Delete)\
+(\'d4\'da\'d6\'d5\'b6\'cb\'c9\'cf\'ca\'e4\'c8\'eb\'bb\'f2\'d5\'df\'d4\'da\'bf\'c9\'ca\'d3\'bb\'af\'c8\'ed\'bc\'fe\'b5\'c4SQL\'b2\'bf\'b7\'d6)\
+
+\f1 \
+
+\f0 a. \'d4\'f6:   \'b2\'e5\'c8\'eb\'d2\'bb\'cc\'f5\'bc\'c7\'c2\'bc\
+\cf12 insert into \cf0  (id, name, age, height) \cf12 values \cf0 (1, \'a1\'aemaggie\'a1\'af,19, 1.65);\
+\cf12 insert into \cf0 boy (name, age, height) \cf12 values \cf0 (\'a1\'aemaggie\'a1\'af,19, 1.65);
+\f1 \
+
+\f0 \
+b. \'c9\'be\'a3\'ba\'c9\'be\'b3\'fd\'d2\'bb\'cc\'f5/\'d2\'bb\'d0\'a9\'bc\'c7\'c2\'bc\
+\cf12 delete from\cf0  student;\
+\cf12 delete from\cf0  boy \cf12 where\cf0  name=\'a1\'aejonny\'a1\'af;\
+
+\f1 \
+
+\f0 c.\'b8\'c4\'a3\'ba\'b8\'fc\'d0\'c2\'d2\'bb\'cc\'f5/\'d2\'bb\'d0\'a9\'bc\'c7\'c2\'bc\
+\cf12 update\cf0  student \cf11 set \cf0 name=\'a1\'aeshirley\'a1\'af;\
+\cf12 update\cf0  boy \cf12 set\cf0  name=\'a1\'aejonny\'a1\'af\cf12 where \cf0 name=\'a1\'aemaggie\'a1\'af;\
+\
+d.\'b2\'e9\'a3\'ba\'d1\'a1\'d4\'f1\'d2\'bb\'cc\'f5/\'d2\'bb\'d0\'a9\'bc\'c7\'c2\'bc\
+\cf12 select * from  \cf0 student;\
+\cf15 select * from\cf0  boy \cf11 where\cf0  name=\'a1\'aemaggie\'a1\'af;\
+\
+\'cf\'c2\'d4\'d8SQLite Free - Datum.zip (\'bf\'c9\'ca\'d3\'bb\'af\'c8\'ed\'bc\'fe)\
+\
+\CocoaLigature1 \'d1\'f9\'c0\'fd\'a3\'ba\'ca\'b9\'d3\'c3Xcode\'c0\'b4\'b4\'a6\'c0\'ed\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'b1\'ed\'d6\'d0\'b5\'c4\'ca\'fd\'be\'dd(\cf11 \'c1\'cb\'bd\'e2\cf0 )\
+\'a1\'beDemo01-SQLite\'a1\'bf\
+\'d7\'bc\'b1\'b8\'b9\'a4\'d7\'f7\'a3\'ba\'cc\'ed\'bc\'d3(\'b5\'bc\'c8\'eb)libsqlite3.0.dylib\
+1. \'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'bf\'e2\'ce\'c4\'bc\'fe\
+2. \'b4\'b4\'bd\'a8\'b1\'ed\
+3. \'d4\'f6/\'b2\'e9\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+FMDB (\'b5\'da\'c8\'fd\'b7\'bd\'bf\'e2\'a1\'aa> \'be\'a1\'c1\'bf\'d5\'c6\'ce\'d5)\
+\
+Core Data (\'ca\'fd\'be\'dd\'bf\'e2)\cf11 \
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

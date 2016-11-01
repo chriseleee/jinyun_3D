@@ -1,0 +1,278 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;\red170\green13\blue145;\red63\green110\blue116;
+\red46\green13\blue110;\red0\green116\blue0;\red28\green0\blue207;\red196\green26\blue22;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19520\viewh20160\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \'bb\'d8\'b9\'cb
+\f1 \
+1.
+\f0 \'bf\'d8\'d6\'c6\'c6\'f7\'b6\'d4\'ca\'d3\'cd\'bc\'d6\'d0\'b5\'c4\'bf\'d8\'bc\'fe\'b5\'c4\'b2\'bc\'be\'d6
+\f1 (
+\f0 \'b4\'bf\'b4\'fa\'c2\'eb
+\f1 )\
+	
+\f0 \'d0\'e8\'d2\'aa\'d6\'d8\'d0\'b4
+\f1 vc
+\f0 \'d6\'d0\'b5\'c4\'b7\'bd\'b7\'a8
+\f1 \
+	viewWillLayoutSubViews\
+	viewDidLayoutSubViews\
+2.Painting[Day04-0-HomeworkPainting](
+\f0 \'d3\'d0\'d6\'b5\'b4\'ab\'b5\'dd
+\f1 )\
+
+\f0 \'d2\'d4\'cf\'c2\'b4\'fa\'c2\'eb\'d4\'da
+\f1 UIView
+\f0 \'d6\'d0\'cd\'ea\'b3\'c9
+\f1 \
+\pard\tx866\pardeftab866\pardirnatural
+
+\f2\fs36 \cf0 \CocoaLigature0 - (\cf2 NSMutableArray\cf0  *)allPaths\{\
+    \cf3 if\cf0  (!\cf4 _allPaths\cf0 ) \{\
+        \cf4 _allPaths\cf0  = [\cf2 NSMutableArray\cf0  \cf5 array\cf0 ];\
+    \}\
+    \cf3 return\cf0  \cf4 _allPaths\cf0 ;\
+\}\
+- (\cf3 void\cf0 )touchesBegan:(\cf2 NSSet\cf0  *)touches withEvent:(\cf2 UIEvent\cf0  *)event\{\
+\cf6 //
+\f0 \'bb\'f1\'b5\'c3\'c6\'f0\'b5\'e3
+\f2 \cf0 \
+    \cf2 UITouch\cf0  *touch = [touches \cf5 anyObject\cf0 ];\
+    \cf3 self\cf0 .\cf4 startPoint\cf0  = [touch \cf5 locationInView\cf0 :\cf3 self\cf0 ];\
+\cf6 //
+\f0 \'b4\'b4\'bd\'a8\'b1\'b4\'c8\'fb\'b6\'fb\'c2\'b7\'be\'b6\'bd\'f8\'d0\'d0\'be\'d8\'d0\'ce\'b5\'c4\'bb\'ad\'b5\'c4\'d7\'bc\'b1\'b8\'b9\'a4\'d7\'f7
+\f2 \cf0 \
+\cf6 //
+\f0 \'b4\'b4\'bd\'a8\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'c2\'b7\'be\'b6\'b6\'d4\'cf\'f3
+\f2 \cf0 \
+    \cf4 DrawPath\cf0  *p = [\cf4 DrawPath\cf0  \cf5 new\cf0 ];\
+    p.\cf4 setting\cf0  = [\cf4 Setting\cf0  \cf5 new\cf0 ];\
+\cf6 //
+\f0 \'c5\'d0\'b6\'cf\'b5\'b1\'c7\'b0\'ca\'c7\'b7\'f1\'ca\'c7
+\f2  
+\f0 \'cf\'f0\'c6\'a4\'c4\'a3\'ca\'bd
+\f2 \cf0 \
+\cf6 //
+\f0 \'ca\'c7\'cf\'f0\'c6\'a4\'c4\'a3\'ca\'bd\'a3\'ac\'d0\'e8\'d2\'aa\'bb\'ad\'d6\'b1\'cf\'df\'a3\'ac\'cf\'df\'b5\'c4\'d1\'d5\'c9\'ab\'d3\'eb\'b5\'b1\'c7\'b0\'ca\'d3\'cd\'bc\'b1\'b3\'be\'b0\'c9\'ab\'d2\'bb\'d6\'c2
+\f2 \cf0 \
+\cf6 //
+\f0 \'b2\'bb\'ca\'c7\'cf\'f0\'c6\'a4\'c4\'a3\'ca\'bd\'a3\'ac\'bb\'ad\'be\'d8\'d0\'ce
+\f2 \cf0 \
+    \cf3 if\cf0  (\cf3 self\cf0 .\cf4 currentSetting\cf0 .\cf4 rubber\cf0 ) \{\
+        p.\cf4 path\cf0  = [\cf2 UIBezierPath\cf0  \cf5 bezierPath\cf0 ];\
+        [p.\cf4 path\cf0  \cf5 moveToPoint\cf0 :\cf3 self\cf0 .\cf4 startPoint\cf0 ];\
+        p.\cf4 setting\cf0 .\cf4 lineWidth\cf0  = \cf7 7\cf0 ;\
+        p.\cf4 setting\cf0 .\cf4 lineColor\cf0  = \cf3 self\cf0 .\cf2 backgroundColor\cf0 ;\
+    \}\cf3 else\cf0 \{\
+        p.\cf4 setting\cf0 .\cf4 lineWidth\cf0  = \cf3 self\cf0 .\cf4 currentSetting\cf0 .\cf4 lineWidth\cf0 ;\
+        p.\cf4 setting\cf0 .\cf4 lineColor\cf0  = \cf3 self\cf0 .\cf4 currentSetting\cf0 .\cf4 lineColor\cf0 ;\
+    \}\
+    [\cf3 self\cf0 .\cf4 allPaths\cf0  \cf5 addObject\cf0 :p];\
+\}\
+- (\cf3 void\cf0 )touchesMoved:(\cf2 NSSet\cf0  *)touches withEvent:(\cf2 UIEvent\cf0  *)event\{\
+    \cf2 UITouch\cf0  *touch = [touches \cf5 anyObject\cf0 ];\
+    \cf2 CGPoint\cf0  endPoint = [touch \cf5 locationInView\cf0 :\cf3 self\cf0 ];\
+\cf6 //
+\f0 \'b4\'d3\'ca\'fd\'d7\'e9\'d6\'d0\'c8\'a1\'b5\'c3\'d7\'ee\'ba\'f3\'d2\'bb\'b8\'f6\'b6\'d4\'cf\'f3\'a3\'ac\'bc\'b4\'b5\'b1\'c7\'b0\'bb\'ad\'cf\'df\'b2\'d9\'d7\'f7\'b5\'c4\'b6\'d4\'cf\'f3
+\f2 \cf0 \
+    \cf4 DrawPath\cf0  *p = [\cf3 self\cf0 .\cf4 allPaths\cf0  \cf5 lastObject\cf0 ];\
+\cf6 //
+\f0 \'cf\'f0\'c6\'a4
+\f2 :
+\f0 \'bb\'ad\'cf\'df
+\f2    
+\f0 \'b7\'c7\'cf\'f0\'c6\'a4\'c4\'a3\'ca\'bd
+\f2 :
+\f0 \'bb\'ad\'be\'d8\'d0\'ce
+\f2 \cf0 \
+    \cf3 if\cf0  (\cf3 self\cf0 .\cf4 currentSetting\cf0 .\cf4 rubber\cf0 ) \{\
+        [p.\cf4 path\cf0  \cf5 addLineToPoint\cf0 :endPoint];\
+    \}\cf3 else\cf0 \{\
+        p.\cf4 path\cf0  = [\cf2 UIBezierPath\cf0  \cf5 bezierPathWithRect\cf0 :\cf5 CGRectMake\cf0 (\cf3 self\cf0 .\cf4 startPoint\cf0 .\cf2 x\cf0 , \cf3 self\cf0 .\cf4 startPoint\cf0 .\cf2 y\cf0 , endPoint.\cf2 x\cf0  - \cf3 self\cf0 .\cf4 startPoint\cf0 .\cf2 x\cf0 , endPoint.\cf2 y\cf0  - \cf3 self\cf0 .\cf4 startPoint\cf0 .\cf2 y\cf0 )];\
+    \}\
+    [\cf3 self\cf0  \cf5 setNeedsDisplay\cf0 ]; \cf6 //
+\f0 \'d6\'d8\'bb\'e6
+\f2 \cf0 \
+\}\
+- (\cf3 void\cf0 )drawRect:(\cf2 CGRect\cf0 )rect \{\
+    \cf3 for\cf0  (\cf4 DrawPath\cf0  *p \cf3 in\cf0  \cf3 self\cf0 .\cf4 allPaths\cf0 ) \{\
+        p.\cf4 path\cf0 .\cf2 lineWidth\cf0  = p.\cf4 setting\cf0 .\cf4 lineWidth\cf0 ;\
+        [p.\cf4 setting\cf0 .\cf4 lineColor\cf0  \cf5 setStroke\cf0 ];\
+        [p.\cf4 path\cf0  \cf5 stroke\cf0 ];\
+    \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \CocoaLigature1 \'bd\'f1\'cc\'ec
+\f1 :\
+	UIView
+\f0 \'b6\'d4\'c4\'da\'b2\'bf\'d7\'d3\'ca\'d3\'cd\'bc\'bd\'f8\'d0\'d0\'b2\'bc\'be\'d6(\'b5\'e4\'d0\'cd\'d3\'a6\'d3\'c3:UITableViewCell\'b6\'d4\'c4\'da\'b2\'bf\'d7\'d3\'ca\'d3\'cd\'bc\'b5\'c4\'b2\'bc\'be\'d6)\
+[Day04-1-TableViewCell-Layout]\
+	\'b9\'d8\'bc\'fc\'b4\'ca:\'d6\'d8\'d0\'b4layoutSubViews\'b7\'bd\'b7\'a8\
+\'d0\'c2\'bd\'a8\'d2\'bb\'b8\'f6CellView\
+1.\
+\pard\tx866\pardeftab866\pardirnatural
+
+\f2\fs36 \cf0 \CocoaLigature0 - (\cf3 void\cf0 )setMusic:(\cf4 TRMusic\cf0  *)music\{\
+    \cf4 _music\cf0  = music;\
+\cf6 //
+\f0 \'cf\'c2\'b7\'bd\'be\'cd\'ca\'c7\'b6\'ee\'cd\'e2\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'c4\'da\'c8\'dd\'a1\'a3\'bd\'ab
+\f2 music
+\f0 \'d6\'d0\'b8\'f7\'b8\'f6\'ca\'f4\'d0\'d4\'cf\'d4\'ca\'be\'d4\'da\'bf\'d8\'bc\'fe\'c9\'cf
+\f2 \cf0 \
+    \cf3 self\cf0 .\cf4 nameLb\cf0 .\cf2 text\cf0  = music.\cf4 name\cf0 ;\
+\cf6 //music
+\f0 \'b5\'c4
+\f2 duration
+\f0 \'ca\'f4\'d0\'d4
+\f2  
+\f0 \'ca\'c7
+\f2 ***
+\f0 \'c3\'eb\'a3\'ac\'d0\'e8\'d2\'aa\'d7\'aa\'bb\'bb\'ce\'aa
+\f2 *
+\f0 \'b7\'d6
+\f2 *
+\f0 \'c3\'eb
+\f2 \cf0 \
+    \cf3 self\cf0 .\cf4 durationLb\cf0 .\cf2 text\cf0  = [\cf2 NSString\cf0  \cf5 stringWithFormat\cf0 :\cf8 @"%d:%02d"\cf0 ,(\cf3 int\cf0 )music.\cf4 duration\cf0 /\cf7 60\cf0 ,(\cf3 int\cf0 )music.\cf4 duration\cf0 %\cf7 60\cf0 ];\
+    \cf3 self\cf0 .\cf4 artistLb\cf0 .\cf2 text\cf0  = [\cf2 NSString\cf0  \cf5 stringWithFormat\cf0 :\cf8 @"%@ - %@"\cf0 , music.\cf4 artist\cf0 , music.\cf4 album\cf0 ];\
+    \cf3 self\cf0 .\cf4 onlineIV\cf0 .\cf2 hidden\cf0  = !music.\cf4 downloaded\cf0 ;\
+    \cf3 self\cf0 .\cf4 hqIV\cf0 .\cf2 hidden\cf0  = !music.\cf4 highQuality\cf0 ;\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \CocoaLigature1 2.\
+\pard\tx866\pardeftab866\pardirnatural
+
+\f2\fs36 \cf6 \CocoaLigature0 //cell
+\f0 \'b6\'d4\'c4\'da\'b2\'bf\'b5\'c4\'b8\'f7\'b8\'f6\'d7\'d3\'ca\'d3\'cd\'bc\'bd\'f8\'d0\'d0\'b2\'bc\'be\'d6
+\f2 \cf0 \
+\cf6 //layoutSubviews
+\f0 \'b7\'bd\'b7\'a8
+\f2  
+\f0 \'ca\'c7\'ca\'f4\'d3\'da
+\f2 UIView
+\f0 \'b5\'c4\'a3\'ac\'cb\'f9\'d3\'d0\'bc\'cc\'b3\'d0
+\f2 UIView
+\f0 \'b5\'c4\'c0\'e0\'a3\'ac\'b6\'bc\'bf\'c9\'d2\'d4\'d6\'d8\'d0\'b4\'cb\'fc\'c0\'b4\'bd\'f8\'d0\'d0\'b2\'bc\'be\'d6
+\f2 \cf0 \
+- (\cf3 void\cf0 )layoutSubviews\{\
+\cf6 //
+\f0 \'d5\'e2\'c0\'ef\'d2\'bb\'b6\'a8\'d2\'aa\'b5\'f7\'b8\'b8\'b7\'bd\'b7\'a8\'a3\'ac\'b7\'f1\'d4\'f2\'bb\'e1\'b3\'f6\'ce\'ca\'cc\'e2
+\f2 \cf0 \
+    [\cf3 super\cf0  \cf5 layoutSubviews\cf0 ];\
+    \cf2 CGRect\cf0  frame = \cf4 _durationLb\cf0 .\cf2 frame\cf0 ;\
+    frame.\cf2 origin\cf0 .\cf2 x\cf0  = \cf3 self\cf0 .\cf2 bounds\cf0 .\cf2 size\cf0 .\cf2 width\cf0  - \cf4 _durationLb\cf0 .\cf2 frame\cf0 .\cf2 size\cf0 .\cf2 width\cf0  - \cf7 10\cf0 ;\
+    \cf4 _durationLb\cf0 .\cf2 frame\cf0  = frame;\
+\cf6 //
+\f0 \'c9\'e8\'d6\'c3\'d2\'f4\'c0\'d6\'c3\'fb\'b3\'c6\'b1\'ea\'c7\'a9\'b5\'c4\'bf\'ed\'b6\'c8
+\f2 \cf0 \
+    \cf2 CGRect\cf0  nameRect = \cf4 _nameLb\cf0 .\cf2 frame\cf0 ;\
+\cf6 //cell
+\f0 \'bf\'ed\'b6\'c8
+\f2 -
+\f0 \'d7\'f3\'b1\'df\'d4\'b5\'be\'e0\'c0\'eb
+\f2 -
+\f0 \'ca\'b1\'b3\'a4\'bf\'ed\'b6\'c8
+\f2 -
+\f0 \'ca\'b1\'b3\'a4\'d3\'d2\'b1\'df\'d4\'b5\'be\'e0\'c0\'eb
+\f2 -
+\f0 \'ca\'b1\'b3\'a4\'d7\'f3\'b1\'df\'d4\'b5\'be\'e0\'c0\'eb
+\f2 \cf0 \
+    nameRect.\cf2 size\cf0 .\cf2 width\cf0  = \cf3 self\cf0 .\cf2 bounds\cf0 .\cf2 size\cf0 .\cf2 width\cf0  - nameRect.\cf2 origin\cf0 .\cf2 x\cf0  - \cf4 _durationLb\cf0 .\cf2 frame\cf0 .\cf2 size\cf0 .\cf2 width\cf0  - \cf7 10\cf0  - \cf7 10\cf0 ;\
+    \cf4 _nameLb\cf0 .\cf2 frame\cf0  = nameRect;\
+\cf6 //
+\f0 \'b5\'da\'b6\'fe\'c5\'c5\'a3\'ac\'b8\'f9\'be\'dd
+\f2 HQ
+\f0 \'ba\'cd\'b6\'d4\'ba\'c5\'ca\'c7\'b7\'f1\'cf\'d4\'ca\'be\'a3\'ac\'c5\'e4\'d6\'c3\'ca\'d3\'cd\'bc\'b5\'c4\'ce\'bb\'d6\'c3
+\f2 \cf0 \
+    \cf2 CGFloat\cf0  x = \cf3 self\cf0 .\cf4 onlineIV\cf0 .\cf2 frame\cf0 .\cf2 origin\cf0 .\cf2 x\cf0 ;\
+    \cf3 if\cf0  (\cf3 self\cf0 .\cf4 music\cf0 .\cf4 downloaded\cf0 ) \{\
+        x += \cf7 20\cf0 ;\
+    \}\
+    \cf3 if\cf0  (\cf3 self\cf0 .\cf4 music\cf0 .\cf4 highQuality\cf0 ) \{\
+        \cf2 CGRect\cf0  rect = \cf3 self\cf0 .\cf4 hqIV\cf0 .\cf2 frame\cf0 ;\
+        rect.\cf2 origin\cf0 .\cf2 x\cf0  = x;\
+        \cf3 self\cf0 .\cf4 hqIV\cf0 .\cf2 frame\cf0  = rect;\
+        x += \cf7 20\cf0 ;\
+    \}\
+    \cf2 CGRect\cf0  arFrame = \cf3 self\cf0 .\cf4 artistLb\cf0 .\cf2 frame\cf0 ;\
+    arFrame.\cf2 origin\cf0 .\cf2 x\cf0  = x;\
+    arFrame.\cf2 size\cf0 .\cf2 width\cf0  = \cf3 self\cf0 .\cf2 bounds\cf0 .\cf2 size\cf0 .\cf2 width\cf0  - x -\cf7 10\cf0 ;\
+    \cf3 self\cf0 .\cf4 artistLb\cf0 .\cf2 frame\cf0  = arFrame;\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \CocoaLigature1 \
+	\'b7\'bd\'b7\'a8\'b5\'c4\'d6\'b4\'d0\'d0\'cb\'b3\'d0\'f2\
+	a.\'b5\'da\'d2\'bb\'b2\'bdviewWillLayoutSubviews\
+	b.\'b5\'da\'b6\'fe\'b2\'bd \'d6\'b4\'d0\'d0\'bf\'d8\'d6\'c6\'c6\'f7\'ca\'d3\'cd\'bc\'d6\'d0\'cb\'f9\'d3\'d0\'d7\'d3View\'b5\'c4layoutSubviews\
+	c.\'b5\'da\'c8\'fd\'b2\'bd viewdidlayoutSubViews\
+\
+2.AutoResizing\
+	2.1 \'ca\'c7\'ca\'b2\'c3\'b4?\
+		\'ca\'c7\'be\'c9\'b0\'e6\'b1\'be(ios5\'d6\'ae\'c7\'b0)\'b5\'c4\'d7\'d4\'b6\'af\'b2\'bc\'be\'d6\'bc\'bc\'ca\'f5\'a3\'ac\'b2\'d9\'d7\'f7\'bc\'f2\'b5\'a5\'a3\'acapi\'bc\'f2\'b5\'a5\'a3\'ac\'b9\'a6\'c4\'dc\'bc\'f2\'b5\'a5\'a3\'ac\'d3\'d0\'be\'d6\'cf\'de\'d0\'d4\'a1\'a3\
+	2.2 \'ba\'cb\'d0\'c4\'b8\'c5\'c4\'ee\
+			\'b5\'b1\'bd\'e7\'c3\'e6\'b4\'f3\'d0\'a1\'b7\'a2\'c9\'fa\'b1\'e4\'bb\'af\'ca\'b1\'a3\'ac\'b8\'f9\'be\'dd\'b1\'e4\'bb\'af\'b5\'c4\'b1\'c8\'c0\'fd\'a3\'ac\'b6\'d4\'d7\'d3\'ca\'d3\'cd\'bc\'bd\'f8\'d0\'d0\'cd\'ac\'b1\'c8\'c0\'fd\'b5\'c4\'b1\'e4\'bb\'af\
+	2.3 \'c8\'e7\'ba\'ce\'ca\'b9\'d3\'c3\'a3\'bf\
+		step1. \'b9\'d8\'b1\'d5autolayout\
+		step2.\'bd\'ab\'d2\'aa\'b2\'bc\'be\'d6\'b5\'c4\'d7\'d3\'ca\'d3\'cd\'bc\'b0\'da\'b7\'c5\'d4\'da\'c6\'da\'b4\'fd\'ce\'bb\'d6\'c3\'c9\'cf\
+		step3.\'d1\'a1\'d6\'d0\'d0\'e8\'d2\'aa\'b2\'bc\'be\'d6\'b5\'c4\'d7\'d3\'ca\'d3\'cd\'bc\
+		step4.\'b4\'f2\'bf\'aa\'bc\'ec\'b2\'e9\'c6\'f75\
+		step5.\'b5\'e3\'c1\'c1\'d0\'e8\'d2\'aa\'b5\'c4\'ba\'ec\'cf\'df\
+				\'cd\'e2\'bf\'f24\'b8\'f6\'a3\'ac\'b4\'fa\'b1\'ed\'d7\'d3\'ca\'d3\'cd\'bc\'b5\'bd\'b8\'b8\'ca\'d3\'cd\'bc\'b1\'df\'d4\'b5\'be\'e0\'c0\'eb\'ca\'c7\'b7\'f1\'bf\'c9\'b1\'e4\
+				\'c4\'da\'bf\'f22\'b8\'f6\'a3\'ac\'b4\'fa\'b1\'ed\'ca\'d3\'cd\'bc\'b5\'c4\'b4\'f3\'d0\'a1\'b3\'df\'b4\'e7\'ca\'c7\'b7\'f1\'bf\'c9\'d2\'d4\'c0\'ad\'c9\'ec\
+		\'a1\'beDay04-2-AutoResizing\'a1\'bf\
+			\
+	2.4 \'b1\'e0\'c2\'eb\'ca\'b5\'cf\'d6Autoresizing\
+		\'a1\'beDay04-3-AutoResizingCode\'a1\'bf\
+	\'b9\'d8\'bc\'fc\'b4\'ca: autoResizingMask\'ca\'f4\'d0\'d4\
+\pard\tx866\pardeftab866\pardirnatural
+
+\f2\fs36 \cf6 \CocoaLigature0 //
+\f0 \'ca\'b9\'d3\'c3
+\f2 autoResizing
+\f0 \'b1\'a3\'b3\'d6\'b0\'b4\'c5\'a5\'c0\'eb\'d3\'d2\'b1\'df\'d4\'b5\'d2\'bb\'b6\'ce\'be\'e0\'c0\'eb
+\f2 \cf0 \
+\cf6 //
+\f0 \'b4\'d3\'ca\'d3\'cd\'bc\'c9\'cf\'cb\'b5\'a3\'ac\'be\'cd\'ca\'c7\'b5\'e3\'c1\'c1
+\f2  
+\f0 \'c9\'cf\'ba\'cd\'d3\'d2\'b5\'c4\'cd\'e2\'b2\'e0\'ba\'ec\'cf\'df
+\f2 //
+\f0 \'b4\'fa\'c2\'eb\'d0\'b4\'b5\'c4\'d5\'fd\'ba\'c3\'cf\'e0\'b7\'b4
+\f2 \cf0 \
+    button.\cf2 autoresizingMask\cf0  = \cf5 UIViewAutoresizingFlexibleBottomMargin\cf0 |\cf5 UIViewAutoresizingFlexibleLeftMargin\cf0 ;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 \CocoaLigature1 \
+3.AutoLayout(\'d7\'d4\'b6\'af\'b2\'bc\'be\'d6)\
+ 3.1\'ca\'c7\'ca\'b2\'c3\'b4\'a3\'bf\
+		\'ca\'c7\'b4\'d3iOS6\'bf\'aa\'ca\'bc\'b5\'c4\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'b2\'bc\'be\'d6\'bc\'bc\'ca\'f5\'a3\'ac\'b9\'a6\'c4\'dc\'c7\'bf\'b4\'f3\'a3\'ac\'b2\'d9\'d7\'f7\'bc\'f2\'b5\'a5\'a3\'ac\'b4\'d3xcode5\'bf\'aa\'ca\'bc\'a3\'ac\'c2\'fd\'c2\'fd\'ba\'c3\'d3\'c3\'a3\'ac\'d4\'daxcode6\'b9\'a6\'c4\'dc\'b8\'fc\'c7\'bf\'b4\'f3\'a1\'a3\
+	3.2 \'b9\'a4\'d7\'f7\'d4\'ad\'c0\'ed\
+		1)\'cd\'a8\'b9\'fd\'ce\'aa\'ca\'d3\'cd\'bc\'cc\'ed\'bc\'d3\'d2\'bb\'b6\'d1\'a1\'b0\'d4\'bc\'ca\'f8constraint\'a1\'b1\'c0\'b4\'cd\'ea\'b3\'c9\'b6\'d4\'ca\'d3\'cd\'bc\'d3\'a6\'b8\'c3\'b0\'da\'b7\'c5\'b5\'c4\'ce\'bb\'d6\'c3\'b5\'c4\'c3\'e8\'ca\'f6\'a3\'ac\'d3\'c9\'cf\'b5\'cd\'b3\'b8\'f9\'be\'dd\'c2\'fa\'d7\'e3\'cb\'f9\'d3\'d0\'d4\'bc\'ca\'f8\'d2\'d4\'ba\'f3\'a3\'ac\'bc\'c6\'cb\'e3\'cf\'ec\'d3\'a6\'b5\'c4frame\'c0\'b4\'b2\'bc\'be\'d6\'a3\'ac\'b2\'bb\'d4\'d9\'ca\'c7\'c8\'cb\'b9\'a4\'bc\'c6\'cb\'e3frame\
+		2)\'ca\'b2\'c3\'b4\'ca\'c7\'d4\'bc\'ca\'f8\'a3\'bf \'d4\'bc\'ca\'f8\'be\'cd\'ca\'c7\'cc\'f5\'bc\'fe\
+		3)\'d4\'bc\'ca\'f8\'b5\'c4\'ca\'b9\'d3\'c3\'d4\'ad\'d4\'f2\
+			\'c3\'e8\'ca\'f6\'c7\'e5\'ce\'fa+\'bb\'a5\'b2\'bb\'b3\'e5\'cd\'bb\'a1\'a3 \'bc\'f2\'b5\'a5\'cb\'b5 \'b2\'bb\'c4\'dc\'b6\'e0\'d2\'b2\'b2\'bb\'c4\'dc\'c9\'d9\
+	3.3 \'c8\'e7\'ba\'ce\'ca\'b9\'d3\'c3\'d4\'bc\'ca\'f8\'a3\'bf\
+		\'b7\'bd\'ca\'bd\'d2\'bb: \'d3\'c3storyboard\'bb\'f2\'d5\'dfxib\'c0\'b4\'b4\'b4\'bd\'a8\'a3\'ac\'b2\'bb\'d0\'e8\'d2\'aa\'b4\'fa\'c2\'eb\
+		\'b7\'bd\'ca\'bd\'b6\'fe:\'ca\'b9\'d3\'c3\'b4\'fa\'c2\'eb\'b4\'b4\'bd\'a8\
+	3.4 \'ca\'b9\'d3\'c3\'b9\'ca\'ca\'c2\'b0\'e5\'cd\'ea\'b3\'c9\'d4\'bc\'ca\'f8\'b5\'c4\'c5\'e4\'d6\'c3\
+		\'a1\'beDay04-4-AutoLayout\'a1\'bf\
+\
+\'d7\'f7\'d2\'b5:\
+\'b2\'ce\'bf\'bc day04\'b5\'c4\'d7\'ca\'d4\'b4\'d6\'d0\'b5\'c4 H01 \'ce\'c4\'bc\'fe\'bc\'d0\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

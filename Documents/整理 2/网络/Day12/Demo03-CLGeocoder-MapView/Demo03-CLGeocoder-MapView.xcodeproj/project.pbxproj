@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85FA6EFA1BAA6D7D00935780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FA6EF91BAA6D7D00935780 /* main.m */; };
+		85FA6EFD1BAA6D7D00935780 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FA6EFC1BAA6D7D00935780 /* AppDelegate.m */; };
+		85FA6F001BAA6D7D00935780 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FA6EFF1BAA6D7D00935780 /* ViewController.m */; };
+		85FA6F031BAA6D7D00935780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FA6F011BAA6D7D00935780 /* Main.storyboard */; };
+		85FA6F051BAA6D7D00935780 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FA6F041BAA6D7D00935780 /* Images.xcassets */; };
+		85FA6F081BAA6D7D00935780 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85FA6F061BAA6D7D00935780 /* LaunchScreen.xib */; };
+		85FA6F141BAA6D7D00935780 /* Demo03_CLGeocoder_MapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FA6F131BAA6D7D00935780 /* Demo03_CLGeocoder_MapViewTests.m */; };
+		85FA6F1E1BAA6E0000935780 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FA6F1D1BAA6E0000935780 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85FA6F0E1BAA6D7D00935780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FA6EEC1BAA6D7D00935780 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FA6EF31BAA6D7D00935780;
+			remoteInfo = "Demo03-CLGeocoder-MapView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85FA6EF41BAA6D7D00935780 /* Demo03-CLGeocoder-MapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo03-CLGeocoder-MapView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FA6EF81BAA6D7D00935780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FA6EF91BAA6D7D00935780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85FA6EFB1BAA6D7D00935780 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85FA6EFC1BAA6D7D00935780 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85FA6EFE1BAA6D7D00935780 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85FA6EFF1BAA6D7D00935780 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85FA6F021BAA6D7D00935780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85FA6F041BAA6D7D00935780 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85FA6F071BAA6D7D00935780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		85FA6F0D1BAA6D7D00935780 /* Demo03-CLGeocoder-MapViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo03-CLGeocoder-MapViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FA6F121BAA6D7D00935780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FA6F131BAA6D7D00935780 /* Demo03_CLGeocoder_MapViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo03_CLGeocoder_MapViewTests.m; sourceTree = "<group>"; };
+		85FA6F1D1BAA6E0000935780 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85FA6EF11BAA6D7D00935780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FA6F1E1BAA6E0000935780 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FA6F0A1BAA6D7D00935780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85FA6EEB1BAA6D7D00935780 = {
+			isa = PBXGroup;
+			children = (
+				85FA6F1D1BAA6E0000935780 /* MapKit.framework */,
+				85FA6EF61BAA6D7D00935780 /* Demo03-CLGeocoder-MapView */,
+				85FA6F101BAA6D7D00935780 /* Demo03-CLGeocoder-MapViewTests */,
+				85FA6EF51BAA6D7D00935780 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85FA6EF51BAA6D7D00935780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85FA6EF41BAA6D7D00935780 /* Demo03-CLGeocoder-MapView.app */,
+				85FA6F0D1BAA6D7D00935780 /* Demo03-CLGeocoder-MapViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85FA6EF61BAA6D7D00935780 /* Demo03-CLGeocoder-MapView */ = {
+			isa = PBXGroup;
+			children = (
+				85FA6EFB1BAA6D7D00935780 /* AppDelegate.h */,
+				85FA6EFC1BAA6D7D00935780 /* AppDelegate.m */,
+				85FA6EFE1BAA6D7D00935780 /* ViewController.h */,
+				85FA6EFF1BAA6D7D00935780 /* ViewController.m */,
+				85FA6F011BAA6D7D00935780 /* Main.storyboard */,
+				85FA6F041BAA6D7D00935780 /* Images.xcassets */,
+				85FA6F061BAA6D7D00935780 /* LaunchScreen.xib */,
+				85FA6EF71BAA6D7D00935780 /* Supporting Files */,
+			);
+			path = "Demo03-CLGeocoder-MapView";
+			sourceTree = "<group>";
+		};
+		85FA6EF71BAA6D7D00935780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85FA6EF81BAA6D7D00935780 /* Info.plist */,
+				85FA6EF91BAA6D7D00935780 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85FA6F101BAA6D7D00935780 /* Demo03-CLGeocoder-MapViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				85FA6F131BAA6D7D00935780 /* Demo03_CLGeocoder_MapViewTests.m */,
+				85FA6F111BAA6D7D00935780 /* Supporting Files */,
+			);
+			path = "Demo03-CLGeocoder-MapViewTests";
+			sourceTree = "<group>";
+		};
+		85FA6F111BAA6D7D00935780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85FA6F121BAA6D7D00935780 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85FA6EF31BAA6D7D00935780 /* Demo03-CLGeocoder-MapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FA6F171BAA6D7D00935780 /* Build configuration list for PBXNativeTarget "Demo03-CLGeocoder-MapView" */;
+			buildPhases = (
+				85FA6EF01BAA6D7D00935780 /* Sources */,
+				85FA6EF11BAA6D7D00935780 /* Frameworks */,
+				85FA6EF21BAA6D7D00935780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo03-CLGeocoder-MapView";
+			productName = "Demo03-CLGeocoder-MapView";
+			productReference = 85FA6EF41BAA6D7D00935780 /* Demo03-CLGeocoder-MapView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85FA6F0C1BAA6D7D00935780 /* Demo03-CLGeocoder-MapViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FA6F1A1BAA6D7D00935780 /* Build configuration list for PBXNativeTarget "Demo03-CLGeocoder-MapViewTests" */;
+			buildPhases = (
+				85FA6F091BAA6D7D00935780 /* Sources */,
+				85FA6F0A1BAA6D7D00935780 /* Frameworks */,
+				85FA6F0B1BAA6D7D00935780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FA6F0F1BAA6D7D00935780 /* PBXTargetDependency */,
+			);
+			name = "Demo03-CLGeocoder-MapViewTests";
+			productName = "Demo03-CLGeocoder-MapViewTests";
+			productReference = 85FA6F0D1BAA6D7D00935780 /* Demo03-CLGeocoder-MapViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85FA6EEC1BAA6D7D00935780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					85FA6EF31BAA6D7D00935780 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					85FA6F0C1BAA6D7D00935780 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 85FA6EF31BAA6D7D00935780;
+					};
+				};
+			};
+			buildConfigurationList = 85FA6EEF1BAA6D7D00935780 /* Build configuration list for PBXProject "Demo03-CLGeocoder-MapView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85FA6EEB1BAA6D7D00935780;
+			productRefGroup = 85FA6EF51BAA6D7D00935780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85FA6EF31BAA6D7D00935780 /* Demo03-CLGeocoder-MapView */,
+				85FA6F0C1BAA6D7D00935780 /* Demo03-CLGeocoder-MapViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85FA6EF21BAA6D7D00935780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FA6F031BAA6D7D00935780 /* Main.storyboard in Resources */,
+				85FA6F081BAA6D7D00935780 /* LaunchScreen.xib in Resources */,
+				85FA6F051BAA6D7D00935780 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FA6F0B1BAA6D7D00935780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85FA6EF01BAA6D7D00935780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FA6F001BAA6D7D00935780 /* ViewController.m in Sources */,
+				85FA6EFD1BAA6D7D00935780 /* AppDelegate.m in Sources */,
+				85FA6EFA1BAA6D7D00935780 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FA6F091BAA6D7D00935780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FA6F141BAA6D7D00935780 /* Demo03_CLGeocoder_MapViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85FA6F0F1BAA6D7D00935780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FA6EF31BAA6D7D00935780 /* Demo03-CLGeocoder-MapView */;
+			targetProxy = 85FA6F0E1BAA6D7D00935780 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85FA6F011BAA6D7D00935780 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FA6F021BAA6D7D00935780 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85FA6F061BAA6D7D00935780 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FA6F071BAA6D7D00935780 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85FA6F151BAA6D7D00935780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85FA6F161BAA6D7D00935780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85FA6F181BAA6D7D00935780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Demo03-CLGeocoder-MapView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85FA6F191BAA6D7D00935780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Demo03-CLGeocoder-MapView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85FA6F1B1BAA6D7D00935780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Demo03-CLGeocoder-MapViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo03-CLGeocoder-MapView.app/Demo03-CLGeocoder-MapView";
+			};
+			name = Debug;
+		};
+		85FA6F1C1BAA6D7D00935780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Demo03-CLGeocoder-MapViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo03-CLGeocoder-MapView.app/Demo03-CLGeocoder-MapView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85FA6EEF1BAA6D7D00935780 /* Build configuration list for PBXProject "Demo03-CLGeocoder-MapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FA6F151BAA6D7D00935780 /* Debug */,
+				85FA6F161BAA6D7D00935780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FA6F171BAA6D7D00935780 /* Build configuration list for PBXNativeTarget "Demo03-CLGeocoder-MapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FA6F181BAA6D7D00935780 /* Debug */,
+				85FA6F191BAA6D7D00935780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85FA6F1A1BAA6D7D00935780 /* Build configuration list for PBXNativeTarget "Demo03-CLGeocoder-MapViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FA6F1B1BAA6D7D00935780 /* Debug */,
+				85FA6F1C1BAA6D7D00935780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85FA6EEC1BAA6D7D00935780 /* Project object */;
+}

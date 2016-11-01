@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AYa-pB-2GO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--第一页-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fg-ge-oWO">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dFG-D9-DNt"/>
+                                    <barButtonItem systemItem="rewind" id="rWm-wf-ehL"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="qyE-27-5Sq"/>
+                                    <barButtonItem systemItem="play" id="bVh-8n-Neb"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="RvW-De-zgb"/>
+                                    <barButtonItem systemItem="fastForward" id="gWk-F3-IUx"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oiN-ck-6px"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="第一页" id="82h-Mr-Qke">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="oRZ-C7-tgz"/>
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="gc8-M6-Oo6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="VdU-th-9IH">
+                            <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="AGa-wS-xWl" kind="push" id="IHV-Cg-XGG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="297"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="MLV-lD-pbQ">
+            <objects>
+                <viewController id="AGa-wS-xWl" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vuv-FI-oXG"/>
+                        <viewControllerLayoutGuide type="bottom" id="9oU-Zn-zb1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="02g-u5-Fsp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XIg-F9-aOK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vr0-3Q-4ZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L9R-eQ-gRY">
+            <objects>
+                <navigationController id="AYa-pB-2GO" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mcT-z0-eB7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="lY0-pC-nd3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woB-9Q-Rmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-240" y="297"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,262 @@
+{\rtf1\ansi\ansicpg936\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset134 STSongti-SC-Regular;\f2\froman\fcharset0 Times-Roman;
+\f3\fnil\fcharset0 HelveticaNeue;\f4\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red134\green19\blue62;\red41\green0\blue130;\red217\green11\blue0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19140\viewh12680\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs72 \cf0 Day04:\
+\
+\'b8\'c5\'c4\'ee\'a3\'ba\
+\'bd\'f8\'b3\'ccProcess\'a3\'ba\'d5\'fd\'d4\'da\'d4\'cb\'d0\'d0\'b5\'c4\'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2(Applications/)\
+\'cf\'df\'b3\'ccThread\'a3\'ba \'b3\'cc\'d0\'f2\'b5\'c4\'d2\'bb\'b6\'ce\'d6\'b4\'d0\'d0\'d0\'f2\'c1\'d0 (\'d6\'b4\'d0\'d0\'c8\'ce\'ce\'f1\'b5\'c4\'b3\'cc\'d0\'f2\'c2\'df\'bc\'ad)\
+\'c8\'ce\'ce\'f1Task\'a3\'ba\'cf\'df\'b3\'cc\'d6\'b4\'d0\'d0\'b5\'c4\'d0\'f2\'c1\'d0\'b6\'ce\
+\
+\'bd\'f8\'b3\'cc\'ba\'cd\'cf\'df\'b3\'cc\'b5\'c4\'b9\'d8\'cf\'b5\'a3\'ba\
+1. \'d5\'eb\'b6\'d4\'ca\'fd\'c1\'bf\'a3\'ba\'d2\'bb\'b8\'f6\'bd\'f8\'b3\'cc\'d6\'c1\'c9\'d9\'d3\'d0\'d2\'bb\'b8\'f6\'cf\'df\'b3\'cc\'a3\'bb\'d6\'c1\'c9\'d9\'d2\'bb\'b8\'f6\'cf\'df\'b3\'cc\'b3\'c6\'ce\'aa\'a1\'b1\'d6\'f7\'cf\'df\'b3\'cc\'a1\'b1\
+2. \'d5\'eb\'b6\'d4\'b9\'a6\'c4\'dc\'a3\'ba\'bd\'f8\'b3\'cc\'d6\'bb\'bb\'e1\'b7\'d6\'c5\'e4\'c4\'da\'b4\'e6\'bf\'d5\'bc\'e4\'a3\'ac\'b2\'bb\'d6\'b4\'d0\'d0\'c8\'ce\'ce\'f1\'a3\'bb\'cf\'df\'b3\'cc\'b6\'bc\'d3\'d0\'d6\'b4\'d0\'d0\'c8\'ce\'ce\'f1\'b5\'c4\'b9\'a6\'c4\'dc\
+\
+\'ce\'aa\'ca\'b2\'c3\'b4\'bb\'e1\'d3\'d0\'b6\'e0\'cf\'df\'b3\'cc\'a3\'bf\
+\'b6\'e0\'cf\'df\'b3\'cc\'b2\'a2\'b7\'a2\'a3\'ba\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'cd\'ac\'ca\'b1\'d6\'b4\'d0\'d0\'c8\'ce\'ce\'f1 \
+\'a1\'aa> \'cc\'e1\'b8\'df\'b3\'cc\'d0\'f2\'b5\'c4\'d6\'b4\'d0\'d0\'d0\'a7\'c2\'ca\
+\
+\'b6\'e0\'cf\'df\'b3\'cc\'d4\'daiOS\'d6\'d0\'b5\'c4\'d7\'f7\'d3\'c3\'a3\'bf\
+\'c8\'ce\'ba\'ce\'d2\'bb\'b8\'f6iOS\'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2\'b6\'bc\'ca\'c7\'d3\'c9\'d2\'bb\'b8\'f6\'bb\'f2\'d5\'df\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'d7\'e9\'b3\'c9\'a3\'ac \'cf\'b5\'cd\'b3\'bb\'e1\'c4\'ac\'c8\'cf\'c6\'f4\'b6\'af\'d2\'bb\'b8\'f6\'d6\'f7\'cf\'df\'b3\'cc (UI\'cf\'df\'b3\'cc)\
+\
+iOS\'d6\'f7\'cf\'df\'b3\'cc\'b5\'c4\'d7\'f7\'d3\'c3\
+1. \'cf\'d4\'ca\'be/\'cb\'a2\'d0\'c2UI\'bd\'e7\'c3\'e6\
+2. \'cf\'ec\'d3\'a6\'d3\'c3\'bb\'a7\'b5\'c4\'ca\'c2\'bc\'fe (\'cd\'cf\'d7\'a7\'a1\'a2\'b9\'f6\'b6\'af\'a1\'a2\'b5\'e3\'bb\'f7\'ca\'c2\'bc\'fe\'a1\'a3\'a1\'a3\'a1\'a3\'a1\'a3)\
+\
+\'d3\'a6\'b8\'c3\'b0\'d1\'ba\'c4\'ca\'b1\'b5\'c4\'b2\'d9\'d7\'f7\'b7\'c5\'b5\'bd\'d7\'d3\'cf\'df\'b3\'cc\'d6\'d0\'d7\'f6\
+\'ba\'c4\'ca\'b1\'b2\'d9\'d7\'f7\'a3\'ba\'cd\'bc\'c6\'ac/\'d2\'f4\'c6\'b5/\'ca\'d3\'c6\'b5\'b5\'c4\'cf\'c2\'d4\'d8; \'c6\'e4\'cb\'fc\'b5\'c4\'ba\'c4\'ca\'b1\'b2\'d9\'d7\'f7\
+\
+PThread: \'bc\'b8\'ba\'f5\'b2\'bb\'d3\'c3 (\'b2\'bb\'d0\'e8\'d2\'aa\'d5\'c6\'ce\'d5)\
+\
+NSThread: Foundation Framework (\'c0\'ed\'bd\'e2)\
+\'c8\'e7\'ba\'ce\'b4\'b4\'bd\'a8NSThread\'cf\'df\'b3\'cc\
+1. initWithTarget:self selector:@() withObject:\
+2. detachNewThreadSelector: \
+3. performSelectorInBackground: withObject:\
+\
+\'c8\'e7\'ba\'ce\'cd\'cb\'b3\'f6\'cf\'df\'b3\'cc(\'cd\'a3\'d6\'b9\'cf\'df\'b3\'cc\'d5\'fd\'d4\'da\'d6\'b4\'d0\'d0\'b5\'c4\'c8\'ce\'ce\'f1)\'a3\'bf\
+[NSThread exit];\
+\
+\'c8\'e7\'ba\'ce\'d4\'da\'d6\'f7\'cf\'df\'b3\'cc\'d6\'d0\'c8\'a1\'cf\'fb\'d7\'d3\'cf\'df\'b3\'cc\'b5\'c4\'c8\'ce\'ce\'f1\'a3\'bf\
+[NSThread cancel];\
+\
+\'d1\'f9\'c0\'fd\'a3\'ba\
+\'ca\'b9\'d3\'c3NSThread\'c0\'b4\'cf\'c2\'d4\'d8\'cd\'f8\'c2\'e7\'cd\'bc\'c6\'ac \
+\'a1\'beDemo01-NSThread-Download\'a1\'bf\
+UI\'bd\'e7\'c3\'e6\'a3\'baUIButton; UIImageView\
+\'d2\'b5\'ce\'f1\'c2\'df\'bc\'ad\'a3\'ba\
+1\'a3\'a9\'b4\'b4\'bd\'a8NSThread\'b6\'d4\'cf\'f3\'a3\'bb\
+2\'a3\'a9\'ca\'b9\'d3\'c3NSThread\'b6\'d4\'cf\'f3\'c0\'b4\'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac (\'cf\'df\'b3\'cc\'d2\'aa\'d6\'b4\'d0\'d0\'b5\'c4\'c8\'ce\'ce\'f1)\
+\'a1\'aa> NSString \'a1\'aa> NSURL \'a1\'aa> NSData \'a1\'aa> UIImage \'a1\'aa> UIImageView\
+3\'a3\'a9\'bb\'d8\'b5\'bd\'d6\'f7\'cf\'df\'b3\'cc\'d6\'d0\'cf\'d4\'ca\'be\'cd\'bc\'c6\'ac (imageView.image = UIImage)\
+\
+\'bd\'e2\'ca\'cd\'a3\'ba\'ce\'aa\'ca\'b2\'c3\'b4\'d2\'aa\'bb\'d8\'b5\'bd\'d6\'f7\'cf\'df\'b3\'cc\'a3\'bf\'a3\'bf\'a3\'bf\'a3\'bf\
+\cf2 \'cb\'f9\'d3\'d0UIKit\'d6\'d0\'b5\'c4\'bf\'d8\'bc\'fe\cf0 \'b5\'c4\'bc\'d3\'d4\'d8\'ba\'cd\'b8\'fc\'d0\'c2\'a3\'ac\'b6\'bc\'d3\'a6\'b8\'c3\'bb\'d8\'b5\'bd\'d6\'f7\'cf\'df\'b3\'cc\'a3\'ac\'ca\'b9\'b5\'c3\'d5\'e2\'d0\'a9\'bc\'d3\'d4\'d8\'ba\'cd\'b8\'fc\'d0\'c2\'b5\'c4\'d3\'c5\'cf\'c8\'bc\'b6\'c9\'fd\'b8\'df\'a3\'ac\'d3\'c5\'cf\'c8\'cf\'ec\'d3\'a6\'a1\'a3\
+\
+\
+\'b6\'e0\'cf\'df\'b3\'cc\'b5\'c4\'cf\'e0\'b9\'d8\'b5\'c4\'b8\'c5\'c4\'ee\'a3\'ba\
+\
+\'bd\'f8\'b3\'cc\'a3\'ba\'d2\'bb\'b8\'f6\cf2 \'d5\'fd\'d4\'da\'d4\'cb\'d0\'d0\cf0 \'b5\'c4\'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2 (\'d5\'fd\'d4\'da\'d4\'cb\'d0\'d0:\'c6\'f4\'b6\'af)\
+\'cf\'df\'b3\'cc\'a3\'ba\'ca\'c7\'b3\'cc\'d0\'f2\'b5\'c4\'d2\'bb\'b6\'ce\'d6\'b4\'d0\'d0\'d0\'f2\'c1\'d0 (\'d6\'b4\'d0\'d0\'b4\'fa\'c2\'eb\'c2\'df\'bc\'ad), \'ca\'c7\'bd\'f8\'b3\'cc\'d2\'bb\'b2\'bf\'b7\'d6\
+\'c8\'ce\'ce\'f1\'a3\'ba\
+\
+\'bd\'f8\'b3\'cc\'ba\'cd\'cf\'df\'b3\'cc\'b5\'c4\'b9\'d8\'cf\'b5\'a3\'ba\
+1. \'d5\'eb\'b6\'d4\'ca\'fd\'c1\'bf\'a3\'baXcode\'bd\'f8\'b3\'cc\'bf\'c9\'d2\'d4\'d3\'d0\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'a3\'ac\cf2 \'d6\'c1\'c9\'d9\'d2\'bb\'b8\'f6\'cf\'df\'b3\'cc\cf0 \'a3\'ac\'c3\'bb\'d3\'d0\'b7\'e5\'d6\'b5 (\'c8\'a1\'be\'f6\'d3\'da\'d3\'a6\'d3\'c3\'b5\'c4\'c9\'e8\'bc\'c6)\
+2. \'d5\'eb\'b6\'d4\'b9\'a6\'c4\'dc\'a3\'ba\
+\'bd\'f8\'b3\'cc\'c3\'bb\'d3\'d0\'d6\'b4\'d0\'d0\'c8\'ce\'ce\'f1\'b5\'c4\'b9\'a6\'c4\'dc (\'bc\'e0\'b9\'a4)\'a3\'ac\'d6\'bb\'ca\'c7\'b7\'d6\'c5\'e4\'c4\'da\'b4\'e6\'bf\'d5\'bc\'e4\
+\'cf\'df\'b3\'cc\'d3\'d0\'d6\'b4\'d0\'d0\'c8\'ce\'ce\'f1\'b5\'c4\'b9\'a6\'c4\'dc (\'b9\'a4\'c8\'cb)\
+\
+Xcode\'bd\'f8\'b3\'cc \'a1\'aa> \'d2\'bb\'b6\'a8\'bb\'e1\'b4\'e6\'d4\'da\'d6\'c1\'c9\'d9\'d2\'bb\'b8\'f6\'cf\'df\'b3\'cc (\'d6\'f7\'cf\'df\'b3\'cc)\
+\
+\'ce\'aa\'ca\'b2\'c3\'b4\'ca\'b9\'d3\'c3\'b6\'e0\'cf\'df\'b3\'cc\'a3\'bf\
+1. \'ca\'ca\'b5\'b1\'b5\'d8\'cc\'e1\'b8\'df\'b3\'cc\'d0\'f2\'b5\'c4\'d6\'b4\'d0\'d0\'d0\'a7\'c2\'ca (\'cd\'ac\'ca\'b1\'d4\'da\'cd\'ac\'d2\'bb\'b8\'f6\'ca\'b1\'bc\'e4\'d6\'b4\'d0\'d0\'b6\'e0\'b8\'f6\'c8\'ce\'ce\'f1)\
+\pard\pardeftab720\sa240
+
+\f1\b\fs66 \cf0 \expnd0\expndtw0\kerning0
+2. \'ca\'ca\'b5\'b1\'cc\'e1\uc0\u12220 \'d7\'ca\'d4\'b4\'c0\'fb\u12132 \'d3\'c3\'c2\'ca
+\f2 \expnd0\expndtw0\kerning0
+(
+\f3 \expnd0\expndtw0\kerning0
+CPU
+\f1 \expnd0\expndtw0\kerning0
+\'a1\'a2\'c4\'da\'b4\'e6\'c0\'fb\uc0\u12132 \'d3\'c3\'c2\'ca
+\f2 \expnd0\expndtw0\kerning0
+) \
+\
+
+\f1 \expnd0\expndtw0\kerning0
+\'b6\'e0\'cf\'df\'b3\'cc\'b5\'c4\'d4\'ad\'c0\'ed (\'c0\'a9\'d5\'b9)\
+1. \'b5\'a5\'ba\'cb: \'b6\'e0\'c8\'ce\'ce\'f1\'c7\'d0\'bb\'bb\'c0\'b4\'b4\'ef\'b5\'bd\'b2\'a2\'d0\'d0\'d6\'b4\'d0\'d0\'b5\'c4\'bc\'d9\'cf\'f3\
+2. \'b6\'e0\'ba\'cb: \'d5\'e6\'d5\'fd\'b5\'c4\'b4\'ef\'b5\'bd\'b6\'e0\'c8\'ce\'ce\'f1\'b5\'c4\'b2\'a2\'d0\'d0\'d6\'b4\'d0\'d0\
+\
+iOS\'b6\'e0\'cf\'df\'b3\'cc\'b5\'c4\'d7\'f7\'d3\'c3 (\'be\'a1\'c1\'bf\'d5\'c6\'ce\'d5)\'a3\'ba\
+\'d6\'f7\'cf\'df\'b3\'cc (UI\'cf\'df\'b3\'cc)\'d7\'f7\'d3\'c3 (\'d3\'c5\'cf\'c8\'bc\'b6\'d7\'ee\'b8\'df)\'a3\'ba\
+1. \'cf\'d4\'ca\'be\'bd\'e7\'c3\'e6/\'cb\'a2\'d0\'c2\'bd\'e7\'c3\'e6 (UIKit\'d6\'d0\'b5\'c4\'bf\'d8\'bc\'fe\'b5\'c4\'cf\'d4\'ca\'be/\'cb\'a2\'d0\'c2)\
+2. \'cf\'ec\'d3\'a6\'d3\'c3\'bb\'a7\'b5\'c4\'ca\'c2\'bc\'feEvents (\'cd\'cf\'d7\'a7\'ca\'c2\'bc\'fe/\'b9\'f6\'b6\'af\'ca\'c2\'bc\'fe/\'b5\'e3\'bb\'f7\'ca\'c2\'bc\'fe)\
+\
+\'d3\'c3\'bb\'a7\'d3\'d0\'b6\'e0\'b8\'f6\'ca\'c2\'bc\'fe\'a3\'a8\'cd\'cf\'d7\'a7/\'b9\'f6\'b6\'af/\'b5\'e3\'bb\'f7\'a3\'a9(\'c0\'ed\'bd\'e2)\'a3\'bf\
+\'d6\'f7\'b6\'d3\'c1\'d0Main Queue [\'b9\'f6\'b6\'af/\'b5\'e3\'bb\'f7/\'cd\'cf\'d7\'a7/] : \
+\'cc\'d8\'d0\'d4: FIFO\'cf\'c8\'bd\'f8\'cf\'c8\'b3\'f6 (\'d4\'da\'b6\'d3\'c1\'d0\'c7\'b0\'c3\'e6\'c8\'ce\'ce\'f1\'a3\'ac\'cf\'c8\'d6\'b4\'d0\'d0)\
+\
+iOS\'ca\'b2\'c3\'b4\'ca\'b1\'ba\'f2\'d2\'aa\'ca\'b9\'d3\'c3\cf2 \expnd0\expndtw0\kerning0
+\'b6\'e0\cf0 \expnd0\expndtw0\kerning0
+\'cf\'df\'b3\'cc (\'d6\'f7\'cf\'df\'b3\'cc + \'b6\'e0\'b8\'f6\'d7\'d3\'cf\'df\'b3\'cc)\'a3\'bf\
+\'d2\'bb\'b0\'e3\'b5\'c4\'b1\'ea\'d7\'bc: \'d6\'bb\'d2\'aa\'ca\'c7\'ba\'c4\'ca\'b1\'b5\'c4\'b2\'d9\'d7\'f7 (\'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac/\'d2\'f4\'c6\'b5/\'ca\'d3\'c6\'b5; \'ba\'cd\'cd\'f8\'c2\'e7\'ce\'de\'b9\'d8\'b5\'c4\'d2\'b5\'ce\'f1\'c2\'df\'bc\'ad)\
+\
+iOS\'a3\'ba\'ca\'c7\'b2\'bb\'ca\'c7\'d7\'d3\'cf\'df\'b3\'cc\'d4\'bd\'b6\'e0\'d4\'bd\'ba\'c3\'a3\'bf\
+\'b4\'f0\'b0\'b8\'a3\'ba\'b2\'bb\'d2\'bb\'b6\'a8\
+\'d4\'ad\'d2\'f2\'a3\'ba\'d5\'bc\'d3\'c3\'d2\'bb\'b6\'a8\'b5\'c4\'d7\'ca\'d4\'b4 (CPU/Memory)\
+\'d2\'bb\'b0\'e3\'c7\'e9\'bf\'f6\'cf\'c2\'a3\'ba\'d6\'f7\'cf\'df\'b3\'cc\'a3\'ba1M; \'d7\'d3\'cf\'df\'b3\'cc\'a3\'ba512KB\
+\
+\'d7\'d3\'cf\'df\'b3\'cc\'b8\'f6\'ca\'fd (pthread/NSThread)\'a3\'bf\
+\'c8\'a1\'be\'f6\'d3\'da\'d3\'a6\'d3\'c3\'b5\'c4\'d0\'e8\'c7\'f3; \'b3\'cc\'d0\'f2\'cf\'fb\'ba\'c4\'b5\'c4\'d7\'ca\'d4\'b4 (CPU/\'d7\'ee\'b4\'f3\'c4\'da\'b4\'e6) :\
+\'d7\'d3\'cf\'df\'b3\'cc\'b8\'f6\'ca\'fd\'bf\'d8\'d6\'c6\'d4\'da5\'b8\'f6\'d2\'d4\'c4\'da\
+\
+\'b4\'b4\'bd\'a8\'cf\'df\'b3\'cc\'b5\'c4\'b2\'bd\'d6\'e8\'a3\'ba\
+1. \'b4\'b4\'bd\'a8\'cf\'df\'b3\'cc\'b6\'d4\'cf\'f3\
+2. \'c9\'e8\'d6\'c3\'cf\'df\'b3\'cc\'b5\'c4\'ca\'f4\'d0\'d4 (\'b6\'d1\'d5\'bb\'b5\'c4\'b4\'f3\'d0\'a1\'a3\'bb\'cf\'df\'b3\'cc\'b5\'c4\'c3\'fb\'d7\'d6\'a3\'bb\'cf\'df\'b3\'cc\'d3\'c5\'cf\'c8\'bc\'b6........)\
+3. \'b8\'f8\'b6\'a8\'cf\'df\'b3\'cc\'d6\'b4\'d0\'d0\'c8\'ce\'ce\'f1\'c2\'df\'bc\'ad\'b5\'c4\'c8\'eb\'bf\'da (\'ba\'af\'ca\'fd/\'b7\'bd\'b7\'a8)\
+\
+\'c6\'bb\'b9\'fb\'cc\'e1\'b9\'a9\'b5\'c4\'cb\'c4\'d6\'d6\'b6\'e0\'cf\'df\'b3\'cc\'bc\'bc\'ca\'f5 (\'bd\'e2\'be\'f6\'b7\'bd\'b0\'b8Solution)\'a3\'ba\
+\'cf\'c2\'c3\'e6\'cb\'c4\'d6\'d6\'b7\'bd\'ca\'bd\'b4\'d3\'b5\'d7\'b2\'e3\'b5\'bd\'b8\'df\'b2\'e3 \
+1. pthread (\'bc\'b8\'ba\'f5\'b2\'bb\'d3\'c3)\
+\'bb\'f9\'d3\'daC\'d3\'ef\'d1\'d4\'a3\'bb\'ca\'b9\'d3\'c3\'bc\'f2\'b5\'a5\'a3\'bb\'b9\'a6\'c4\'dc\'c9\'d9\
+Demo01-MainThreadBlock-Pthread: \'c1\'cb\'bd\'e2\
+UI\'bd\'e7\'c3\'e6\'a3\'baUITextView (\'b9\'f6\'b6\'af\'b5\'c4\'ca\'c2\'bc\'fe); UIButton / UIButton\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f0\fs72 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 \'c4\'ac\'c8\'cf
+\f4 pthread
+\f0 \'cf\'df\'b3\'cc\'b6\'d1\'d5\'bb\'b4\'f3\'d0\'a1
+\f4 :524288
+\f1\fs66 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sa240
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa240
+\cf3 \expnd0\expndtw0\kerning0
+\'d6\'f7\'cf\'df\'b3\'cc\'d7\'e8\'c8\'fb\cf0 \expnd0\expndtw0\kerning0
+ (\'bf\'a8)\
+\'d7\'e8\'b0\'ad\'d6\'f7\'cf\'df\'b3\'cc\'cf\'ec\'d3\'a6\'c6\'e4\'cb\'fb\'b5\'c4\'ca\'c2\'bc\'fe/\'bd\'e7\'c3\'e6\'b5\'c4\'cb\'a2\'d0\'c2\
+\
+2. NSThread (\'ca\'b9\'d3\'c3\'bd\'cf\'c9\'d9)\
+\'d3\'c5\'b5\'e3\'a3\'ba\'bb\'f9\'d3\'daOC\'d3\'ef\'d1\'d4\'a3\'bb\'ca\'b9\'d3\'c3\'cf\'e0\'b6\'d4\'bc\'f2\'b5\'a5\'a3\'bb\
+\'c8\'b1\'b5\'e3\'a3\'ba\'ca\'d6\'b6\'af\'b9\'dc\'c0\'ed/\'b4\'b4\'bd\'a8\'cf\'df\'b3\'cc\'a3\'bb\'ca\'d6\'b6\'af\'cd\'cb\'b3\'f6\'d7\'d3\'cf\'df\'b3\'cc(\'d6\'d5\'d6\'b9\'d7\'d3\'cf\'df\'b3\'cc\'d5\'fd\'d4\'da\'d6\'b4\'d0\'d0\'b5\'c4\'b2\'d9\'d7\'f7); \'cf\'df\'b3\'cc\'b0\'b2\'c8\'ab\'ce\'ca\'cc\'e2(\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'cd\'ac\'ca\'b1\'c7\'c0\'b6\'e1/\cf4 \expnd0\expndtw0\kerning0
+\'d0\'b4\cf0 \expnd0\expndtw0\kerning0
+\'cd\'ac\'d2\'bb\'b8\'f6\'d7\'ca\'d4\'b4) \'a1\'aa> \'ca\'d6\'b6\'af\'bc\'d3\'cb\'f8/\'bd\'e2\'cb\'f8\
+\
+\'d1\'f9\'c0\'fd\'b6\'fe\'a3\'ba\'b4\'b4\'bd\'a8NSThread\'c0\'e0\'d0\'cd\'b5\'c4\'cf\'df\'b3\'cc\'a1\'beDemo02-NSThread\'a1\'bf\
+UI\'bd\'e7\'c3\'e6\'a3\'ba\'c8\'fd\'b8\'f6\'b0\'b4\'c5\'a5(\'b7\'d6\'b1\'f0\'d5\'eb\'b6\'d4\'c8\'fd\'d6\'d6\'b3\'f5\'ca\'bc\'bb\'af\'b5\'c4\'b7\'bd\'ca\'bd)\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f0\fs72 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \'ca\'b9\'d3\'c3\'c0\'e0\'b7\'bd\'b7\'a8
+\f4 : 
+\f0 [NSThread currentThread]\'b4\'f2\'d3\'a1\'bd\'e1\'b9\'fb
+\f4 \
+\{number = 1, name = main\}
+\f0 \'a3\'ba\'d6\'f7\'cf\'df\'b3\'cc
+\f4 \
+\{number = 3, name = 
+\f0 \'cf\'df\'b3\'cc\'d2\'bb
+\f4 \}: 
+\f0 \'d7\'d3\'cf\'df\'b3\'cc
+\f4 \
+
+\f0 \'c7\'f8\'b7\'d6\'d6\'f7\'cf\'df\'b3\'cc\'ba\'cd\'d7\'d3\'cf\'df\'b3\'cc\'b5\'c4\'bc\'bc\'c7\'c9\'a3\'ba
+\f4 \
+number
+\f0 \'ca\'c71 \'a1\'aa\'a1\'b7 \'d6\'f7\'cf\'df\'b3\'cc\
+number\'b7\'c71 \'a1\'aa\'a1\'b7 \'d7\'d3\'cf\'df\'b3\'cc
+\f1\fs66 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sa240
+\cf2 \expnd0\expndtw0\kerning0
+\
+\cf0 \expnd0\expndtw0\kerning0
+\'c4\'ac\'c8\'cfNSThread\'d5\'bc\'d3\'c3\'b5\'c4\'c4\'da\'b4\'e6\'b4\'f3\'d0\'a1\'a3\'ba\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f4\fs72 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 NSThread
+\f0 \'c4\'ac\'c8\'cf\'b6\'d1\'d5\'bb\'b4\'f3\'d0\'a1
+\f4 :524288
+\f1\fs66 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sa240
+\cf2 \expnd0\expndtw0\kerning0
+\
+\cf0 \expnd0\expndtw0\kerning0
+\'cf\'df\'b3\'cc\'b0\'b2\'c8\'ab\'ce\'ca\'cc\'e2/\'ca\'fd\'be\'dd\'b2\'bb\'d2\'bb\'d6\'c2\'cf\'d6\'cf\'f3:\
+\'b6\'e0\'b8\'f6\'cf\'df\'b3\'cc\'cd\'ac\'ca\'b1\'c7\'c0\'b6\'e1\'cd\'ac\'d2\'bb\'b8\'f6\'d7\'ca\'d4\'b4\'b5\'c4\'ca\'b1\'ba\'f2\cf2 \expnd0\expndtw0\kerning0
+\
+\
+\cf0 \expnd0\expndtw0\kerning0
+\'d1\'f9\'c0\'fd\'c8\'fd\'a3\'ba\'ca\'b9\'d3\'c3\'c1\'bd\'b8\'f6NSThread\'cf\'df\'b3\'cc\'c0\'b4\'c4\'a3\'c4\'e2\'d2\'bb\'b8\'f6\'c2\'f4\'c6\'b1\'cf\'b5\'cd\'b3\
+\'a1\'beDemo03-NSThread-SaleTicket\'a1\'bf\
+UI\'bd\'e7\'c3\'e6\'a3\'baUIButton\
+\
+\'d1\'f9\'c0\'fd\'c8\'fd\'ce\'ca\'cc\'e2\'a3\'ba\
+\'c1\'bd\'b8\'f6\'cf\'df\'b3\'cc/\'b4\'b0\'bf\'da\'cd\'ac\'ca\'b1\'c2\'f4\'c6\'b1(\'cd\'ac\'ca\'b1\'d2\'aa\'d0\'de\'b8\'c4BJ->SH\'b5\'c4\'ca\'fd\'be\'dd)\'a3\'ac\'d4\'ec\'b3\'c9\'ca\'fd\'be\'dd\'b2\'bb\'d2\'bb\'d6\'c2\'b5\'c4\'ce\'ca\'cc\'e2\
+\'bd\'e2\'be\'f6\'b7\'bd\'b0\'b8\'a3\'ba\'d4\'da\'c2\'f4\'c6\'b1\'b5\'c4\'b9\'fd\'b3\'cc\'d6\'d0\'d2\'aa\'bd\'f8\'d0\'d0\'bc\'d3\'cb\'f8\'ba\'cd\'bd\'e2\'cb\'f8\'b2\'d9\'d7\'f7\
+\'c0\'e0\'a3\'baNSLock (\'bb\'a5\'b3\'e2\'cb\'f8/\'c5\'c5\'cb\'fc\'cb\'f8)\
+\'bc\'d3\'cb\'f8\'b5\'c4\'ca\'b1\'bb\'fa\'a3\'ba\'bf\'aa\'ca\'bc\'c2\'f4\'c6\'b1\'b5\'c4\'ca\'b1\'ba\'f2\
+\'bd\'e2\'cb\'f8\'b5\'c4\'ca\'b1\'bb\'fa\'a3\'ba\'c2\'f4\'b3\'f6\'d2\'bb\'d5\'c5\'c6\'b1\'b5\'c4\'ca\'b1\'ba\'f2/\'c2\'f4\'cd\'ea\'b5\'c4\'ca\'b1\'ba\'f2\cf2 \expnd0\expndtw0\kerning0
+\
+\'d5\'c6\'ce\'d5\'b5\'c4\'d6\'aa\'ca\'b6\'b5\'e3\'a3\'ba\'b3\'a3\'d3\'c3\'b5\'c4\'b7\'bd\'b7\'a8\
+\
+\'d1\'f9\'c0\'fd\'a3\'ba\'ca\'b9\'d3\'c3NSThread\'b4\'d3\'cd\'f8\'c2\'b7\'d6\'d0\'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac\
+\'a1\'beDemo04-NSThread-Download\'a1\'bf\
+UI\'bd\'e7\'c3\'e6\'a3\'baUIButton / UIImageView\
+\'d2\'b5\'ce\'f1\'c2\'df\'bc\'ad -\'a1\'b7 \'ba\'c4\'ca\'b1\'b2\'d9\'d7\'f7\'a3\'ba\
+1. \'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac (\'b7\'bd\'ca\'bd\'d2\'bb\'a3\'baNSString -> NSURL -> NSData -> UIImage)\
+2. \'bd\'ab\'d7\'d3\'cf\'df\'b3\'cc\'d6\'d0\'cf\'c2\'d4\'d8\'b5\'c4\'cd\'bc\'c6\'acUIImage\'d3\'a6\'b8\'c3\'b4\'ab\'b8\'f8\'d6\'f7\'cf\'df\'b3\'cc\'a3\'ac\'c8\'c3\'d6\'f7\'cf\'df\'b3\'cc\'c0\'b4\'cf\'d4\'ca\'be\
+\
+\'ca\'f5\'d3\'ef\'a3\'ba\
+\'cf\'df\'b3\'cc\'bc\'e4\'b5\'c4\'cd\'a8\'d1\'b6 (\'b4\'ab\'b2\'ce)\
+\
+\'ce\'aa\'ca\'b2\'c3\'b4\'d0\'e8\'d2\'aa\'bb\'d8\'b5\'bd\'d6\'f7\'cf\'df\'b3\'cc\'c0\'b4\'cf\'d4\'ca\'be?\
+\'d4\'ad\'d2\'f2\'a3\'ba\'cb\'f9\'d3\'d0UIKit\'b5\'c4\'bf\'d8\'bc\'fe\'b6\'bc\'d3\'a6\'b8\'c3\'bb\'d8\'b5\'bd\'d6\'f7\'cf\'df\'b3\'cc\'d6\'d0\'cf\'d4\'ca\'be\'a3\'ac\'ca\'b9\'b5\'c3\'d5\'e2\'d0\'a9\'bf\'d8\'bc\'fe\'b5\'c4\'bc\'d3\'d4\'d8/\'cf\'d4\'ca\'be\'b5\'c4\'d3\'c5\'cf\'c8\'bc\'b6\'d7\'ee\'b8\'df\
+\'b9\'d9\'b7\'bd\'c1\'b4\'bd\'d3?????\
+\
+\cf0 \expnd0\expndtw0\kerning0
+\
+3. GCD (\'be\'a1\'c1\'bf\'d5\'c6\'ce\'d5; \'ca\'b9\'d3\'c3\'b9\'e3\'b7\'ba)\
+Grand Central Dispatch\'a3\'ba\'ce\'b0\'b4\'f3\'b5\'c4\'ba\'cb\'d0\'c4/\'d6\'d0\'ca\'e0\'b5\'f7\'b6\'c8\'bb\'fa\'d6\'c6\
+\'cc\'d8\'b5\'e3\'a3\'ba\'bb\'f9\'d3\'daC\'d3\'ef\'d1\'d4; \'ba\'c3\'d3\'c3 (Block) / \'b2\'bb\'d3\'c3\'c1\'cb\'bd\'e2\'cf\'df\'b3\'cc\'b5\'c4\'b8\'c5\'c4\'ee (\'bd\'b5\'b5\'cd\'bf\'aa\'b7\'a2\'c3\'c5\'bc\'f7; \'d4\'bd\'c0\'b4\'d4\'bd\'b6\'e0\'b5\'c4\'bf\'aa\'b7\'a2\'c8\'cb\'d4\'b1\'bf\'aa\'b7\'a2app)\
+4. NSOperation (\'be\'a1\'c1\'bf\'d5\'c6\'ce\'d5)\
+\'bb\'f9\'d3\'daGCD\'ca\'b5\'cf\'d6; \'c3\'e6\'cf\'f2\'b6\'d4\'cf\'f3 (alloc init\'b7\'bd\'ca\'bd\'b4\'b4\'bd\'a8\'b6\'e0\'cf\'df\'b3\'ccapp)\
+\'d3\'d0\'d2\'bb\'d0\'a9GCD\'ce\'de\'b7\'a8\'ca\'b5\'cf\'d6\'b5\'c4\'b9\'a6\'c4\'dc\
+\
+\
+GCD\'c8\'ce\'ce\'f1\'a3\'ba\'cd\'ac\'ca\'b1\'cf\'c2\'d4\'d8\'ca\'ae\'b8\'f6\'d2\'f4\'c0\'d6\'ce\'c4\'bc\'fe (\'ca\'ae\'b8\'f6\'cf\'df\'b3\'cc\'a3\'bf\'bf\'d8\'d6\'c6\'d4\'da5\'b8\'f6\'d2\'d4\'c4\'da)\
+\
+\pard\pardeftab720\sa240
+{\field{\*\fldinst{HYPERLINK "http://stackoverflow.com/"}}{\fldrslt 
+\f3\fs128 \cf0 \expnd0\expndtw0\kerning0
+www.stackoverflow.com/}}
+\f3\fs128 \expnd0\expndtw0\kerning0
+\
+www.raywenderlich.com
+\f0\b0\fs72 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+UIButton: @selector(clickButton)\
+\
+\
+{\field{\*\fldinst{HYPERLINK "http://www.egouz.com/uploadfile/2015/0305/20150305103626911.jpg"}}{\fldrslt http://www.egouz.com/uploadfile/2015/0305/20150305103626911.jpg}}\
+\
+\
+\
+\
+\
+\
+\
+\
+}

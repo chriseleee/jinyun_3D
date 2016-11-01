@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分数：12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFs-vE-CTX">
+                                <rect key="frame" x="46" y="28" width="229" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQc-hl-BsV">
+                                <rect key="frame" x="8" y="76" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iPe-cu-sgP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxC-Oe-Z5t">
+                                <rect key="frame" x="86" y="76" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0bA-rd-juB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKt-gH-mIK">
+                                <rect key="frame" x="164" y="76" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MWR-L9-Nrk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZE-S7-Ced">
+                                <rect key="frame" x="242" y="76" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4HZ-LK-aPQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77i-gB-iaW">
+                                <rect key="frame" x="8" y="189" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MFQ-Nf-nqt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKd-Qt-20C">
+                                <rect key="frame" x="86" y="189" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Er0-AO-Cn6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCF-X8-Npb">
+                                <rect key="frame" x="164" y="189" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="458-ci-ozz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-TY-Nap">
+                                <rect key="frame" x="242" y="189" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iEG-aE-QnV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBV-6U-mTr">
+                                <rect key="frame" x="8" y="302" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Ti-Ua-CKm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJJ-yN-xiT">
+                                <rect key="frame" x="86" y="302" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cqI-Ff-ol1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOo-We-abf">
+                                <rect key="frame" x="164" y="302" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oH7-q8-RV2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye8-aZ-fl3">
+                                <rect key="frame" x="242" y="302" width="70" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="❤️K" backgroundImage="cardfront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fNg-t2-F3c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.72156862749999995" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scoreLb" destination="zFs-vE-CTX" id="ukT-sb-xb2"/>
+                        <outletCollection property="buttons" destination="YQc-hl-BsV" id="nNz-Gp-VH2"/>
+                        <outletCollection property="buttons" destination="JxC-Oe-Z5t" id="MEI-90-cm7"/>
+                        <outletCollection property="buttons" destination="VKt-gH-mIK" id="hA2-zC-zkJ"/>
+                        <outletCollection property="buttons" destination="7ZE-S7-Ced" id="hvQ-qL-MQs"/>
+                        <outletCollection property="buttons" destination="77i-gB-iaW" id="094-xh-zfQ"/>
+                        <outletCollection property="buttons" destination="QKd-Qt-20C" id="MYL-83-ePV"/>
+                        <outletCollection property="buttons" destination="dCF-X8-Npb" id="MuS-hQ-8vg"/>
+                        <outletCollection property="buttons" destination="hh7-TY-Nap" id="DHz-rp-1VF"/>
+                        <outletCollection property="buttons" destination="zBV-6U-mTr" id="CYk-Dp-SwD"/>
+                        <outletCollection property="buttons" destination="bJJ-yN-xiT" id="eZY-UN-iog"/>
+                        <outletCollection property="buttons" destination="ZOo-We-abf" id="dbm-lG-4wq"/>
+                        <outletCollection property="buttons" destination="Ye8-aZ-fl3" id="nFd-rp-v2Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="267"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cardfront" width="79" height="120"/>
+    </resources>
+</document>

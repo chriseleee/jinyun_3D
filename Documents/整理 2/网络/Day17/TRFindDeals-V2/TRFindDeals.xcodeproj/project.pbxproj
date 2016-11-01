@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85C12EE81BB0F10200098EEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12EE71BB0F10200098EEC /* main.m */; };
+		85C12EEB1BB0F10200098EEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12EEA1BB0F10200098EEC /* AppDelegate.m */; };
+		85C12EF11BB0F10200098EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C12EEF1BB0F10200098EEC /* Main.storyboard */; };
+		85C12EF31BB0F10200098EEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C12EF21BB0F10200098EEC /* Images.xcassets */; };
+		85C12F021BB0F10200098EEC /* TRFindDealsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F011BB0F10200098EEC /* TRFindDealsTests.m */; };
+		85C12F121BB0F1B500098EEC /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F0E1BB0F1B500098EEC /* DPAPI.m */; };
+		85C12F131BB0F1B500098EEC /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F111BB0F1B500098EEC /* DPRequest.m */; };
+		85C12F171BB0FE2E00098EEC /* TRDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F161BB0FE2E00098EEC /* TRDeal.m */; };
+		85C12F1E1BB128C500098EEC /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85C12F1A1BB128C500098EEC /* categories.plist */; };
+		85C12F1F1BB128C500098EEC /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85C12F1B1BB128C500098EEC /* cities.plist */; };
+		85C12F201BB128C500098EEC /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85C12F1C1BB128C500098EEC /* cityGroups.plist */; };
+		85C12F211BB128C500098EEC /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85C12F1D1BB128C500098EEC /* sorts.plist */; };
+		85C12F241BB12EA300098EEC /* TRSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F231BB12EA300098EEC /* TRSort.m */; };
+		85C12F281BB12FE600098EEC /* TRMetaDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F271BB12FE600098EEC /* TRMetaDataTool.m */; };
+		85C12F2B1BB1366C00098EEC /* TRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F2A1BB1366C00098EEC /* TRCategory.m */; };
+		85C12F2E1BB1369500098EEC /* TRCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F2D1BB1369500098EEC /* TRCity.m */; };
+		85C12F321BB14DF800098EEC /* TRMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F311BB14DF800098EEC /* TRMainCollectionViewController.m */; };
+		85C12F351BB14E4A00098EEC /* TRNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C12F341BB14E4A00098EEC /* TRNavViewController.m */; };
+		85D6801F1BB2349400A0AA00 /* UIBarButtonItem+TRBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D6801E1BB2349400A0AA00 /* UIBarButtonItem+TRBarButtonItem.m */; };
+		85D680231BB23C0100A0AA00 /* TRNavLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D680221BB23C0100A0AA00 /* TRNavLeftView.m */; };
+		85D680251BB23C4B00A0AA00 /* TRNavLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D680241BB23C4B00A0AA00 /* TRNavLeftView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C12EFC1BB0F10200098EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C12EDA1BB0F10200098EEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C12EE11BB0F10200098EEC;
+			remoteInfo = TRFindDeals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85C12EE21BB0F10200098EEC /* TRFindDeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRFindDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C12EE61BB0F10200098EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C12EE71BB0F10200098EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85C12EE91BB0F10200098EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85C12EEA1BB0F10200098EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85C12EF01BB0F10200098EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85C12EF21BB0F10200098EEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85C12EFB1BB0F10200098EEC /* TRFindDealsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRFindDealsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C12F001BB0F10200098EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C12F011BB0F10200098EEC /* TRFindDealsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRFindDealsTests.m; sourceTree = "<group>"; };
+		85C12F0D1BB0F1B500098EEC /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
+		85C12F0E1BB0F1B500098EEC /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
+		85C12F0F1BB0F1B500098EEC /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		85C12F101BB0F1B500098EEC /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		85C12F111BB0F1B500098EEC /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		85C12F151BB0FE2E00098EEC /* TRDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDeal.h; sourceTree = "<group>"; };
+		85C12F161BB0FE2E00098EEC /* TRDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDeal.m; sourceTree = "<group>"; };
+		85C12F1A1BB128C500098EEC /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		85C12F1B1BB128C500098EEC /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		85C12F1C1BB128C500098EEC /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		85C12F1D1BB128C500098EEC /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		85C12F221BB12EA300098EEC /* TRSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSort.h; sourceTree = "<group>"; };
+		85C12F231BB12EA300098EEC /* TRSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSort.m; sourceTree = "<group>"; };
+		85C12F261BB12FE600098EEC /* TRMetaDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMetaDataTool.h; sourceTree = "<group>"; };
+		85C12F271BB12FE600098EEC /* TRMetaDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMetaDataTool.m; sourceTree = "<group>"; };
+		85C12F291BB1366C00098EEC /* TRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCategory.h; sourceTree = "<group>"; };
+		85C12F2A1BB1366C00098EEC /* TRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategory.m; sourceTree = "<group>"; };
+		85C12F2C1BB1369500098EEC /* TRCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCity.h; sourceTree = "<group>"; };
+		85C12F2D1BB1369500098EEC /* TRCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCity.m; sourceTree = "<group>"; };
+		85C12F301BB14DF800098EEC /* TRMainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMainCollectionViewController.h; sourceTree = "<group>"; };
+		85C12F311BB14DF800098EEC /* TRMainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainCollectionViewController.m; sourceTree = "<group>"; };
+		85C12F331BB14E4A00098EEC /* TRNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNavViewController.h; sourceTree = "<group>"; };
+		85C12F341BB14E4A00098EEC /* TRNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNavViewController.m; sourceTree = "<group>"; };
+		85D6801D1BB2349400A0AA00 /* UIBarButtonItem+TRBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TRBarButtonItem.h"; sourceTree = "<group>"; };
+		85D6801E1BB2349400A0AA00 /* UIBarButtonItem+TRBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TRBarButtonItem.m"; sourceTree = "<group>"; };
+		85D680211BB23C0100A0AA00 /* TRNavLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNavLeftView.h; sourceTree = "<group>"; };
+		85D680221BB23C0100A0AA00 /* TRNavLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNavLeftView.m; sourceTree = "<group>"; };
+		85D680241BB23C4B00A0AA00 /* TRNavLeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRNavLeftView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C12EDF1BB0F10200098EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C12EF81BB0F10200098EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85C12ED91BB0F10200098EEC = {
+			isa = PBXGroup;
+			children = (
+				85C12EE41BB0F10200098EEC /* TRFindDeals */,
+				85C12EFE1BB0F10200098EEC /* TRFindDealsTests */,
+				85C12EE31BB0F10200098EEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85C12EE31BB0F10200098EEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C12EE21BB0F10200098EEC /* TRFindDeals.app */,
+				85C12EFB1BB0F10200098EEC /* TRFindDealsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C12EE41BB0F10200098EEC /* TRFindDeals */ = {
+			isa = PBXGroup;
+			children = (
+				85D680201BB23B8000A0AA00 /* Views */,
+				85C12F2F1BB14DA500098EEC /* Controllers */,
+				85C12F251BB12FB700098EEC /* Utilities */,
+				85C12F181BB1289600098EEC /* Resources */,
+				85C12F141BB0FE0400098EEC /* Models */,
+				85C12F0B1BB0F17900098EEC /* Libraries */,
+				85C12EE91BB0F10200098EEC /* AppDelegate.h */,
+				85C12EEA1BB0F10200098EEC /* AppDelegate.m */,
+				85C12EEF1BB0F10200098EEC /* Main.storyboard */,
+				85C12EF21BB0F10200098EEC /* Images.xcassets */,
+				85C12EE51BB0F10200098EEC /* Supporting Files */,
+			);
+			path = TRFindDeals;
+			sourceTree = "<group>";
+		};
+		85C12EE51BB0F10200098EEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85C12EE61BB0F10200098EEC /* Info.plist */,
+				85C12EE71BB0F10200098EEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85C12EFE1BB0F10200098EEC /* TRFindDealsTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F011BB0F10200098EEC /* TRFindDealsTests.m */,
+				85C12EFF1BB0F10200098EEC /* Supporting Files */,
+			);
+			path = TRFindDealsTests;
+			sourceTree = "<group>";
+		};
+		85C12EFF1BB0F10200098EEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F001BB0F10200098EEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85C12F0B1BB0F17900098EEC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F0C1BB0F1B500098EEC /* DPSDK */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		85C12F0C1BB0F1B500098EEC /* DPSDK */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F0D1BB0F1B500098EEC /* DPAPI.h */,
+				85C12F0E1BB0F1B500098EEC /* DPAPI.m */,
+				85C12F0F1BB0F1B500098EEC /* DPConstants.h */,
+				85C12F101BB0F1B500098EEC /* DPRequest.h */,
+				85C12F111BB0F1B500098EEC /* DPRequest.m */,
+			);
+			path = DPSDK;
+			sourceTree = "<group>";
+		};
+		85C12F141BB0FE0400098EEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F151BB0FE2E00098EEC /* TRDeal.h */,
+				85C12F161BB0FE2E00098EEC /* TRDeal.m */,
+				85C12F221BB12EA300098EEC /* TRSort.h */,
+				85C12F231BB12EA300098EEC /* TRSort.m */,
+				85C12F291BB1366C00098EEC /* TRCategory.h */,
+				85C12F2A1BB1366C00098EEC /* TRCategory.m */,
+				85C12F2C1BB1369500098EEC /* TRCity.h */,
+				85C12F2D1BB1369500098EEC /* TRCity.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		85C12F181BB1289600098EEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F191BB128C500098EEC /* Plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		85C12F191BB128C500098EEC /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F1A1BB128C500098EEC /* categories.plist */,
+				85C12F1B1BB128C500098EEC /* cities.plist */,
+				85C12F1C1BB128C500098EEC /* cityGroups.plist */,
+				85C12F1D1BB128C500098EEC /* sorts.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		85C12F251BB12FB700098EEC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F261BB12FE600098EEC /* TRMetaDataTool.h */,
+				85C12F271BB12FE600098EEC /* TRMetaDataTool.m */,
+				85D6801D1BB2349400A0AA00 /* UIBarButtonItem+TRBarButtonItem.h */,
+				85D6801E1BB2349400A0AA00 /* UIBarButtonItem+TRBarButtonItem.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		85C12F2F1BB14DA500098EEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85C12F301BB14DF800098EEC /* TRMainCollectionViewController.h */,
+				85C12F311BB14DF800098EEC /* TRMainCollectionViewController.m */,
+				85C12F331BB14E4A00098EEC /* TRNavViewController.h */,
+				85C12F341BB14E4A00098EEC /* TRNavViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		85D680201BB23B8000A0AA00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85D680211BB23C0100A0AA00 /* TRNavLeftView.h */,
+				85D680221BB23C0100A0AA00 /* TRNavLeftView.m */,
+				85D680241BB23C4B00A0AA00 /* TRNavLeftView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C12EE11BB0F10200098EEC /* TRFindDeals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C12F051BB0F10200098EEC /* Build configuration list for PBXNativeTarget "TRFindDeals" */;
+			buildPhases = (
+				85C12EDE1BB0F10200098EEC /* Sources */,
+				85C12EDF1BB0F10200098EEC /* Frameworks */,
+				85C12EE01BB0F10200098EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRFindDeals;
+			productName = TRFindDeals;
+			productReference = 85C12EE21BB0F10200098EEC /* TRFindDeals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C12EFA1BB0F10200098EEC /* TRFindDealsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C12F081BB0F10200098EEC /* Build configuration list for PBXNativeTarget "TRFindDealsTests" */;
+			buildPhases = (
+				85C12EF71BB0F10200098EEC /* Sources */,
+				85C12EF81BB0F10200098EEC /* Frameworks */,
+				85C12EF91BB0F10200098EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C12EFD1BB0F10200098EEC /* PBXTargetDependency */,
+			);
+			name = TRFindDealsTests;
+			productName = TRFindDealsTests;
+			productReference = 85C12EFB1BB0F10200098EEC /* TRFindDealsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C12EDA1BB0F10200098EEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TR;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					85C12EE11BB0F10200098EEC = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					85C12EFA1BB0F10200098EEC = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 85C12EE11BB0F10200098EEC;
+					};
+				};
+			};
+			buildConfigurationList = 85C12EDD1BB0F10200098EEC /* Build configuration list for PBXProject "TRFindDeals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C12ED91BB0F10200098EEC;
+			productRefGroup = 85C12EE31BB0F10200098EEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C12EE11BB0F10200098EEC /* TRFindDeals */,
+				85C12EFA1BB0F10200098EEC /* TRFindDealsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C12EE01BB0F10200098EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C12F1E1BB128C500098EEC /* categories.plist in Resources */,
+				85C12EF11BB0F10200098EEC /* Main.storyboard in Resources */,
+				85C12F211BB128C500098EEC /* sorts.plist in Resources */,
+				85C12F1F1BB128C500098EEC /* cities.plist in Resources */,
+				85C12EF31BB0F10200098EEC /* Images.xcassets in Resources */,
+				85C12F201BB128C500098EEC /* cityGroups.plist in Resources */,
+				85D680251BB23C4B00A0AA00 /* TRNavLeftView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C12EF91BB0F10200098EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C12EDE1BB0F10200098EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C12F321BB14DF800098EEC /* TRMainCollectionViewController.m in Sources */,
+				85D6801F1BB2349400A0AA00 /* UIBarButtonItem+TRBarButtonItem.m in Sources */,
+				85C12F2E1BB1369500098EEC /* TRCity.m in Sources */,
+				85C12F281BB12FE600098EEC /* TRMetaDataTool.m in Sources */,
+				85C12F131BB0F1B500098EEC /* DPRequest.m in Sources */,
+				85C12F351BB14E4A00098EEC /* TRNavViewController.m in Sources */,
+				85C12F121BB0F1B500098EEC /* DPAPI.m in Sources */,
+				85C12F2B1BB1366C00098EEC /* TRCategory.m in Sources */,
+				85C12F171BB0FE2E00098EEC /* TRDeal.m in Sources */,
+				85C12EEB1BB0F10200098EEC /* AppDelegate.m in Sources */,
+				85D680231BB23C0100A0AA00 /* TRNavLeftView.m in Sources */,
+				85C12F241BB12EA300098EEC /* TRSort.m in Sources */,
+				85C12EE81BB0F10200098EEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C12EF71BB0F10200098EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C12F021BB0F10200098EEC /* TRFindDealsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C12EFD1BB0F10200098EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C12EE11BB0F10200098EEC /* TRFindDeals */;
+			targetProxy = 85C12EFC1BB0F10200098EEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C12EEF1BB0F10200098EEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C12EF01BB0F10200098EEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C12F031BB0F10200098EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		85C12F041BB0F10200098EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C12F061BB0F10200098EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TRFindDeals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85C12F071BB0F10200098EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TRFindDeals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85C12F091BB0F10200098EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TRFindDealsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRFindDeals.app/TRFindDeals";
+			};
+			name = Debug;
+		};
+		85C12F0A1BB0F10200098EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TRFindDealsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRFindDeals.app/TRFindDeals";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C12EDD1BB0F10200098EEC /* Build configuration list for PBXProject "TRFindDeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C12F031BB0F10200098EEC /* Debug */,
+				85C12F041BB0F10200098EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C12F051BB0F10200098EEC /* Build configuration list for PBXNativeTarget "TRFindDeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C12F061BB0F10200098EEC /* Debug */,
+				85C12F071BB0F10200098EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C12F081BB0F10200098EEC /* Build configuration list for PBXNativeTarget "TRFindDealsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C12F091BB0F10200098EEC /* Debug */,
+				85C12F0A1BB0F10200098EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85C12EDA1BB0F10200098EEC /* Project object */;
+}

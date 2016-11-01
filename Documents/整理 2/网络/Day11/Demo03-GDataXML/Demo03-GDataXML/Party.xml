@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Party>
+  <Player>
+    <Name>TaylorSwift</Name>
+    <Level>1</Level>
+    <Class>Pop</Class>
+  </Player>
+
+  <Player>
+    <Name>Avril</Name>
+    <Level>1</Level>
+    <Class>Rock</Class>
+  </Player>
+</Party>
+
+
+
+
+
+
+

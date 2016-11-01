@@ -1,0 +1,38 @@
+{
+    "total_count" : 20000,
+    "count" : 3,
+    "deals" : [
+    {
+               "deal_id" : "1-1111",
+               "title" : "巴黎贝甜",
+               "list_price" : 89,
+               "current_price" : 50
+    },
+    {
+               "deal_id" : "2-2222",
+               "title" : "松子料理",
+               "list_price" : 220,
+               "current_price" : 180
+               
+    },
+    {
+               "deal_id" : "3-3333",
+               "title" : "汉拿山烧烤",
+               "list_price" :280,
+               "current_price" :200
+               }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
